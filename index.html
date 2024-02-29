@@ -3734,6 +3734,53 @@ onload=resetAndFocus()>
 
 
 
+		<!-- MI EDICION dd the download button -->
+	
+				<!-- Add the download button -->
+				<button id="downloadButtonbook">Download SETS</button>
+				<script>
+						// Define the function to open the file in another tab
+						function openFileInNewTab(filePath) {
+								window.open(filePath, '_blank');
+						}
+		
+						// Bind the function to the button click event
+						document.getElementById("downloadButtonbook").addEventListener("click", function() {
+								// Specify the file path
+								var filePath = 'https://mega.nz/folder/5lRShJwL#dpiVP4OsuIBJ0nWWfCs7wA'; // Change this to your file path
+								openFileInNewTab(filePath);
+						});
+		
+				<!-- MI EDICION dd the download button -->
+		
+				// Get the button element
+				var button = document.getElementById("downloadButtonbook");
+		
+				// Function to change the button size
+				function changeButtonSize(width, height) {
+					button.style.width = width;
+					button.style.height = height;
+				}
+		
+				// Example: Change button size to 150px width and 50px height
+				changeButtonSize("60px", "30px");
+				function changeButtonTextSize(buttonId, textSize) {
+					 var button = document.getElementById(buttonId);
+					 button.style.fontSize = textSize;
+				 }
+		
+				 // Example: Change the button text size to 24px
+				 changeButtonTextSize("downloadButtonbook", "10px");
+	
+				
+	
+				 
+				
+				</script>
+		 
+	
+
+
 
 	 <!-- MI EDICION dd the download button -->
 	
@@ -3995,53 +4042,6 @@ onload=resetAndFocus()>
 
 
 	</script>
-
-
-
-		<!-- MI EDICION dd the download button -->
-	
-				<!-- Add the download button -->
-			<button id="downloadButtonbook">Download SETS</button>
-			<script>
-					// Define the function to open the file in another tab
-					function openFileInNewTab(filePath) {
-							window.open(filePath, '_blank');
-					}
-	
-					// Bind the function to the button click event
-					document.getElementById("downloadButtonbook").addEventListener("click", function() {
-							// Specify the file path
-							var filePath = 'https://mega.nz/folder/5lRShJwL#dpiVP4OsuIBJ0nWWfCs7wA'; // Change this to your file path
-							openFileInNewTab(filePath);
-					});
-	
-			<!-- MI EDICION dd the download button -->
-	
-			// Get the button element
-			var button = document.getElementById("downloadButtonbook");
-	
-			// Function to change the button size
-			function changeButtonSize(width, height) {
-				button.style.width = width;
-				button.style.height = height;
-			}
-	
-			// Example: Change button size to 150px width and 50px height
-			changeButtonSize("60px", "30px");
-			function changeButtonTextSize(buttonId, textSize) {
-				 var button = document.getElementById(buttonId);
-				 button.style.fontSize = textSize;
-			 }
-	
-			 // Example: Change the button text size to 24px
-			 changeButtonTextSize("downloadButtonbook", "10px");
-
-			
-
-			 
-			
-			</script>
-	 
 
 	 
 

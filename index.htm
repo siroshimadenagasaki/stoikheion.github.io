@@ -3154,14 +3154,33 @@ for (var i = 0; i < spaceremove.length; i++){
 
 }
 
-function varients(interval){
-   var varient= new Array();
-    interval[0]=interval[0]-3;	
-   for (var i = 1; i < interval.length; i++){
-        interval[i]=parseInt(interval[i-1])+parseInt(interval[i]);		
+/*function varients(interval){
+  
+    var tempvari=interval[0]-3;	
+    for (var i = 0; i < interval.length-1; i++){
+        interval[i+1]=parseInt(interval[i]);
 	}
+	
 	return interval;
-}
+	
+}*/
+
+/*function varients(interval){
+   var interval4= new Array();
+   var tempinterval=interval[0]-3;	
+	
+   for (var i = 0; i < interval.length-1; i++){
+        interval4[i+1]=interval[i];		
+	}
+	
+	interval4[0]=tempinterval;
+
+	 for (var i = 1; i < interval4.length; i++){
+        interval4[i]=parseInt(interval4[i-1])+parseInt(interval4[i]);	
+	}
+	return interval4;
+}*/
+
 
 function isEqual(a, b) {
 
@@ -3169,7 +3188,7 @@ function isEqual(a, b) {
 }
 
 function arraysEqual(arr1, arr2) {
-
+   
     if (arr1.length !== arr2.length) return false;
    
     for (let i = 0; i < arr1.length; i++) {
@@ -3178,6 +3197,39 @@ function arraysEqual(arr1, arr2) {
 		
     }
     return true;
+}
+
+function check_clockwise_rotation(prime_arr, inter_arr){
+   
+   if (prime_arr.length !== inter_arr.length) return false;
+   var previous_match = -1;
+   var index_no_first=0;
+   var k=-2;
+   for (let i = 0; i < prime_arr.length; i++) {	        
+		if(i==prime_arr.length-1){
+		  previous_match = -1;
+		}
+		
+      for (let j = 0; j < inter_arr.length; j++) {	
+        
+	       
+		   if(parseInt(prime_arr[i]) === parseInt(inter_arr[j]))
+		   {
+		         var k = j;	
+				if(j > previous_match){
+				   var k = j;			
+				    break;
+				}
+				
+		   }
+	   }	   
+	  
+	   if( k < previous_match){ return false;}
+	    previous_match=k; 
+	   
+    }
+	return true;
+
 }
 
 function updatecal(form){
@@ -3203,29 +3255,66 @@ function updatecal(form){
 	}
 	
 	var interval=changeinterval(spaceremove);
-	var diffvarient=varients(interval);
-	var diffpermutation=permute(diffvarient);
+	
 	
 	//var prime_value=convertToArray(form.prime.value.substring(form.prime.value.indexOf("(")+1,form.prime.value.lastIndexOf(")")));
+	 var prime_value_new =new Array();
+	 var prime_value = form.prime.value.substring(form.prime.value.indexOf("[")+1,form.prime.value.lastIndexOf("]"))
+	
+	 var j=0;
+	 for (var i = 0; i < prime_value.length; i++){
+	        if(prime_value[i] != ",")
+			{
+				if(prime_value[i]=='t'){ 
+					prime_value_new[j]=10;
+					j=j+1;
+				}else if(field[i]=='e'){
+					prime_value_new[j]=11;
+					j=j+1;
+				}else{
+				  prime_value_new[j]=prime_value[i];
+				  j=j+1;
+				}
+			}
+	  }
 	 
-	 let prime_value = form.prime.value
-	 // alert(prime_value);
-	var k=0;
-	for (var i = 0; i < diffpermutation.length; i++){	
-            	
-			var diffchangeinterval = changeinterval(diffpermutation[i]);
-		  // console.log(diffpermutation[i]);
-			//console.log(diffchangeinterval);
-			let diffvarients=varients(diffchangeinterval);
-			if(arraysEqual(diffvarients,prime_value) == true){
+	 var prime_value_new_interval=changeinterval(prime_value_new);
+	 
+	   
+	 
+	 
+	 if(arraysEqual(interval,prime_value_new) == true){
+	      console.log("s"+interval);
+	      console.log("t"+prime_value_new);
+	      form.solomon.value=form.forte.value;
+		  
+	 }else if(check_clockwise_rotation(prime_value_new_interval,interval) == false){
+			 form.solomon.value=form.forte.value+'B';	          
+	 }else if(arraysEqual(interval,prime_value_new_interval) == true){
+	   console.log("u"+interval);
+	      console.log("v"+prime_value_new_interval);
+			form.solomon.value=form.forte.value;
+	 }else{
+	 		 
+		var diffpermutation=permute(interval);	 
+	
+		var k = 0;
+		
+		for (var i = 0; i < diffpermutation.length; i++)
+		{	
+            			
+				console.log(diffpermutation[i]);
+				console.log(prime_value_new_interval);
+			if(arraysEqual(diffpermutation[i],prime_value_new_interval) == true){
 			    form.solomon.value=form.forte.value;
-				k=1;
+				k = 1;
 				break;
 			}
-	}
-     if(k==0){	
+		}
+		if(k == 0){	
 	    form.solomon.value=form.forte.value+'B';
-	 }
+		}
+	}
 }
 
 

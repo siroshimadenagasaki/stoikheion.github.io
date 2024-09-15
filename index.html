@@ -25,6 +25,7 @@
 <title>Stoikheion Calculator</title>
 
 <meta http-equiv="Content-Type" content="text/html; charset=UTF-8">
+<script src="list.js"></script>
 
 <script language="javascript">
 
@@ -3131,7 +3132,57 @@ function submitSet(form)
 	main(form, false);
 	
     updatecal(form);
+
+	setLink(form)
 }
+
+
+function setLink(form) {
+
+	
+
+form.solomonName.value = solomonName;
+document.getElementById("open-link").addEventListener("click", () => {
+	window.open(url, '_blank');
+});
+
+}
+
+
+function setLink(form) {
+
+const solomonValue = form.solomon.value
+
+// Find the Value
+let newObj = solomonlist.find((obj) => obj.solomonCode == solomonValue);
+if (!newObj) return
+
+// Find the Name
+let solomonName = newObj.name;
+
+if (newObj && newObj.link) {
+	let url = newObj.link;
+
+	// Check if the URL starts with 'http://' or 'https://'
+	if (!/^https?:\/\//i.test(url)) {
+		// Prepend 'https://' if missing
+		url = 'https://' + url;
+	}
+
+	const openUrl = () => {
+		window.open(url, '_blank');
+	}
+	form.solomonName.value = solomonName;
+	document.getElementById("open-link").addEventListener("click", openUrl);
+
+
+	console.log("NEw OBJ : ", newObj);
+
+} else {
+	console.error('No link available');
+}
+}
+
 
 function changeinterval(spaceremove){
 var interval= new Array();
@@ -3799,12 +3850,14 @@ function resetAndFocus()
 	
 								<td>Solomon:</td>
 	
-								<td><input size="6" name="solomon"> </td></tr>
-		<tr>
+								<td>
+									<input size="6" name="solomon">
+									<input type="button" id="open-link" name="pdfButton" value="PDF"> </td></tr>
+								<tr>
 			
 									<td>Name:</td>
 	
-									<td><input size="28" name="common-name"> </td></tr>
+									<td><input size="28" name="solomonName"> </td></tr>
 	
 	
 						</tbody>

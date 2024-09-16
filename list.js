@@ -6,12 +6,12 @@ const solomonlist = [
     },
     {
         "solomonCode": "3-2",
-        "link": "",
+        "link": "www.no.com",
         "name": "Phrygian triad"
     },
     {
         "solomonCode": "3-2B",
-        "link": "",
+        "link": "www.no.com",
         "name": "Minor tricord"
     },
     {
@@ -75,7 +75,7 @@ const solomonlist = [
         "name": " Minor triad - 6(no5)"
     },      {
         "solomonCode": "3-11B",
-        "link": "",
+        "link": "www.no.com",
         "name": "Major triad - m6(no5)"
     },         {
         "solomonCode": "3-12",
@@ -203,56 +203,356 @@ const solomonlist = [
         "name": "Maj+ - Major augmented tetrachord"
     },      {
         "solomonCode": "4-20",
-        "link": "w",
-        "name": "w"
+        "link": "https://drive.google.com/file/d/1jPZDxrHisJOxX4Wjw7uo3ZPFo4gfOa5q/view?usp=drive_link",
+        "name": "Maj - Major seventh chord"
     },      {
         "solomonCode": "4-21",
-        "link": "w",
-        "name": "w"
+        "link": "https://drive.google.com/file/d/1h5Stu5bz1ByFh6GwUqu_5Q6qTgqf4WvR/view?usp=drive_link",
+        "name": "7(9 no5) - Tonal tetrachord"
     },      {
         "solomonCode": "4-22",
-        "link": "w",
-        "name": "w"
+        "link": "https://drive.google.com/file/d/1N-RNu5-JtII7v8FYzIBGskqNBteecZqR/view?usp=drive_link",
+        "name": "Major 9 - 1 2 3 5 - Coltrane major pattern"
     },      {
         "solomonCode": "4-22B",
-        "link": "w",
-        "name": "w"
+        "link": "https://drive.google.com/file/d/1AoYypZbkXik3hjh9WXn6cLUXN6IWK8DV/view?usp=drive_link",
+        "name": "Perfect fourth minor tetrachord - Minor 11"
     },      {
         "solomonCode": "4-23",
-        "link": "w",
-        "name": "w"
+        "link": "https://drive.google.com/file/d/1vKDVjEOmvmsJT10yK8-YvxGAZxWlxvOl/view?usp=drive_link",
+        "name": "Cuartal tetrachord - m7(11 no5) - 7 Sus4"
     },      {
         "solomonCode": "4-24",
-        "link": "w",
-        "name": "w"
+        "link": "https://drive.google.com/file/d/1jlAXCFySTXtbklnlh0f0Zct6qStHCc6h/view?usp=drive_link",
+        "name": "Augmented seventh chord - 7+"
     },      {
         "solomonCode": "4-25",
-        "link": "w",
-        "name": "w"
+        "link": "https://drive.google.com/file/d/1WxhEDXAQG3sGnjYcgDfR7t1xU01uUQ82/view?usp=drive_link",
+        "name": "7(5b) - C7(no5) + F#7(no5) - French sixth chord"
     },      {
         "solomonCode": "4-26",
-        "link": "w",
-        "name": "w"
+        "link": "https://drive.google.com/file/d/1yYPahaFH_L5xp--s-b1eBpC5B-ZmrOVv/view?usp=drive_link",
+        "name": "Minor seventh chord - m7"
     },      {
         "solomonCode": "4-27",
-        "link": "w",
-        "name": "w"
+        "link": "https://drive.google.com/file/d/12nQ8qRlnHVVxt6b72qdit-vqic_cVtU9/view?usp=drive_link",
+        "name": "half diminished chord - m7(5b)"
     },      {
         "solomonCode": "4-27B",
-        "link": "w",
-        "name": "w"
+        "link": "https://drive.google.com/file/d/1EBpEAJcf7UnZoFpL2jRJuA1sL2-e0gxl/view?usp=drive_link",
+        "name": "Seventh chord - German sixth"
     },      {
         "solomonCode": "4-28",
-        "link": "w",
-        "name": "w"
+        "link": "https://drive.google.com/file/d/1iKDTGoFbzonRkZLp9nSJg9Smg9_vSiUP/view?usp=drive_link",
+        "name": "Diminish seventh chord - Dim7"
     },      {
         "solomonCode": "4-29",
-        "link": "w",
-        "name": "w"
+        "link": "https://drive.google.com/file/d/10XpPfBnuvc9Y0h3f9gfOIjHFVZJmEhmq/view?usp=drive_link",
+        "name": "7(6 no5) - All intervals tetrachord n3"
     },      {
         "solomonCode": "4-29B",
-        "link": "w",
-        "name": "w"
+        "link": "https://drive.google.com/file/d/1x-Vla4D_rFMMylDE89NmEba1sIDUh-qk/view?usp=drive_link",
+        "name": "Major 4# - All intervals tetrachord n4"
+    }
+    {
+        "solomonCode": "5-1",
+        "link": "https://drive.google.com/file/d/1LyJXJ61_iY8FVNNBzjZaajCFwKDqo-zs/view?usp=drive_link",
+        "name": "Chromatic pentantonic"
+    },
+    {
+        "solomonCode": "5-2",
+        "link": "www.no.com",
+        "name": "Minor second pentacluster n2"
+    },
+    {
+        "solomonCode": "5-2B",
+        "link": "www.no.com",
+        "name": "Minor second pentacluster n1"
+    },
+    {
+        "solomonCode": "5-3",
+        "link": "www.no.com",
+        "name": "Major 9b pentatonic"
+    },
+    {
+        "solomonCode": "5-3B",
+        "link": "www.no.com",
+        "name": "Spanish pentacluster"
+    },
+    {
+        "solomonCode": "5-4",
+        "link": "www.no.com",
+        "name": "Blues pentacluster"
+    },
+    {
+        "solomonCode": "5-4B",
+        "link": "www.no.com",
+        "name": "Minor third pentacluster"
+    },
+    {
+        "solomonCode": "5-5",
+        "link": "www.no.com",
+        "name": "Major third pentacluster n2"
+    },
+    {
+        "solomonCode": "5-5B",
+        "link": "www.no.com",
+        "name": "Major third pentacluster n1"
+    },
+    {
+        "solomonCode": "5-6",
+        "link": "www.no.com",
+        "name": "Oriental pentacluster n1 - Raga Megharanji - 1 3 1 6 1"
+    },
+    {
+        "solomonCode": "5-6B",
+        "link": "www.no.com",
+        "name": "Oriental pentacluster n2"
+    },
+    {
+        "solomonCode": "5-7",
+        "link": "www.no.com",
+        "name": "Double pentacluser n1 - Raga Nabhomani - 1 1 4 1 5"
+    },
+    {
+        "solomonCode": "5-7B",
+        "link": "www.no.com",
+        "name": "Double pentacluster n2"
+    },
+    {
+        "solomonCode": "5-8",
+        "link": "https://drive.google.com/file/d/1LyJXJ61_iY8FVNNBzjZaajCFwKDqo-zs/view?usp=drive_link",
+        "name": "Tritone symetrical pentatonic - Mirror pentatonic"
+    },
+    {
+        "solomonCode": "5-9",
+        "link": "www.no.com",
+        "name": "Expanded tritone pentatonic"
+    },
+    {
+        "solomonCode": "5-9B",
+        "link": "www.no.com",
+        "name": "Contracted tritone pentatonic"
+    },
+    {
+        "solomonCode": "5-10",
+        "link": "www.no.com",
+        "name": "Alternated pentatonic n1"
+    },
+    {
+        "solomonCode": "5-10B",
+        "link": "www.no.com",
+        "name": "Alternated pentatonic n2"
+    },
+    {
+        "solomonCode": "5-11",
+        "link": "www.no.com",
+        "name": "Central cluster pentatonic n1"
+    },
+    {
+        "solomonCode": "5-11B",
+        "link": "www.no.com",
+        "name": "Central cluster pentatonic n2"
+    },
+    {
+        "solomonCode": "5-12",
+        "link": "www.no.com",
+        "name": "Locrian pentatonic"
+    },
+    {
+        "solomonCode": "5-13",
+        "link": "www.no.com",
+        "name": "Augmented pentatonic n1"
+    },
+    {
+        "solomonCode": "5-13B",
+        "link": "www.no.com",
+        "name": "Augmented pentatonic n2"
+    },
+    {
+        "solomonCode": "5-14",
+        "link": "www.no.com",
+        "name": "Doble second triple fourth pentatonic n1"
+    },
+    {
+        "solomonCode": "5-14B",
+        "link": "www.no.com",
+        "name": "Doble second triple fourth pentatonic n2"
+    },
+    {
+        "solomonCode": "5-15",
+        "link": "www.no.com",
+        "name": "Asymetric pentatonic"
+    },
+    {
+        "solomonCode": "5-16",
+        "link": "www.no.com",
+        "name": "Major minor diminished pentatonic n1"
+    },
+    {
+        "solomonCode": "5-16B",
+        "link": "www.no.com",
+        "name": "Major minor diminished pentatonic n2"
+    },
+    {
+        "solomonCode": "5-17",
+        "link": "https://drive.google.com/file/d/18jQCav0D4jgYGZnESoed8-4rq1faw1Yv/view?usp=drive_link",
+        "name": "Maj+(6) - Minor 9 chord"
+    },
+    {
+        "solomonCode": "5-18",
+        "link": "https://drive.google.com/file/d/1pZdcs2Cq7jhSz2rWMZ4uB13g6iAsljes/view?usp=drive_link",
+        "name": "Gypsy pentatonic n1"
+    },
+    {
+        "solomonCode": "5-18B",
+        "link": "https://drive.google.com/file/d/1mYY5_aGX_ns0-YRrth76jdjohyu1afpI/view?usp=drive_link",
+        "name": "Gypsy pentatonic n2"
+    },
+    {
+        "solomonCode": "5-19B",
+        "link": "https://drive.google.com/file/d/1kc6b7FK_WrtEngeUR9ea8VU-n9uJMVMm/view?usp=drive_link",
+        "name": "Balinese Pentatonic"
+    },
+    {
+        "solomonCode": "5-20",
+        "link": "https://drive.google.com/file/d/1io-n6aSCy0qNRZE99-aHC-gTXf0SdP6h/view?usp=drive_link",
+        "name": "Pelog pentatonic"
+    },
+    {
+        "solomonCode": "5-20B",
+        "link": "https://drive.google.com/file/d/10Zqxfonr2TS7Rg7mZyT3z9r0uSJVa26v/view?usp=drive_link",
+        "name": "Hirajoshi Pentatonic"
+    },
+    {
+        "solomonCode": "5-21",
+        "link": "https://drive.google.com/file/d/1ykHsS3JpBb1L5Z_YQlTnMSg024frZJet/view?usp=drive_link",
+        "name": "Sirian Pentatonic"
+    },
+    {
+        "solomonCode": "5-21B",
+        "link": "https://drive.google.com/file/d/1ygcXS00iQLGbCR5IIrP-9uxRf8kIpmGa/view?usp=drive_link",
+        "name": "Libanese Pentatonic - Minor augmented chord"
+    },
+    {
+        "solomonCode": "5-",
+        "link": "",
+        "name": ""
+    },
+    {
+        "solomonCode": "5-22",
+        "link": "https://drive.google.com/file/d/1p-XFAVQafNcDYXZPPD-6n41lOpeDEHBR/view?usp=drive_link",
+        "name": "Persian pentatonic"
+    },
+    {
+        "solomonCode": "5-23",
+        "link": "www.no.com",
+        "name": "Minor pentatonic"
+    },
+    {
+        "solomonCode": "5-23B",
+        "link": "https://drive.google.com/file/d/1o-Ytby6SdRXF3M1d056LEm6o0rkEYs4U/view?usp=drive_link",
+        "name": "Major pentatonic - m11(no5)"
+    },
+    {
+        "solomonCode": "5-24",
+        "link": "www.no.com",
+        "name": "Phrygian pentatonic"
+    },
+    {
+        "solomonCode": "5-25",
+        "link": "www.no.com",
+        "name": "Major ninth diminished chord"
+    },
+    {
+        "solomonCode": "5-25B",
+        "link": "www.no.com",
+        "name": "Minor 9b chord"
+    },
+    {
+        "solomonCode": "5-26",
+        "link": "https://drive.google.com/file/d/1gEOT6UtT3tSK5E5nogLLbSXRcE0d0HBr/view?usp=drive_link",
+        "name": "Diminished 9# chord - mMaj(6)"
+    },
+    {
+        "solomonCode": "5-26B",
+        "link": "www.no.com",
+        "name": "Augmented 9b chord"
+    },
+    {
+        "solomonCode": "5-27",
+        "link": "https://drive.google.com/file/d/1Bhl3Poc5cuxGY9vbPTcFAbchCpTfCLXM/view?usp=drive_link",
+        "name": "Major 9 chord - Maj9"
+    },
+    {
+        "solomonCode": "5-27B",
+        "link": "https://drive.google.com/file/d/10m5WJzh7hBs-NDLlml-HkUzQJ9VGlsWi/view?usp=drive_link",
+        "name": "Minor 9 chord - m9 - Maj(6)"
+    },
+    {
+        "solomonCode": "5-28",
+        "link": "https://drive.google.com/file/d/1hU7Kv1KMiWAvbnxfBmkPWOxGeNSqUxz1/view?usp=drive_link",
+        "name": "Augmented sixth pentatonic n1"
+    },
+    {
+        "solomonCode": "5-28B",
+        "link": "www.no.com",
+        "name": "Augmented sixth pentatonic n2"
+    },
+    {
+        "solomonCode": "5-29",
+        "link": "https://drive.google.com/file/d/1gCHPqn1Q-6PTaes7ERJnWt2FMD_47347/view?usp=drive_link",
+        "name": "Kumoi pentatonic n2"
+    },
+    {
+        "solomonCode": "5-29B",
+        "link": "https://drive.google.com/file/d/1wb8-yTkGk031p1kCPZSWz8Nz16Ws3IlE/view?usp=drive_link",
+        "name": "Kumoi pentatonic n1"
+    },
+    {
+        "solomonCode": "5-30",
+        "link": "https://drive.google.com/file/d/1UzqyAZ8BWk2Qv6x9rG1mtcZXNBF4zjn4/view?usp=drive_link",
+        "name": "Enigmatic pentatonic n1"
+    },
+    {
+        "solomonCode": "5-30B",
+        "link": "https://drive.google.com/file/d/11OnKPca2D7KlInQNWP8RkDDiGHcj2V3Q/view?usp=drive_link",
+        "name": "Enigmatic pentatonic n2 - Altered pentatonic"
+    },
+    {
+        "solomonCode": "5-31",
+        "link": "https://drive.google.com/file/d/1yjMHjuK50ohABI1cMSXm-5f8vW74qsc8/view?usp=drive_link",
+        "name": "Diminished 9b chord"
+    },
+    {
+        "solomonCode": "5-31B",
+        "link": "https://drive.google.com/file/d/1BCV8332Ul7GxHAhoOLVmSSQqJ7YsuPUM/view?usp=drive_link",
+        "name": "Diminished 9 chord"
+    },
+    {
+        "solomonCode": "5-32",
+        "link": "https://drive.google.com/file/d/11tnZYgBu7gpRFHw0x2lY5nprYasnL4Jl/view?usp=drive_link",
+        "name": "Napolitan pentatonic n1"
+    },
+    {
+        "solomonCode": "5-32B",
+        "link": "https://drive.google.com/file/d/1bYbP0BtNK_TFgjm_48Hz7JTdBuM2gdoW/view?usp=drive_link",
+        "name": "Napolitan pentatonic n2"
+    },
+    {
+        "solomonCode": "5-33",
+        "link": "https://drive.google.com/file/d/1qKJsgzgocuy4x3uoZi7YhkhN8yKvndeZ/view?usp=drive_link",
+        "name": "Tonal pentatonic"
+    },
+    {
+        "solomonCode": "5-34",
+        "link": "https://drive.google.com/file/d/1qJX-pt-JK1ORqOPM-X6bbbJPVROxbIAM/view?usp=drive_link",
+        "name": "Prometeus pentatonic - m(4 6)"
+    },
+    {
+        "solomonCode": "5-35",
+        "link": "https://drive.google.com/file/d/1dZG3jX8V1-W8Idm7EQ-JaPtWm7t4JsLv/view?usp=drive_link",
+        "name": "Traditional pentatonic"
     }
 ];
 

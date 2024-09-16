@@ -253,9 +253,8 @@ const solomonlist = [
         "solomonCode": "4-29B",
         "link": "https://drive.google.com/file/d/1x-Vla4D_rFMMylDE89NmEba1sIDUh-qk/view?usp=drive_link",
         "name": "Major 4# - All intervals tetrachord n4"
-    }
-    {
-        "solomonCode": "5-1",
+    },
+    {        "solomonCode": "5-1",
         "link": "https://drive.google.com/file/d/1LyJXJ61_iY8FVNNBzjZaajCFwKDqo-zs/view?usp=drive_link",
         "name": "Chromatic pentantonic"
     },

@@ -435,11 +435,6 @@ const solomonlist = [
         "name": "Libanese Pentatonic - Minor augmented chord"
     },
     {
-        "solomonCode": "5-",
-        "link": "",
-        "name": ""
-    },
-    {
         "solomonCode": "5-22",
         "link": "https://drive.google.com/file/d/1p-XFAVQafNcDYXZPPD-6n41lOpeDEHBR/view?usp=drive_link",
         "name": "Persian pentatonic"

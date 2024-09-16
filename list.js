@@ -195,166 +195,65 @@ const solomonlist = [
         "name": "Minor diminish tetrachord"
     },      {
         "solomonCode": "4-19",
-        "link": "",
-        "name": ""
+        "link": "https://drive.google.com/file/d/11-R4y-tuTzsi0-WRzv0kktWvqB4i12E2/view?usp=drive_link",
+        "name": "mMaj9 - minor augmented tretrachord"
     },      {
         "solomonCode": "4-19B",
-        "link": "",
-        "name": ""
+        "link": "https://drive.google.com/file/d/1r7N2AbQZkw2-Apn5zEmfOlvZCWGhcJ8b/view?usp=drive_link",
+        "name": "Maj+ - Major augmented tetrachord"
     },      {
-        "solomonCode": "0-0",
-        "link": "",
-        "name": ""
+        "solomonCode": "4-20",
+        "link": "w",
+        "name": "w"
     },      {
-        "solomonCode": "0-0",
-        "link": "",
-        "name": ""
+        "solomonCode": "4-21",
+        "link": "w",
+        "name": "w"
     },      {
-        "solomonCode": "0-0",
-        "link": "",
-        "name": ""
+        "solomonCode": "4-22",
+        "link": "w",
+        "name": "w"
     },      {
-        "solomonCode": "0-0",
-        "link": "",
-        "name": ""
+        "solomonCode": "4-22B",
+        "link": "w",
+        "name": "w"
     },      {
-        "solomonCode": "0-0",
-        "link": "",
-        "name": ""
+        "solomonCode": "4-23",
+        "link": "w",
+        "name": "w"
     },      {
-        "solomonCode": "0-0",
-        "link": "",
-        "name": ""
+        "solomonCode": "4-24",
+        "link": "w",
+        "name": "w"
     },      {
-        "solomonCode": "0-0",
-        "link": "",
-        "name": ""
+        "solomonCode": "4-25",
+        "link": "w",
+        "name": "w"
     },      {
-        "solomonCode": "0-0",
-        "link": "",
-        "name": ""
+        "solomonCode": "4-26",
+        "link": "w",
+        "name": "w"
     },      {
-        "solomonCode": "0-0",
-        "link": "",
-        "name": ""
+        "solomonCode": "4-27",
+        "link": "w",
+        "name": "w"
     },      {
-        "solomonCode": "0-0",
-        "link": "",
-        "name": ""
+        "solomonCode": "4-27B",
+        "link": "w",
+        "name": "w"
     },      {
-        "solomonCode": "0-0",
-        "link": "",
-        "name": ""
+        "solomonCode": "4-28",
+        "link": "w",
+        "name": "w"
     },      {
-        "solomonCode": "0-0",
-        "link": "",
-        "name": ""
+        "solomonCode": "4-29",
+        "link": "w",
+        "name": "w"
     },      {
-        "solomonCode": "0-0",
-        "link": "",
-        "name": ""
-    },      {
-        "solomonCode": "0-0",
-        "link": "",
-        "name": ""
-    },      {
-        "solomonCode": "0-0",
-        "link": "",
-        "name": ""
-    },      {
-        "solomonCode": "0-0",
-        "link": "",
-        "name": ""
-    },      {
-        "solomonCode": "0-0",
-        "link": "",
-        "name": ""
-    },      {
-        "solomonCode": "0-0",
-        "link": "",
-        "name": ""
-    },      {
-        "solomonCode": "0-0",
-        "link": "",
-        "name": ""
-    },      {
-        "solomonCode": "0-0",
-        "link": "",
-        "name": ""
-    },      {
-        "solomonCode": "0-0",
-        "link": "",
-        "name": ""
-    },      {
-        "solomonCode": "0-0",
-        "link": "",
-        "name": ""
-    },      {
-        "solomonCode": "0-0",
-        "link": "",
-        "name": ""
-    },      {
-        "solomonCode": "0-0",
-        "link": "",
-        "name": ""
-    },      {
-        "solomonCode": "0-0",
-        "link": "",
-        "name": ""
-    },      {
-        "solomonCode": "0-0",
-        "link": "",
-        "name": ""
-    },      {
-        "solomonCode": "0-0",
-        "link": "",
-        "name": ""
-    },      {
-        "solomonCode": "0-0",
-        "link": "",
-        "name": ""
-    },      {
-        "solomonCode": "0-0",
-        "link": "",
-        "name": ""
-    },      {
-        "solomonCode": "0-0",
-        "link": "",
-        "name": ""
-    },      {
-        "solomonCode": "0-0",
-        "link": "",
-        "name": ""
-    },      {
-        "solomonCode": "0-0",
-        "link": "",
-        "name": ""
-    },      {
-        "solomonCode": "0-0",
-        "link": "",
-        "name": ""
-    },      {
-        "solomonCode": "0-0",
-        "link": "",
-        "name": ""
-    },      {
-        "solomonCode": "0-0",
-        "link": "",
-        "name": ""
-    },      {
-        "solomonCode": "0-0",
-        "link": "",
-        "name": ""
-    },      {
-        "solomonCode": "0-0",
-        "link": "",
-        "name": ""
-    },      {
-        "solomonCode": "0-0",
-        "link": "",
-        "name": ""
-    } 
-
+        "solomonCode": "4-29B",
+        "link": "w",
+        "name": "w"
+    }
 ];
 
 

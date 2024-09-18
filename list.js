@@ -75,7 +75,7 @@ const solomonlist = [
         "name": " Minor triad - 6(no5)"
     },      {
         "solomonCode": "3-11B",
-        "link": "www.no.com",
+        "link": "https://drive.google.com/file/d/19B0wNReMW1-5h_3q157HNu0KQoqer4dd/view?usp=drive_link",
         "name": "Major triad - m6(no5)"
     },         {
         "solomonCode": "3-12",

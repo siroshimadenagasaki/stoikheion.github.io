@@ -6,12 +6,12 @@ const solomonlist = [
     },
     {
         "solomonCode": "3-2",
-        "link": "www.no.com",
+        "link": "www.thissethasnopdf.com",
         "name": "Phrygian triad"
     },
     {
         "solomonCode": "3-2B",
-        "link": "www.no.com",
+        "link": "www.thissethasnopdf.com",
         "name": "Minor tricord"
     },
     {
@@ -21,7 +21,7 @@ const solomonlist = [
     },
     {
         "solomonCode": "3-3B",
-        "link": "www.blank.com",
+        "link": "www.thissethasnopdf.com",
         "name": " Major/minor triad n2 "
     },
       {
@@ -31,7 +31,7 @@ const solomonlist = [
     },
     {
         "solomonCode": "3-4B",
-        "link": "www.blank.com",
+        "link": "www.thissethasnopdf.com",
         "name": "Maj7(no3) - incomplete Maj7 n2"
     },      {
         "solomonCode": "3-5",
@@ -87,11 +87,11 @@ const solomonlist = [
         "name": "Chromatic tetrachord - X Cell"
     },      {
         "solomonCode": "4-2",
-        "link": "www.blank.com",
+        "link": "www.thissethasnopdf.com",
         "name": "Major second tetracluster no2"
     },      {
         "solomonCode": "4-2B",
-        "link": "www.blank.com",
+        "link": "www.thissethasnopdf.com",
         "name": "Major second tetracluster no1"
     },      {
         "solomonCode": "4-3",
@@ -111,7 +111,7 @@ const solomonlist = [
         "name": "Major third tetracluster n2 - 1 2b 5 7"
     },      {
         "solomonCode": "4-5",
-        "link": "www.no.com",
+        "link": "www.thissethasnopdf.com",
         "name": "Major third tetracluster no1"
     },      {
         "solomonCode": "4-6",
@@ -131,7 +131,7 @@ const solomonlist = [
         "name": "Double tritone tetracord"
     },      {
         "solomonCode": "4-10",
-        "link": "www.no.com",
+        "link": "www.thissethasnopdf.com",
         "name": "Minor tetracord"
     },      {
         "solomonCode": "4-11",
@@ -260,62 +260,62 @@ const solomonlist = [
     },
     {
         "solomonCode": "5-2",
-        "link": "www.no.com",
+        "link": "www.thissethasnopdf.com",
         "name": "Minor second pentacluster n2"
     },
     {
         "solomonCode": "5-2B",
-        "link": "www.no.com",
+        "link": "www.thissethasnopdf.com",
         "name": "Minor second pentacluster n1"
     },
     {
         "solomonCode": "5-3",
-        "link": "www.no.com",
+        "link": "www.thissethasnopdf.com",
         "name": "Major 9b pentatonic"
     },
     {
         "solomonCode": "5-3B",
-        "link": "www.no.com",
+        "link": "www.thissethasnopdf.com",
         "name": "Spanish pentacluster"
     },
     {
         "solomonCode": "5-4",
-        "link": "www.no.com",
+        "link": "www.thissethasnopdf.com",
         "name": "Blues pentacluster"
     },
     {
         "solomonCode": "5-4B",
-        "link": "www.no.com",
+        "link": "www.thissethasnopdf.com",
         "name": "Minor third pentacluster"
     },
     {
         "solomonCode": "5-5",
-        "link": "www.no.com",
+        "link": "www.thissethasnopdf.com",
         "name": "Major third pentacluster n2"
     },
     {
         "solomonCode": "5-5B",
-        "link": "www.no.com",
+        "link": "www.thissethasnopdf.com",
         "name": "Major third pentacluster n1"
     },
     {
         "solomonCode": "5-6",
-        "link": "www.no.com",
+        "link": "www.thissethasnopdf.com",
         "name": "Oriental pentacluster n1 - Raga Megharanji - 1 3 1 6 1"
     },
     {
         "solomonCode": "5-6B",
-        "link": "www.no.com",
+        "link": "www.thissethasnopdf.com",
         "name": "Oriental pentacluster n2"
     },
     {
         "solomonCode": "5-7",
-        "link": "www.no.com",
+        "link": "www.thissethasnopdf.com",
         "name": "Double pentacluser n1 - Raga Nabhomani - 1 1 4 1 5"
     },
     {
         "solomonCode": "5-7B",
-        "link": "www.no.com",
+        "link": "www.thissethasnopdf.com",
         "name": "Double pentacluster n2"
     },
     {
@@ -325,72 +325,72 @@ const solomonlist = [
     },
     {
         "solomonCode": "5-9",
-        "link": "www.no.com",
+        "link": "www.thissethasnopdf.com",
         "name": "Expanded tritone pentatonic"
     },
     {
         "solomonCode": "5-9B",
-        "link": "www.no.com",
+        "link": "www.thissethasnopdf.com",
         "name": "Contracted tritone pentatonic"
     },
     {
         "solomonCode": "5-10",
-        "link": "www.no.com",
+        "link": "www.thissethasnopdf.com",
         "name": "Alternated pentatonic n1"
     },
     {
         "solomonCode": "5-10B",
-        "link": "www.no.com",
+        "link": "www.thissethasnopdf.com",
         "name": "Alternated pentatonic n2"
     },
     {
         "solomonCode": "5-11",
-        "link": "www.no.com",
+        "link": "www.thissethasnopdf.com",
         "name": "Central cluster pentatonic n1"
     },
     {
         "solomonCode": "5-11B",
-        "link": "www.no.com",
+        "link": "www.thissethasnopdf.com",
         "name": "Central cluster pentatonic n2"
     },
     {
         "solomonCode": "5-12",
-        "link": "www.no.com",
+        "link": "www.thissethasnopdf.com",
         "name": "Locrian pentatonic"
     },
     {
         "solomonCode": "5-13",
-        "link": "www.no.com",
+        "link": "www.thissethasnopdf.com",
         "name": "Augmented pentatonic n1"
     },
     {
         "solomonCode": "5-13B",
-        "link": "www.no.com",
+        "link": "www.thissethasnopdf.com",
         "name": "Augmented pentatonic n2"
     },
     {
         "solomonCode": "5-14",
-        "link": "www.no.com",
+        "link": "www.thissethasnopdf.com",
         "name": "Doble second triple fourth pentatonic n1"
     },
     {
         "solomonCode": "5-14B",
-        "link": "www.no.com",
+        "link": "www.thissethasnopdf.com",
         "name": "Doble second triple fourth pentatonic n2"
     },
     {
         "solomonCode": "5-15",
-        "link": "www.no.com",
+        "link": "www.thissethasnopdf.com",
         "name": "Asymetric pentatonic"
     },
     {
         "solomonCode": "5-16",
-        "link": "www.no.com",
+        "link": "www.thissethasnopdf.com",
         "name": "Major minor diminished pentatonic n1"
     },
     {
         "solomonCode": "5-16B",
-        "link": "www.no.com",
+        "link": "www.thissethasnopdf.com",
         "name": "Major minor diminished pentatonic n2"
     },
     {
@@ -440,7 +440,7 @@ const solomonlist = [
     },
     {
         "solomonCode": "5-23",
-        "link": "www.no.com",
+        "link": "www.thissethasnopdf.com",
         "name": "Minor pentatonic"
     },
     {
@@ -450,17 +450,17 @@ const solomonlist = [
     },
     {
         "solomonCode": "5-24",
-        "link": "www.no.com",
+        "link": "www.thissethasnopdf.com",
         "name": "Phrygian pentatonic"
     },
     {
         "solomonCode": "5-25",
-        "link": "www.no.com",
+        "link": "www.thissethasnopdf.com",
         "name": "Major ninth diminished chord"
     },
     {
         "solomonCode": "5-25B",
-        "link": "www.no.com",
+        "link": "www.thissethasnopdf.com",
         "name": "Minor 9b chord"
     },
     {
@@ -470,7 +470,7 @@ const solomonlist = [
     },
     {
         "solomonCode": "5-26B",
-        "link": "www.no.com",
+        "link": "www.thissethasnopdf.com",
         "name": "Augmented 9b chord"
     },
     {
@@ -490,7 +490,7 @@ const solomonlist = [
     },
     {
         "solomonCode": "5-28B",
-        "link": "www.no.com",
+        "link": "www.thissethasnopdf.com",
         "name": "Augmented sixth pentatonic n2"
     },
     {
@@ -550,47 +550,47 @@ const solomonlist = [
     },
     {
         "solomonCode": "6-1",
-        "link": "www.no.com",
+        "link": "www.thissethasnopdf.com",
         "name": "Chromatic hexatonic"
     },
     {
         "solomonCode": "6-2",
-        "link": "www.no.com",
-        "name": "w"
+        "link": "www.thissethasnopdf.com",
+        "name": "no name to this set"
     },
     {
         "solomonCode": "6-2b",
-        "link": "www.no.com",
-        "name": "w"
+        "link": "www.thissethasnopdf.com",
+        "name": "no name to this set"
     },
     {
         "solomonCode": "6-3",
-        "link": "www.no.com",
-        "name": "w"
+        "link": "www.thissethasnopdf.com",
+        "name": "no name to this set"
     },
     {
         "solomonCode": "6-3B",
-        "link": "www.no.com",
-        "name": "w"
+        "link": "www.thissethasnopdf.com",
+        "name": "no name to this set"
     },
     {
         "solomonCode": "6-4",
-        "link": "www.no.com",
-        "name": "w"
+        "link": "www.thissethasnopdf.com",
+        "name": "no name to this set"
     },
     {
         "solomonCode": "6-5",
-        "link": "www.no.com",
-        "name": "w"
+        "link": "www.thissethasnopdf.com",
+        "name": "no name to this set"
     },
     {
         "solomonCode": "6-5B",
-        "link": "www.no.com",
-        "name": "w"
+        "link": "www.thissethasnopdf.com",
+        "name": "no name to this set"
     },
     {
         "solomonCode": "6-6",
-        "link": "www.no.com",
+        "link": "www.thissethasnopdf.com",
         "name": "Double cluster Hexatonic"
     },
     {
@@ -600,103 +600,103 @@ const solomonlist = [
     },
     {
         "solomonCode": "6-8",
-        "link": "www.no.com",
-        "name": "w"
+        "link": "www.thissethasnopdf.com",
+        "name": "no name to this set"
     },
     {
         "solomonCode": "6-9",
-        "link": "www.no.com",
-        "name": "w"
+        "link": "www.thissethasnopdf.com",
+        "name": "no name to this set"
     },
     {
         "solomonCode": "6-9B",
-        "link": "www.no.com",
-        "name": "w"
+        "link": "www.thissethasnopdf.com",
+        "name": "no name to this set"
     },
     {
         "solomonCode": "6-10",
-        "link": "www.no.com",
-        "name": "w"
+        "link": "www.thissethasnopdf.com",
+        "name": "no name to this set"
     },
     {
         "solomonCode": "6-10B",
-        "link": "www.no.com",
-        "name": "w"
+        "link": "www.thissethasnopdf.com",
+        "name": "no name to this set"
     },
     {
         "solomonCode": "6-11",
-        "link": "www.no.com",
-        "name": "w"
+        "link": "www.thissethasnopdf.com",
+        "name": "no name to this set"
     },
     {
         "solomonCode": "6-11B",
-        "link": "www.no.com",
-        "name": "w"
+        "link": "www.thissethasnopdf.com",
+        "name": "no name to this set"
     },
     {
         "solomonCode": "6-12",
-        "link": "www.no.com",
-        "name": "w"
+        "link": "www.thissethasnopdf.com",
+        "name": "no name to this set"
     },
     {
         "solomonCode": "6-12B",
-        "link": "www.no.com",
-        "name": "w"
+        "link": "www.thissethasnopdf.com",
+        "name": "no name to this set"
     },
     {
         "solomonCode": "6-13",
-        "link": "www.no.com",
+        "link": "www.thissethasnopdf.com",
         "name": "Alternated Hexatonic"
     },
     {
         "solomonCode": "6-14",
-        "link": "www.no.com",
-        "name": "w"
+        "link": "www.thissethasnopdf.com",
+        "name": "no name to this set"
     },
     {
         "solomonCode": "6-14B",
-        "link": "www.no.com",
-        "name": "w"
+        "link": "www.thissethasnopdf.com",
+        "name": "no name to this set"
     },
     {
         "solomonCode": "6-15",
-        "link": "www.no.com",
-        "name": "w"
+        "link": "www.thissethasnopdf.com",
+        "name": "no name to this set"
     },
     {
         "solomonCode": "6-15B",
-        "link": "www.no.com",
-        "name": "w"
+        "link": "www.thissethasnopdf.com",
+        "name": "no name to this set"
     },
     {
         "solomonCode": "6-16",
-        "link": "www.no.com",
-        "name": "w"
+        "link": "www.thissethasnopdf.com",
+        "name": "no name to this set"
     },
     {
         "solomonCode": "6-16B",
-        "link": "www.no.com",
+        "link": "www.thissethasnopdf.com",
         "name": "Megha Raga"
     },
     {
         "solomonCode": "6-17",
-        "link": "www.no.com",
+        "link": "www.thissethasnopdf.com",
         "name": "All intervals hexatonic"
     },
     {
         "solomonCode": "6-17B",
-        "link": "www.no.com",
-        "name": "w"
+        "link": "www.thissethasnopdf.com",
+        "name": "no name to this set"
     },
     {
         "solomonCode": "6-18",
-        "link": "www.no.com",
-        "name": "w"
+        "link": "www.thissethasnopdf.com",
+        "name": "no name to this set"
     },
     {
         "solomonCode": "6-18B",
-        "link": "www.no.com",
-        "name": "w"
+        "link": "www.thissethasnopdf.com",
+        "name": "no name to this set"
     },
     {
         "solomonCode": "6-19",
@@ -715,33 +715,33 @@ const solomonlist = [
     },
     {
         "solomonCode": "6-21",
-        "link": "www.no.com",
-        "name": "w"
+        "link": "www.thissethasnopdf.com",
+        "name": "no name to this set"
     },
     {
         "solomonCode": "6-21B",
-        "link": "www.no.com",
-        "name": "w"
+        "link": "www.thissethasnopdf.com",
+        "name": "no name to this set"
     },
     {
         "solomonCode": "6-22",
-        "link": "www.no.com",
-        "name": "w"
+        "link": "www.thissethasnopdf.com",
+        "name": "no name to this set"
     },
     {
         "solomonCode": "6-22B",
-        "link": "www.no.com",
-        "name": "w"
+        "link": "www.thissethasnopdf.com",
+        "name": "no name to this set"
     },
     {
         "solomonCode": "6-23",
-        "link": "www.no.com",
+        "link": "www.thissethasnopdf.com",
         "name": "Super locrian Hexatonic"
     },
     {
         "solomonCode": "6-24",
-        "link": "www.no.com",
-        "name": "w"
+        "link": "www.thissethasnopdf.com",
+        "name": "no name to this set"
     },
     {
         "solomonCode": "6-24B",
@@ -765,8 +765,8 @@ const solomonlist = [
     },
     {
         "solomonCode": "6-27",
-        "link": "www.no.com",
-        "name": "w"
+        "link": "www.thissethasnopdf.com",
+        "name": "no name to this set"
     },
     {
         "solomonCode": "6-27B",
@@ -775,13 +775,13 @@ const solomonlist = [
     },
     {
         "solomonCode": "6-28",
-        "link": "www.no.com",
+        "link": "www.thissethasnopdf.com",
         "name": "Double Phrygian hexatonic"
     },
     {
         "solomonCode": "6-29",
-        "link": "www.no.com",
-        "name": "w"
+        "link": "www.thissethasnopdf.com",
+        "name": "no name to this set"
     },
     {
         "solomonCode": "6-30",
@@ -795,13 +795,13 @@ const solomonlist = [
     },
     {
         "solomonCode": "6-31",
-        "link": "www.no.com",
-        "name": "w"
+        "link": "www.thissethasnopdf.com",
+        "name": "no name to this set"
     },
     {
         "solomonCode": "6-31B",
-        "link": "www.no.com",
-        "name": "w"
+        "link": "www.thissethasnopdf.com",
+        "name": "no name to this set"
     },
     {
         "solomonCode": "6-32",
@@ -834,787 +834,796 @@ const solomonlist = [
         "name": "Tonal scale"
     },
     {
-        "solomonCode": "6-",
-        "link": "www.no.com",
-        "name": "w"
+        "solomonCode": "6-36",
+        "link": "www.thissethasnopdf.com",
+        "name": "no name to this set"
     },
     {
-        "solomonCode": "6-",
-        "link": "www.no.com",
-        "name": "w"
+        "solomonCode": "6-36B",
+        "link": "www.thissethasnopdf.com",
+        "name": "no name to this set"
     },
     {
-        "solomonCode": "6-",
-        "link": "www.no.com",
-        "name": "w"
+        "solomonCode": "6-37",
+        "link": "www.thissethasnopdf.com",
+        "name": "no name to this set"
     },
     {
-        "solomonCode": "6-",
-        "link": "www.no.com",
-        "name": "w"
+        "solomonCode": "6-38",
+        "link": "www.thissethasnopdf.com",
+        "name": "Two quartal triads one semitone apart"
     },
     {
-        "solomonCode": "6-",
-        "link": "www.no.com",
-        "name": "w"
+        "solomonCode": "6-39",
+        "link": "www.thissethasnopdf.com",
+        "name": "no name to this set"
     },
     {
-        "solomonCode": "6-",
-        "link": "www.no.com",
-        "name": "w"
+        "solomonCode": "6-39B",
+        "link": "www.thissethasnopdf.com",
+        "name": "no name to this set"
     },
     {
-        "solomonCode": "6-",
-        "link": "www.no.com",
-        "name": "w"
+        "solomonCode": "6-40",
+        "link": "www.thissethasnopdf.com",
+        "name": "no name to this set"
     },
     {
-        "solomonCode": "6-",
-        "link": "www.no.com",
-        "name": "w"
+        "solomonCode": "6-40B",
+        "link": "www.thissethasnopdf.com",
+        "name": "no name to this set"
     },
     {
-        "solomonCode": "6-",
-        "link": "www.no.com",
-        "name": "w"
+        "solomonCode": "6-41",
+        "link": "www.thissethasnopdf.com",
+        "name": "no name to this set"
     },
     {
-        "solomonCode": "6-",
-        "link": "www.no.com",
-        "name": "w"
+        "solomonCode": "6-41B",
+        "link": "www.thissethasnopdf.com",
+        "name": "no name to this set"
     },
     {
-        "solomonCode": "6-",
-        "link": "www.no.com",
-        "name": "w"
+        "solomonCode": "6-42",
+        "link": "www.thissethasnopdf.com",
+        "name": "no name to this set"
     },
     {
-        "solomonCode": "6-",
-        "link": "www.no.com",
-        "name": "w"
+        "solomonCode": "6-43",
+        "link": "www.thissethasnopdf.com",
+        "name": "no name to this set"
     },
     {
-        "solomonCode": "6-",
-        "link": "www.no.com",
-        "name": "w"
+        "solomonCode": "6-43B",
+        "link": "www.thissethasnopdf.com",
+        "name": "no name to this set"
     },
     {
-        "solomonCode": "6-",
-        "link": "www.no.com",
-        "name": "w"
+        "solomonCode": "6-44",
+        "link": "www.thissethasnopdf.com",
+        "name": "Schoemberg anagram hexatonic"
     },
     {
-        "solomonCode": "6-",
-        "link": "www.no.com",
-        "name": "w"
+        "solomonCode": "6-44B",
+        "link": "www.thissethasnopdf.com",
+        "name": "Bauli Raga 133131"
     },
     {
-        "solomonCode": "6-",
-        "link": "www.no.com",
-        "name": "w"
+        "solomonCode": "6-45",
+        "link": "www.thissethasnopdf.com",
+        "name": "no name to this set"
     },
     {
-        "solomonCode": "6-",
-        "link": "www.no.com",
-        "name": "w"
+        "solomonCode": "6-46",
+        "link": "www.thissethasnopdf.com",
+        "name": "no name to this set"
     },
     {
-        "solomonCode": "7-",
-        "link": "www.no.com",
-        "name": "w"
+        "solomonCode": "6-46B",
+        "link": "www.thissethasnopdf.com",
+        "name": "no name to this set"
     },
     {
-        "solomonCode": "7-",
-        "link": "www.no.com",
-        "name": "w"
+        "solomonCode": "6-47",
+        "link": "www.thissethasnopdf.com",
+        "name": "no name to this set"
     },
     {
-        "solomonCode": "7-",
-        "link": "www.no.com",
-        "name": "w"
+        "solomonCode": "6-47B",
+        "link": "https://drive.google.com/file/d/1Sni73ViPXTIsfY0xc7X4IAF5CucjpFBJ/view?usp=drive_link",
+        "name": "Blues mode 1 321132"
     },
     {
-        "solomonCode": "7-",
-        "link": "www.no.com",
-        "name": "w"
+        "solomonCode": "6-48",
+        "link": "www.thissethasnopdf.com",
+        "name": "no name to this set"
     },
     {
-        "solomonCode": "7-",
-        "link": "www.no.com",
-        "name": "w"
+        "solomonCode": "6-49",
+        "link": "https://drive.google.com/file/d/1QdrbOupV7XvnV4ux-gTnbZVg6GYP0Eul/view?usp=drive_link",
+        "name": "Prometeus napolitan 132312"
     },
     {
-        "solomonCode": "7-",
-        "link": "www.no.com",
-        "name": "w"
+        "solomonCode": "6-50",
+        "link": "https://drive.google.com/file/d/1ynYX5fpqz0hDqFaqtsyw3YbwujBKqhat/view?usp=drive_link",
+        "name": "C + F#m"
     },
     {
-        "solomonCode": "7-",
-        "link": "www.no.com",
-        "name": "w"
+        "solomonCode": "7-1",
+        "link": "www.thissethasnopdf.com",
+        "name": "Chromatic heptatonic"
     },
     {
-        "solomonCode": "7-",
-        "link": "www.no.com",
-        "name": "w"
+        "solomonCode": "7-2",
+        "link": "www.thissethasnopdf.com",
+        "name": "no name to this set"
     },
     {
-        "solomonCode": "7-",
-        "link": "www.no.com",
-        "name": "w"
+        "solomonCode": "7-2B",
+        "link": "www.thissethasnopdf.com",
+        "name": "no name to this set"
     },
     {
-        "solomonCode": "7-",
-        "link": "www.no.com",
-        "name": "w"
+        "solomonCode": "7-3",
+        "link": "www.thissethasnopdf.com",
+        "name": "no name to this set"
     },
     {
-        "solomonCode": "7-",
-        "link": "www.no.com",
-        "name": "w"
+        "solomonCode": "7-3B",
+        "link": "www.thissethasnopdf.com",
+        "name": "no name to this set"
     },
     {
-        "solomonCode": "7-",
-        "link": "www.no.com",
-        "name": "w"
+        "solomonCode": "7-4",
+        "link": "www.thissethasnopdf.com",
+        "name": "no name to this set"
     },
     {
-        "solomonCode": "7-",
-        "link": "www.no.com",
-        "name": "w"
+        "solomonCode": "7-4B",
+        "link": "www.thissethasnopdf.com",
+        "name": "no name to this set"
     },
     {
-        "solomonCode": "7-",
-        "link": "www.no.com",
-        "name": "w"
+        "solomonCode": "7-5",
+        "link": "www.thissethasnopdf.com",
+        "name": "no name to this set"
     },
     {
-        "solomonCode": "7-",
-        "link": "www.no.com",
-        "name": "w"
+        "solomonCode": "7-5B",
+        "link": "www.thissethasnopdf.com",
+        "name": "no name to this set"
     },
     {
-        "solomonCode": "7-",
-        "link": "www.no.com",
-        "name": "w"
+        "solomonCode": "7-6",
+        "link": "www.thissethasnopdf.com",
+        "name": "no name to this set"
     },
     {
-        "solomonCode": "7-",
-        "link": "www.no.com",
-        "name": "w"
+        "solomonCode": "7-6B",
+        "link": "www.thissethasnopdf.com",
+        "name": "no name to this set"
     },
     {
-        "solomonCode": "7-",
-        "link": "www.no.com",
-        "name": "w"
+        "solomonCode": "7-7",
+        "link": "www.thissethasnopdf.com",
+        "name": "no name to this set"
     },
     {
-        "solomonCode": "7-",
-        "link": "www.no.com",
-        "name": "w"
+        "solomonCode": "7-7B",
+        "link": "www.thissethasnopdf.com",
+        "name": "no name to this set"
     },
     {
-        "solomonCode": "7-",
-        "link": "www.no.com",
-        "name": "w"
+        "solomonCode": "7-8",
+        "link": "www.thissethasnopdf.com",
+        "name": "no name to this set"
     },
     {
-        "solomonCode": "7-",
-        "link": "www.no.com",
-        "name": "w"
+        "solomonCode": "7-9",
+        "link": "www.thissethasnopdf.com",
+        "name": "no name to this set"
     },
     {
-        "solomonCode": "7-",
-        "link": "www.no.com",
-        "name": "w"
+        "solomonCode": "7-9B",
+        "link": "www.thissethasnopdf.com",
+        "name": "no name to this set"
     },
     {
-        "solomonCode": "7-",
-        "link": "www.no.com",
-        "name": "w"
+        "solomonCode": "7-10",
+        "link": "www.thissethasnopdf.com",
+        "name": "no name to this set"
     },
     {
-        "solomonCode": "7-",
-        "link": "www.no.com",
-        "name": "w"
+        "solomonCode": "7-10B",
+        "link": "www.thissethasnopdf.com",
+        "name": "no name to this set"
     },
     {
-        "solomonCode": "7-",
-        "link": "www.no.com",
-        "name": "w"
+        "solomonCode": "7-11",
+        "link": "www.thissethasnopdf.com",
+        "name": "no name to this set"
     },
     {
-        "solomonCode": "7-",
-        "link": "www.no.com",
-        "name": "w"
+        "solomonCode": "7-11B",
+        "link": "www.thissethasnopdf.com",
+        "name": "no name to this set"
     },
     {
-        "solomonCode": "7-",
-        "link": "www.no.com",
-        "name": "w"
+        "solomonCode": "7-12",
+        "link": "https://drive.google.com/file/d/1dtKKy9WWWKRIqdR3REzshO0VoGukUOmH/view?usp=drive_link",
+        "name": "Afro american blues scale"
     },
     {
-        "solomonCode": "7-",
-        "link": "www.no.com",
-        "name": "w"
+        "solomonCode": "7-13",
+        "link": "www.thissethasnopdf.com",
+        "name": "no name to this set"
     },
     {
-        "solomonCode": "7-",
-        "link": "www.no.com",
-        "name": "w"
+        "solomonCode": "7-13B",
+        "link": "www.thissethasnopdf.com",
+        "name": "no name to this set"
     },
     {
-        "solomonCode": "7-",
-        "link": "www.no.com",
-        "name": "w"
+        "solomonCode": "7-14",
+        "link": "www.thissethasnopdf.com",
+        "name": "no name to this set"
     },
     {
-        "solomonCode": "7-",
-        "link": "www.no.com",
-        "name": "w"
+        "solomonCode": "7-14B",
+        "link": "www.thissethasnopdf.com",
+        "name": "no name to this set"
     },
     {
-        "solomonCode": "7-",
-        "link": "www.no.com",
-        "name": "w"
+        "solomonCode": "7-15",
+        "link": "www.thissethasnopdf.com",
+        "name": "no name to this set"
     },
     {
-        "solomonCode": "7-",
-        "link": "www.no.com",
-        "name": "w"
+        "solomonCode": "7-16",
+        "link": "www.thissethasnopdf.com",
+        "name": "no name to this set"
     },
     {
-        "solomonCode": "7-",
-        "link": "www.no.com",
-        "name": "w"
+        "solomonCode": "7-16B",
+        "link": "www.thissethasnopdf.com",
+        "name": "no name to this set"
     },
     {
-        "solomonCode": "7-",
-        "link": "www.no.com",
-        "name": "w"
+        "solomonCode": "7-17",
+        "link": "www.thissethasnopdf.com",
+        "name": "no name to this set"
     },
     {
-        "solomonCode": "7-",
-        "link": "www.no.com",
-        "name": "w"
+        "solomonCode": "7-18",
+        "link": "https://drive.google.com/file/d/10jnSwf__2hLGHgLhwjAwCXL6PWyWxPyB/view?usp=drive_link",
+        "name": "Enigmatica menor"
     },
     {
-        "solomonCode": "7-",
-        "link": "www.no.com",
-        "name": "w"
+        "solomonCode": "7-18B",
+        "link": "www.thissethasnopdf.com",
+        "name": "no name to this set"
     },
     {
-        "solomonCode": "7-",
-        "link": "www.no.com",
-        "name": "w"
+        "solomonCode": "7-19",
+        "link": "www.thissethasnopdf.com",
+        "name": "no name to this set"
     },
     {
-        "solomonCode": "7-",
-        "link": "www.no.com",
-        "name": "w"
+        "solomonCode": "7-19B",
+        "link": "www.thissethasnopdf.com",
+        "name": "no name to this set"
     },
     {
-        "solomonCode": "7-",
-        "link": "www.no.com",
-        "name": "w"
+        "solomonCode": "7-20",
+        "link": "https://drive.google.com/file/d/1PT3FYArZmYP5PL8CCuNbqwOv24brNbtR/view?usp=drive_link",
+        "name": "Persa 1 - Chromatic phrygian inverse 1123113"
     },
     {
-        "solomonCode": "7-",
-        "link": "www.no.com",
-        "name": "w"
+        "solomonCode": "7-20B",
+        "link": "https://drive.google.com/file/d/1qPa-Ym3dN-M785sopzhXt_6Kz_CkmBXT/view?usp=drive_link",
+        "name": "Chalanata - Chromatic mixolydian 1131132 - Chromatic dorian - Pantuvarali raga 1321131 - Mela Kanakangi 1132113"
     },
     {
-        "solomonCode": "7-",
-        "link": "www.no.com",
-        "name": "w"
+        "solomonCode": "7-21",
+        "link": "www.thissethasnopdf.com",
+        "name": "no name to this set"
     },
     {
-        "solomonCode": "7-",
-        "link": "www.no.com",
-        "name": "w"
+        "solomonCode": "7-21B",
+        "link": "https://drive.google.com/file/d/1zNg8AvrV7y9Ngqc-s2y3IT3ASFh5vDTZ/view?usp=drive_link",
+        "name": "Gypsy heptatonic 1312113"
     },
     {
-        "solomonCode": "7-",
-        "link": "www.no.com",
-        "name": "w"
+        "solomonCode": "7-22",
+        "link": "https://drive.google.com/file/d/1MbBtRLh2uyPFmU0EENuAs9fy0sAGIXmK/view?usp=drive_link",
+        "name": "Hungarian minor - Parsi scale - Major Gypsy - Double Harmonic - Bhairav that 1312131 - Oriental scale 1311312"
     },
     {
-        "solomonCode": "7-",
-        "link": "www.no.com",
-        "name": "w"
+        "solomonCode": "7-23",
+        "link": "www.thissethasnopdf.com",
+        "name": "no name to this set"
     },
     {
-        "solomonCode": "7-",
-        "link": "www.no.com",
-        "name": "w"
+        "solomonCode": "7-23B",
+        "link": "www.thissethasnopdf.com",
+        "name": "Major + tritone heptatonic"
     },
     {
-        "solomonCode": "7-",
-        "link": "www.no.com",
-        "name": "w"
+        "solomonCode": "7-24",
+        "link": "https://drive.google.com/file/d/1BsuE2MHF7AFavQq_mTmjtaBn5KbQV7Gq/view?usp=drive_link",
+        "name": "Enigmatic heptatonic 1322211"
     },
     {
-        "solomonCode": "7-",
-        "link": "www.no.com",
-        "name": "w"
+        "solomonCode": "7-24B",
+        "link": "www.thissethasnopdf.com",
+        "name": "no name to this set"
     },
     {
-        "solomonCode": "7-",
-        "link": "www.no.com",
-        "name": "w"
+        "solomonCode": "7-25",
+        "link": "https://drive.google.com/file/d/1jquhyqbacqON3xBxBm6NYOdxghiRcZeB/view?usp=drive_link",
+        "name": "Blues heptatonic"
     },
     {
-        "solomonCode": "7-",
-        "link": "www.no.com",
-        "name": "w"
+        "solomonCode": "7-25B",
+        "link": "www.thissethasnopdf.com",
+        "name": "no name to this set"
     },
     {
-        "solomonCode": "7-",
-        "link": "www.no.com",
-        "name": "w"
+        "solomonCode": "7-26",
+        "link": "www.thissethasnopdf.com",
+        "name": "no name to this set"
     },
     {
-        "solomonCode": "7-",
-        "link": "www.no.com",
-        "name": "w"
+        "solomonCode": "7-26B",
+        "link": "www.thissethasnopdf.com",
+        "name": "no name to this set"
     },
     {
-        "solomonCode": "7-",
-        "link": "www.no.com",
-        "name": "w"
+        "solomonCode": "7-27",
+        "link": "www.thissethasnopdf.com",
+        "name": "no name to this set"
     },
     {
-        "solomonCode": "7-",
-        "link": "www.no.com",
-        "name": "w"
+        "solomonCode": "7-27B",
+        "link": "www.thissethasnopdf.com",
+        "name": "Modified Blues 2121132"
     },
     {
-        "solomonCode": "7-",
-        "link": "www.no.com",
-        "name": "w"
+        "solomonCode": "7-28",
+        "link": "www.thissethasnopdf.com",
+        "name": "no name to this set"
     },
     {
-        "solomonCode": "7-",
-        "link": "www.no.com",
-        "name": "w"
+        "solomonCode": "7-28B",
+        "link": "www.thissethasnopdf.com",
+        "name": "no name to this set"
     },
     {
-        "solomonCode": "7-",
-        "link": "www.no.com",
-        "name": "w"
+        "solomonCode": "7-29",
+        "link": "www.thissethasnopdf.com",
+        "name": "Locrian natural seventh"
     },
     {
-        "solomonCode": "7-",
-        "link": "www.no.com",
-        "name": "w"
+        "solomonCode": "7-29B",
+        "link": "www.thissethasnopdf.com",
+        "name": "Ionian 5b"
     },
     {
-        "solomonCode": "7-",
-        "link": "www.no.com",
-        "name": "w"
+        "solomonCode": "7-30",
+        "link": "https://drive.google.com/file/d/1J3VXIhrRabFtsrad7sy9im_Iysj4HVd-/view?usp=drive_link",
+        "name": "Napolitan minor - Mela Dhenuka"
     },
     {
-        "solomonCode": "7-",
-        "link": "www.no.com",
-        "name": "w"
+        "solomonCode": "7-30B",
+        "link": "www.thissethasnopdf.com",
+        "name": "no name to this set"
     },
     {
-        "solomonCode": "7-",
-        "link": "www.no.com",
-        "name": "w"
+        "solomonCode": "7-31",
+        "link": "https://drive.google.com/file/d/1lsij-RaVISR3ohzVjEpPxZe7uBr2VuGb/view?usp=drive_link",
+        "name": "Hungarian major - Alternated heptatonic 1"
     },
     {
-        "solomonCode": "7-",
-        "link": "www.no.com",
-        "name": "w"
+        "solomonCode": "7-31B",
+        "link": "www.thissethasnopdf.com",
+        "name": "Alternated heptatonic 2"
     },
     {
-        "solomonCode": "7-",
-        "link": "www.no.com",
-        "name": "w"
+        "solomonCode": "7-32",
+        "link": "https://drive.google.com/file/d/1Qi56o5AznSmXAfeYJifoQE0y11YdeGdk/view?usp=drive_link",
+        "name": "Harmonic minor - Spanish gypsy - Mela Kiravani - Pilu That"
     },
     {
-        "solomonCode": "7-",
-        "link": "www.no.com",
-        "name": "w"
+        "solomonCode": "7-32B",
+        "link": "https://drive.google.com/file/d/1yrusFZRf0tRP31bZEUx7stTQev7-Mblm/view?usp=drive_link",
+        "name": "Harmonic major - Dharmavati scale 2131221 - Mela cakravana - Raga ahir bhairav"
     },
     {
-        "solomonCode": "8-",
-        "link": "www.no.com",
-        "name": "w"
+        "solomonCode": "7-33",
+        "link": "https://drive.google.com/file/d/1m0IpSX_V5oOGVsIjd87UJjzAF2ii56OS/view?usp=drive_link",
+        "name": "Major napolitan 1222221 - Leading tone scale 222211"
     },
     {
-        "solomonCode": "8-",
-        "link": "www.no.com",
-        "name": "w"
+        "solomonCode": "7-34",
+        "link": "https://drive.google.com/file/d/1NMew6PPWhaOV6tWHIWT-ZeCKbBbuu4Ys/view?usp=drive_link",
+        "name": "Melodic minor - Jazz minor - Super locrian"
     },
     {
-        "solomonCode": "8-",
-        "link": "www.no.com",
-        "name": "w"
+        "solomonCode": "7-35",
+        "link": "https://drive.google.com/file/d/1BaePHUIS59Q5KQeTzLN72aeZ1EEefLtN/view?usp=drive_link",
+        "name": "Major scale - Diatonic scale - Heptatonic major - Major inverse"
     },
     {
-        "solomonCode": "8-",
-        "link": "www.no.com",
-        "name": "w"
+        "solomonCode": "7-36",
+        "link": "www.thissethasnopdf.com",
+        "name": "no name to this set"
     },
     {
-        "solomonCode": "8-",
-        "link": "www.no.com",
-        "name": "w"
+        "solomonCode": "7-36B",
+        "link": "www.thissethasnopdf.com",
+        "name": "no name to this set"
     },
     {
-        "solomonCode": "8-",
-        "link": "www.no.com",
-        "name": "w"
+        "solomonCode": "7-37",
+        "link": "www.thissethasnopdf.com",
+        "name": "no name to this set"
     },
     {
-        "solomonCode": "8-",
-        "link": "www.no.com",
-        "name": "w"
+        "solomonCode": "7-38",
+        "link": "www.thissethasnopdf.com",
+        "name": "no name to this set"
     },
     {
-        "solomonCode": "8-",
-        "link": "www.no.com",
-        "name": "w"
+        "solomonCode": "7-38B",
+        "link": "www.thissethasnopdf.com",
+        "name": "no name to this set"
     },
     {
-        "solomonCode": "8-",
-        "link": "www.no.com",
-        "name": "w"
+        "solomonCode": "8-1",
+        "link": "www.thissethasnopdf.com",
+        "name": "Chromatic octatonic"
     },
     {
-        "solomonCode": "8-",
-        "link": "www.no.com",
-        "name": "w"
+        "solomonCode": "8-2",
+        "link": "www.thissethasnopdf.com",
+        "name": "no name to this set"
     },
     {
-        "solomonCode": "8-",
-        "link": "www.no.com",
-        "name": "w"
+        "solomonCode": "8-3",
+        "link": "www.thissethasnopdf.com",
+        "name": "no name to this set"
     },
     {
-        "solomonCode": "8-",
-        "link": "www.no.com",
-        "name": "w"
+        "solomonCode": "8-4",
+        "link": "www.thissethasnopdf.com",
+        "name": "no name to this set"
     },
     {
-        "solomonCode": "8-",
-        "link": "www.no.com",
-        "name": "w"
+        "solomonCode": "8-4B",
+        "link": "www.thissethasnopdf.com",
+        "name": "no name to this set"
     },
     {
-        "solomonCode": "8-",
-        "link": "www.no.com",
-        "name": "w"
+        "solomonCode": "8-5",
+        "link": "www.thissethasnopdf.com",
+        "name": "no name to this set"
     },
     {
-        "solomonCode": "8-",
-        "link": "www.no.com",
-        "name": "w"
+        "solomonCode": "8-5B",
+        "link": "www.thissethasnopdf.com",
+        "name": "no name to this set"
     },
     {
-        "solomonCode": "8-",
-        "link": "www.no.com",
-        "name": "w"
+        "solomonCode": "8-6",
+        "link": "www.thissethasnopdf.com",
+        "name": "no name to this set"
     },
     {
-        "solomonCode": "8-",
-        "link": "www.no.com",
-        "name": "w"
+        "solomonCode": "8-7",
+        "link": "www.thissethasnopdf.com",
+        "name": "no name to this set"
     },
     {
-        "solomonCode": "8-",
-        "link": "www.no.com",
-        "name": "w"
+        "solomonCode": "8-8",
+        "link": "www.thissethasnopdf.com",
+        "name": "no name to this set"
     },
     {
-        "solomonCode": "8-",
-        "link": "www.no.com",
-        "name": "w"
+        "solomonCode": "8-9",
+        "link": "https://drive.google.com/file/d/1B2f5NJwgJ83FuVM0MGHw45BJUtHSFpw5/view?usp=drive_link",
+        "name": "Messiaen mode 4 11131113"
     },
     {
-        "solomonCode": "8-",
-        "link": "www.no.com",
-        "name": "w"
+        "solomonCode": "8-10",
+        "link": "www.thissethasnopdf.com",
+        "name": "no name to this set"
     },
     {
-        "solomonCode": "8-",
-        "link": "www.no.com",
-        "name": "w"
+        "solomonCode": "8-11",
+        "link": "www.thissethasnopdf.com",
+        "name": "no name to this set"
     },
     {
-        "solomonCode": "8-",
-        "link": "www.no.com",
-        "name": "w"
+        "solomonCode": "8-11B",
+        "link": "www.thissethasnopdf.com",
+        "name": "Blues octatonic 1"
     },
     {
-        "solomonCode": "8-",
-        "link": "www.no.com",
-        "name": "w"
+        "solomonCode": "8-12",
+        "link": "www.thissethasnopdf.com",
+        "name": "no name to this set"
     },
     {
-        "solomonCode": "8-",
-        "link": "www.no.com",
-        "name": "w"
+        "solomonCode": "8-12B",
+        "link": "www.thissethasnopdf.com",
+        "name": "no name to this set"
     },
     {
-        "solomonCode": "8-",
-        "link": "www.no.com",
-        "name": "w"
+        "solomonCode": "8-13",
+        "link": "www.thissethasnopdf.com",
+        "name": "Blues octatonic 2"
     },
     {
-        "solomonCode": "8-",
-        "link": "www.no.com",
-        "name": "w"
+        "solomonCode": "8-13B",
+        "link": "www.thissethasnopdf.com",
+        "name": "no name to this set"
     },
     {
-        "solomonCode": "8-",
-        "link": "www.no.com",
-        "name": "w"
+        "solomonCode": "8-14",
+        "link": "www.thissethasnopdf.com",
+        "name": "no name to this set"
     },
     {
-        "solomonCode": "8-",
-        "link": "www.no.com",
-        "name": "w"
+        "solomonCode": "8-14B",
+        "link": "www.thissethasnopdf.com",
+        "name": "no name to this set"
     },
     {
-        "solomonCode": "8-",
-        "link": "www.no.com",
-        "name": "w"
+        "solomonCode": "8-15",
+        "link": "www.thissethasnopdf.com",
+        "name": "no name to this set"
     },
     {
-        "solomonCode": "8-",
-        "link": "www.no.com",
-        "name": "w"
+        "solomonCode": "8-15B",
+        "link": "www.thissethasnopdf.com",
+        "name": "no name to this set"
     },
     {
-        "solomonCode": "8-",
-        "link": "www.no.com",
-        "name": "w"
+        "solomonCode": "8-16",
+        "link": "www.thissethasnopdf.com",
+        "name": "no name to this set"
     },
     {
-        "solomonCode": "8-",
-        "link": "www.no.com",
-        "name": "w"
+        "solomonCode": "8-16B",
+        "link": "www.thissethasnopdf.com",
+        "name": "no name to this set"
     },
     {
-        "solomonCode": "8-",
-        "link": "www.no.com",
-        "name": "w"
+        "solomonCode": "8-17",
+        "link": "www.thissethasnopdf.com",
+        "name": "no name to this set"
     },
     {
-        "solomonCode": "8-",
-        "link": "www.no.com",
-        "name": "w"
+        "solomonCode": "8-18",
+        "link": "www.thissethasnopdf.com",
+        "name": "no name to this set"
     },
     {
-        "solomonCode": "8-",
-        "link": "www.no.com",
-        "name": "w"
+        "solomonCode": "8-18B",
+        "link": "www.thissethasnopdf.com",
+        "name": "no name to this set"
     },
     {
-        "solomonCode": "8-",
-        "link": "www.no.com",
-        "name": "w"
+        "solomonCode": "8-19",
+        "link": "www.thissethasnopdf.com",
+        "name": "no name to this set"
     },
     {
-        "solomonCode": "8-",
-        "link": "www.no.com",
-        "name": "w"
+        "solomonCode": "8-19B",
+        "link": "www.thissethasnopdf.com",
+        "name": "no name to this set"
     },
     {
-        "solomonCode": "8-",
-        "link": "www.no.com",
-        "name": "w"
+        "solomonCode": "8-20",
+        "link": "www.thissethasnopdf.com",
+        "name": "no name to this set"
     },
     {
-        "solomonCode": "8-",
-        "link": "www.no.com",
-        "name": "w"
+        "solomonCode": "8-21",
+        "link": "www.thissethasnopdf.com",
+        "name": "no name to this set"
     },
     {
-        "solomonCode": "8-",
-        "link": "www.no.com",
-        "name": "w"
+        "solomonCode": "8-22",
+        "link": "https://drive.google.com/file/d/1UIqRsNdBqdZo0f7PjcE59yOCxk2CFrLA/view?usp=drive_link",
+        "name": "Bebop ionian 2b 2"
     },
     {
-        "solomonCode": "8-",
-        "link": "www.no.com",
-        "name": "w"
+        "solomonCode": "8-22B",
+        "link": "www.thissethasnopdf.com",
+        "name": "Spanish octatonic 12111222"
     },
     {
-        "solomonCode": "8-",
-        "link": "www.no.com",
-        "name": "w"
+        "solomonCode": "8-23",
+        "link": "whttps://drive.google.com/file/d/1XZPq5sWiUpRU02v-jCKqJ-f9WyCKDsMg/view?usp=drive_link",
+        "name": "Quartal oxtatonic - Bebop dorian - Bebop mixolydian "
     },
     {
-        "solomonCode": "8-",
-        "link": "www.no.com",
-        "name": "w"
+        "solomonCode": "8-24",
+        "link": "www.thissethasnopdf.com",
+        "name": "no name to this set"
     },
     {
-        "solomonCode": "8-",
-        "link": "www.no.com",
-        "name": "w"
+        "solomonCode": "8-25",
+        "link": "https://drive.google.com/file/d/148OfImSUoMghoM3ElmVuqBzJbRHnahOJ/view?usp=drive_link",
+        "name": "Dominant 5b diminished scale (Barry harris) - Messiaen mode 6 11221122"
     },
     {
-        "solomonCode": "8-",
-        "link": "www.no.com",
-        "name": "w"
+        "solomonCode": "8-26",
+        "link": "https://drive.google.com/file/d/1_xdgH_aakyJm9MvzjwiwpTza5Fd_0R26/view?usp=drive_link",
+        "name": "Major sixth diminished scale (Barry harris) - Bebop ionian - Phrygian spanish 12112122 - Blues mode 2 21211212 "
     },
     {
-        "solomonCode": "8-",
-        "link": "www.no.com",
-        "name": "w"
+        "solomonCode": "8-27",
+        "link": "https://drive.google.com/file/d/1rFmh85WxVxar1AyV1E_sXtQSVdtQ-eM5/view?usp=drive_link",
+        "name": "Minor sixth diminished scale (Barry harris)"
     },
     {
-        "solomonCode": "8-",
-        "link": "www.no.com",
-        "name": "w"
+        "solomonCode": "8-27B",
+        "link": "https://drive.google.com/file/d/1yAPUFT8xD3FbxUGyaewlCjxmysE96HWv/view?usp=drive_link",
+        "name": "Dominant diminished scale (Barry harris)"
     },
     {
-        "solomonCode": "8-",
-        "link": "www.no.com",
-        "name": "w"
+        "solomonCode": "8-28",
+        "link": "https://drive.google.com/file/d/14XegTozCCxXft5Hv5c-qIN6Z5zHZ3s_K/view?usp=drive_link",
+        "name": "Octatonic - Diminished scale"
     },
     {
-        "solomonCode": "8-",
-        "link": "www.no.com",
-        "name": "w"
+        "solomonCode": "8-29",
+        "link": "www.thissethasnopdf.com",
+        "name": "no name to this set"
     },
     {
-        "solomonCode": "8-",
-        "link": "www.no.com",
-        "name": "w"
+        "solomonCode": "8-29B",
+        "link": "www.thissethasnopdf.com",
+        "name": "no name to this set"
     },
     {
-        "solomonCode": "8-",
-        "link": "www.no.com",
-        "name": "w"
+        "solomonCode": "9-1",
+        "link": "www.thissethasnopdf.com",
+        "name": "Chromatic nonachord"
     },
     {
-        "solomonCode": "8-",
-        "link": "www.no.com",
-        "name": "w"
+        "solomonCode": "9-2",
+        "link": "www.thissethasnopdf.com",
+        "name": "no name to this set"
     },
     {
-        "solomonCode": "8-",
-        "link": "www.no.com",
-        "name": "w"
+        "solomonCode": "9-2B",
+        "link": "www.thissethasnopdf.com",
+        "name": "no name to this set"
     },
     {
-        "solomonCode": "8-",
-        "link": "www.no.com",
-        "name": "w"
+        "solomonCode": "9-3",
+        "link": "www.thissethasnopdf.com",
+        "name": "no name to this set"
     },
     {
-        "solomonCode": "8-",
-        "link": "www.no.com",
-        "name": "w"
+        "solomonCode": "9-3B",
+        "link": "www.thissethasnopdf.com",
+        "name": "no name to this set"
     },
     {
-        "solomonCode": "8-",
-        "link": "www.no.com",
-        "name": "w"
+        "solomonCode": "9-4",
+        "link": "www.thissethasnopdf.com",
+        "name": "no name to this set"
     },
     {
-        "solomonCode": "8-",
-        "link": "www.no.com",
-        "name": "w"
+        "solomonCode": "9-4B",
+        "link": "www.thissethasnopdf.com",
+        "name": "no name to this set"
     },
     {
-        "solomonCode": "8-",
-        "link": "www.no.com",
-        "name": "w"
+        "solomonCode": "9-5",
+        "link": "www.thissethasnopdf.com",
+        "name": "no name to this set"
     },
     {
-        "solomonCode": "8-",
-        "link": "www.no.com",
-        "name": "w"
+        "solomonCode": "9-5B",
+        "link": "www.thissethasnopdf.com",
+        "name": "no name to this set"
     },
     {
-        "solomonCode": "8-",
-        "link": "www.no.com",
-        "name": "w"
+        "solomonCode": "9-6",
+        "link": "www.thissethasnopdf.com",
+        "name": "no name to this set"
     },
     {
-        "solomonCode": "8-",
-        "link": "www.no.com",
-        "name": "w"
+        "solomonCode": "9-7",
+        "link": "https://drive.google.com/file/d/1kWo3GnwLMjt-MDI8TdnlPO3F1TwT1pGD/view?usp=drive_link",
+        "name": "Blues nonatonic scale - Barry harris major chromatic scale"
     },
     {
-        "solomonCode": "8-",
-        "link": "www.no.com",
-        "name": "w"
+        "solomonCode": "9-7B",
+        "link": "www.thissethasnopdf.com",
+        "name": "no name to this set"
     },
     {
-        "solomonCode": "8-",
-        "link": "www.no.com",
-        "name": "w"
+        "solomonCode": "9-8",
+        "link": "www.thissethasnopdf.com",
+        "name": "no name to this set"
     },
     {
-        "solomonCode": "8-",
-        "link": "www.no.com",
-        "name": "w"
+        "solomonCode": "9-8B",
+        "link": "www.thissethasnopdf.com",
+        "name": "no name to this set"
     },
     {
-        "solomonCode": "8-",
-        "link": "www.no.com",
-        "name": "w"
+        "solomonCode": "9-9",
+        "link": "www.thissethasnopdf.com",
+        "name": "Raga Ramdasi Malhar 211122111"
     },
     {
-        "solomonCode": "8-",
-        "link": "www.no.com",
-        "name": "w"
+        "solomonCode": "9-10",
+        "link": "www.thissethasnopdf.com",
+        "name": "no name to this set"
     },
     {
-        "solomonCode": "8-",
-        "link": "www.no.com",
-        "name": "w"
+        "solomonCode": "9-11",
+        "link": "www.thissethasnopdf.com",
+        "name": "no name to this set"
     },
     {
-        "solomonCode": "8-",
-        "link": "www.no.com",
-        "name": "w"
+        "solomonCode": "9-11B",
+        "link": "www.thissethasnopdf.com",
+        "name": "Diminished nonachord"
     },
     {
-        "solomonCode": "8-",
-        "link": "www.no.com",
-        "name": "w"
+        "solomonCode": "9-12",
+        "link": "https://drive.google.com/file/d/1_nlEqfmh3FRjP64Wi2LuMrtZ_8G8ypif/view?usp=drive_link",
+        "name": "Tcherepnin - Messiaen mode 3 112112112"
     },
     {
-        "solomonCode": "8-",
-        "link": "www.no.com",
-        "name": "w"
+        "solomonCode": "10-1",
+        "link": "www.thissethasnopdf.com",
+        "name": "Chromatic dodecatonic scale"
     },
     {
-        "solomonCode": "8-",
-        "link": "www.no.com",
-        "name": "w"
+        "solomonCode": "10-2",
+        "link": "www.thissethasnopdf.com",
+        "name": "no name to this set"
     },
     {
-        "solomonCode": "8-",
-        "link": "www.no.com",
-        "name": "w"
+        "solomonCode": "10-3",
+        "link": "www.thissethasnopdf.com",
+        "name": "no name to this set"
     },
     {
-        "solomonCode": "8-",
-        "link": "www.no.com",
-        "name": "w"
+        "solomonCode": "10-4",
+        "link": "www.thissethasnopdf.com",
+        "name": "no name to this set"
     },
     {
-        "solomonCode": "8-",
-        "link": "www.no.com",
-        "name": "w"
+        "solomonCode": "10-5",
+        "link": "www.thissethasnopdf.com",
+        "name": "Major-minor mixed scale"
     },
     {
-        "solomonCode": "8-",
-        "link": "www.no.com",
-        "name": "w"
+        "solomonCode": "10-6",
+        "link": "https://drive.google.com/file/d/1MFhCF1B1DKBdCDt8Z-hzEhQ_EuI740iS/view?usp=drive_link",
+        "name": "Messiaen mode 7 1111211112"
     },
-     
+    {
+        "solomonCode": "11-1",
+        "link": "www.thissethasnopdf.com",
+        "name": "Undecatonic scale"
+    },    {
+        "solomonCode": "12-1",
+        "link": "https://drive.google.com/file/d/1XMDylQSsUWToe6EOAQPgY2jBWwob59xB/view?usp=drive_link",
+        "name": "Chromatic scale"
+    }
 ];
+
 
 
 

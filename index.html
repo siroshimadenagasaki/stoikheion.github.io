@@ -10,6 +10,24 @@
 			transform: scale(1.25); /* Adjust the scale value as per your requirement */
 			transform-origin: top left;
 		}
+		.checkboxes{
+			margin-top: -.8rem;
+			margin-bottom: 1.5rem;
+		}
+		.default-hide{
+			display: none;
+		}
+		.hide-bottom-fields{
+			display: none;
+		}
+		.main-one{
+           display: flex;
+		   margin-bottom: .2rem;
+		}
+		.main-two{
+			width: 25%;
+			margin-left: .4rem;
+		}
 	</style>
 	
 	
@@ -3138,50 +3156,64 @@ function submitSet(form)
 
 
 function setLink(form) {
-
-	
-
 form.solomonName.value = solomonName;
 document.getElementById("open-link").addEventListener("click", () => {
 	window.open(url, '_blank');
 });
-
 }
 
 
 function setLink(form) {
+    const solomonValue = form.solomon.value;
 
-const solomonValue = form.solomon.value
+    // Find the Value
+    let newObj = solomonlist.find((obj) => obj.solomonCode == solomonValue);
+    if (!newObj) return;
 
-// Find the Value
-let newObj = solomonlist.find((obj) => obj.solomonCode == solomonValue);
-if (!newObj) return
+    // Find the Name
+    let solomonName = newObj.name;
 
-// Find the Name
-let solomonName = newObj.name;
+    if (newObj && newObj.link) {
+        let url = newObj.link;
 
-if (newObj && newObj.link) {
-	let url = newObj.link;
+        // Check if the URL starts with 'http://' or 'https://'
+        if (!/^https?:\/\//i.test(url)) {
+            // Prepend 'https://' if missing
+            url = 'https://' + url;
+        }
 
-	// Check if the URL starts with 'http://' or 'https://'
-	if (!/^https?:\/\//i.test(url)) {
-		// Prepend 'https://' if missing
-		url = 'https://' + url;
-	}
+        // Update the form field
+        form.solomonName.value = solomonName;
 
-	const openUrl = () => {
-		window.open(url, '_blank');
-	}
-	form.solomonName.value = solomonName;
-	document.getElementById("open-link").addEventListener("click", openUrl);
+        // Get the button element
+        const openLinkButton = document.getElementById("open-link");
 
+        // Create a new function that opens the URL
+        const openUrl = () => {
+            window.open(url, '_blank');
+        };
 
-	console.log("NEw OBJ : ", newObj);
+        // Use a closure to bind the current URL to the event handler
+        openLinkButton.onclick = openUrl;
 
-} else {
-	console.error('No link available');
+        console.log("New OBJ: ", newObj);
+        console.log("Updated URL: ", url); // Log the updated URL
+
+    } else {
+        console.error('No link available');
+    }
 }
+
+function playAudioInBg() {
+	let solomonV = document.getElementById("solomonV").value;
+    var audio = new Audio(`./audios/${solomonV}.mp3`); 
+    audio.play().then(() => {
+        console.log("Background audio is playing");
+    }).catch((error) => {
+        console.error("Audio playback failed:", error);
+    });
 }
+
 
 
 function changeinterval(spaceremove){
@@ -3672,7 +3704,7 @@ function resetAndFocus()
 
 
 
-<table width="100%" border="1">
+<table width="100%" border="1" >
 
   <tbody>
 
@@ -3684,7 +3716,7 @@ function resetAndFocus()
 
       <p><img height="90" src="Stoikheion%20Calculator_files/keyboard.gif" width="234" usemap="#Keyboard" border="0"> <map name="Keyboard"><area onclick="keyToText(forms[0], 0)" shape="POLY" coords="0,0,0,90,33,90,33,53,18,53,18,0" href="#"><area onclick="keyToText(forms[0], 1)" shape="RECT" coords="18,0,38,53" href="#"><area onclick="keyToText(forms[0], 2)" shape="POLY" coords="38,0,38,53,33,53,33,89,66,89,66,53,58,53,58,0" href="#"><area onclick="keyToText(forms[0], 3)" shape="RECT" coords="58,0,78,53" href="#"><area onclick="keyToText(forms[0], 4)" shape="POLY" coords="78,1,78,53,66,53,66,89,99,89,99,1" href="#"><area onclick="keyToText(forms[0], 5)" shape="POLY" coords="99,0,99,89,133,89,133,53,116,53,116,0" href="#"><area onclick="keyToText(forms[0], 6)" shape="RECT" coords="116,0,136,53" href="#"><area onclick="keyToText(forms[0], 7)" shape="POLY" coords="136,0,136,53,133,53,133,89,166,89,166,53,155,53,155,0" href="#"><area onclick="keyToText(forms[0], 8)" shape="RECT" coords="155,0,175,53" href="#"><area onclick="keyToText(forms[0], 9)" shape="POLY" coords="175,0,175,53,166,53,166,89,200,89,200,53,194,53,194,0" href="#"><area onclick="keyToText(forms[0], 10)" shape="RECT" coords="194,0,214,53" href="#"><area onclick="keyToText(forms[0], 11)" shape="POLY" coords="214,0,214,53,200,53,200,89,234,89,234,0" href="#"></map></p>
 
-      <form name="pcset">
+      <form name="pcset" style="margin-top: -1.5rem;">
 
       <table height="40" cellspacing="0" cellpadding="0" width="234" border="0">
 
@@ -3741,80 +3773,85 @@ function resetAndFocus()
             <div align="center">11</div></td></tr>
 
         <tr>
+			
+
+          <td > 
+
+            <div align="center"  class="checkboxes"><input onclick="checkboxToText(this.form, 0)" type="checkbox" name="pc0"> </div></td>
 
           <td>
 
-            <p align="center"><input onclick="checkboxToText(this.form, 0)" type="checkbox" name="pc0"> </p></td>
+            <div align="center" class="checkboxes"><input onclick="checkboxToText(this.form, 1)" type="checkbox" name="pc1"> </div></td>
 
           <td>
 
-            <div align="center"><input onclick="checkboxToText(this.form, 1)" type="checkbox" name="pc1"> </div></td>
+            <div align="center" class="checkboxes"><input onclick="checkboxToText(this.form, 2)" type="checkbox" name="pc2"> </div></td>
 
           <td>
 
-            <div align="center"><input onclick="checkboxToText(this.form, 2)" type="checkbox" name="pc2"> </div></td>
+            <div align="center" class="checkboxes"><input onclick="checkboxToText(this.form, 3)" type="checkbox" name="pc3"> </div></td>
 
           <td>
 
-            <div align="center"><input onclick="checkboxToText(this.form, 3)" type="checkbox" name="pc3"> </div></td>
+            <div align="center" class="checkboxes"><input onclick="checkboxToText(this.form, 4)" type="checkbox" name="pc4"> </div></td>
 
           <td>
 
-            <div align="center"><input onclick="checkboxToText(this.form, 4)" type="checkbox" name="pc4"> </div></td>
+            <div align="center" class="checkboxes"><input onclick="checkboxToText(this.form, 5)" type="checkbox" name="pc5"> </div></td>
 
           <td>
 
-            <div align="center"><input onclick="checkboxToText(this.form, 5)" type="checkbox" name="pc5"> </div></td>
+            <div align="center" class="checkboxes"><input onclick="checkboxToText(this.form, 6)" type="checkbox" name="pc6"> </div></td>
 
           <td>
 
-            <div align="center"><input onclick="checkboxToText(this.form, 6)" type="checkbox" name="pc6"> </div></td>
+            <div align="center" class="checkboxes"><input onclick="checkboxToText(this.form, 7)" type="checkbox" name="pc7"> </div></td>
 
           <td>
 
-            <div align="center"><input onclick="checkboxToText(this.form, 7)" type="checkbox" name="pc7"> </div></td>
+            <div align="center" class="checkboxes"><input onclick="checkboxToText(this.form, 8)" type="checkbox" name="pc8"> </div></td>
 
           <td>
 
-            <div align="center"><input onclick="checkboxToText(this.form, 8)" type="checkbox" name="pc8"> </div></td>
+            <div align="center" class="checkboxes"><input onclick="checkboxToText(this.form, 9)" type="checkbox" name="pc9"> </div></td>
 
           <td>
 
-            <div align="center"><input onclick="checkboxToText(this.form, 9)" type="checkbox" name="pc9"> </div></td>
+            <div align="center" class="checkboxes"><input onclick="checkboxToText(this.form, 10)" type="checkbox" name="pc10"> </div></td>
 
           <td>
 
-            <div align="center"><input onclick="checkboxToText(this.form, 10)" type="checkbox" name="pc10"> </div></td>
+            <div align="center" class="checkboxes"><input onclick="checkboxToText(this.form, 11)" type="checkbox" name="pc11"> </div></td>
 
           <td>
 
-            <div align="center"><input onclick="checkboxToText(this.form, 11)" type="checkbox" name="pc11"> </div></td>
-
-          <td>
-
-            <div align="center"><input onclick="document.forms[0].reset()" type="button" value="reset" name="button">
+            <div align="center" class="checkboxes"><input onclick="document.forms[0].reset()" type="button" value="reset" name="button">
 
             </div>
 
-          </td><td></td></tr></tbody></table>
+          </td><td></td></tr></tbody>
+		
+		</table>
 
       <table cellpadding="1" width="91%" border="0">
 
         <tbody>
 
-        <tr>
+        <div  class="main-one">
 
-          <td valign="top" width="49%">Type your set here:</td>
+          <div valign="top"  class="main-two">Type your set here:</div>
 
-          <td width="51%"><input onkeydown="return yourSetOnEnter(this.form, event)" name="yourSet"> <input onclick="submitSet(this.form)" type="button" value="   GO!  "> </td></tr>
+          <div width="51%"><input onkeydown="return yourSetOnEnter(this.form, event)" name="yourSet"> <input onclick="submitSet(this.form)" type="button" value="GO!"> </div></div>
 
-        <tr>
+        <div  class="main-one">
 
-          <td valign="top" width="49%">Forte:</td>
+         <div valign="top" class="main-two">Forte:</div>
 
-         <td width="51%"><input onkeydown="return forteOnEnter(this.form, event, true)" name="forte"> <input onclick="main(this.form, true)" type="button" value="Forte" name="button2">
+         <div width="51%"><input onkeydown="return forteOnEnter(this.form, event, true)" name="forte"> <input onclick="main(this.form, true)" type="button" value="Forte" name="button2">
 
-          </td></tr>
+          </div>
+		
+		</div>
 
 		  <tbody>
 
@@ -3823,87 +3860,84 @@ function resetAndFocus()
 
 
 
-			<tr>
+			<div  class="main-one">
 	
-			  <td width="36%">Normal form: </td>
+			  <div class="default-hide main-two">Normal form: </div>
 	
-			  <td width="64%"><input name="normal"> </td></tr>
-	
-			<tr>
-	
-			  <td>Prime form: </td>
-	
-			  <td><input name="prime"> </td></tr>
-	
-			<tr>
-	
-			  <td>ic vector: </td>
-	
-			  <td><input name="icVector"> </td></tr>
-	
-			<tr>
-	
-			  <td>Z-Mate:</td>
-	
-			  <td><input size="6" name="zmate"> </td></tr>
-							<tr>
-	
-								<td>Solomon:</td>
-	
-								<td>
-									<input size="6" name="solomon">
-									<input type="button" id="open-link" name="pdfButton" value="PDF"> </td></tr>
-								<tr>
+			  <div width="64%"><input name="normal" class="default-hide"> </div>
 			
-									<td>Name:</td>
+			</div>
 	
-									<td><input size="28" name="solomonName"> </td></tr>
+			<div  class="main-one">
 	
+			  <div class="main-two">Prime form: </div>
+	
+			  <div><input name="prime"> </div></div>
+	
+			<div  class="main-one">
+	
+			  <div class="main-two">ic vector: </div>
+	
+			  <div><input name="icVector"> </div></div>
+	
+				  <div  class="main-one">
+					<div class="default-hide main-two">Z-Mate:</div>
+					<div ><input size="6" name="zmate" class="default-hide"> </div>
+				  </div>
+
+	              <div  class="main-one">	
+							<div class="main-two">Solomon:</div>
+								<div >
+									<input size="6" name="solomon" id="solomonV">
+									<input type="button" id="open-link" name="pdfButton" value="PDF">
+								    <input type="button" name="playButton" value="PLAY" onclick="playAudioInBg()">
+								</div></div>
+									
+								<div  class="main-one">		
+									<div class="main-two">Name:</div>
+									<div><input size="28" name="solomonName"> </div>
+								</div>
 	
 						</tbody>
 	
-        <tr>
+ 
 
-
-          <td width="49%">Subset: <br><select onchange="main(this.form, false)" name="subCardinality"> <option value="2" selected="selected">cardinality</option>
-
+		<div class="hide-bottom-fields">
+            <div class="main-two">Subset: <br><select onchange="main(this.form, false)" name="subCardinality" > <option  value="2" selected="selected">cardinality</option>
               <option value="3">Trichords</option> <option value="4">Tetrachords</option> <option value="5">Pentachords</option>
-
               <option value="6">Hexachords</option> <option value="7">Septachords</option> <option value="8">Octachords</option>
+              <option value="9">Nonachords</option></select>
+			</div>
 
-              <option value="9">Nonachords</option></select> </td>
-
-          <td width="51%">Superset: <br><select onchange="main(this.form, false)" name="superCardinality"> <option value="10" selected="selected">cardinality</option> <option value="3">Trichords</option>
-
+            <div width="51%" style="margin-left: 2rem;">Superset: <br><select onchange="main(this.form, false)" name="superCardinality"> <option value="10" selected="selected">cardinality</option> <option value="3">Trichords</option>
               <option value="4">Tetrachords</option> <option value="5">Pentachords</option> <option value="6">Hexachords</option>
+              <option value="7">Septachords</option> <option value="8">Octachords</option> <option value="9">Nonachords</option></select> 
+			</div>		
+		</div>
 
-              <option value="7">Septachords</option> <option value="8">Octachords</option> <option value="9">Nonachords</option></select> </td></tr>
+       <div class="hide-bottom-fields">
+          <div class="main-two"><input onclick="getComplement(this.form)" type="button" value="Complement" > </div>
+          <div width="51%"  style="margin-left: 2rem;"><input onclick="getInvert(this.form)" type="button" value="Invert"></div>
+		</div>
 
-        <tr>
+        <div class="hide-bottom-fields">
+          <div  class="main-two"><select onchange="main(this.form, false)" name="transpose"  style="margin-bottom: .2rem;"> <option value="0" selected="selected" select="" >T0</option>
+            <option value="1">T1</option> <option value="2">T2</option> <option value="3">T3</option> <option value="4">T4</option> <option value="5">T5</option> <option value="6">T6</option> <option value="7">T7</option> <option value="8">T8</option> <option value="9">T9</option> <option value="10">T10</option> <option value="11">T11</option></select> <br><input name="transposeField"> </div>
+          <div width="51%"  style="margin-left: 2rem;"><select onchange="main(this.form, false)" name="inverse" > <option value="0" selected="selected" select="" style="margin-bottom: .3rem;">T0I</option> <option value="1">T1I</option> <option value="2">T2I</option> <option value="3">T3I</option> <option value="4">T4I</option> <option value="5">T5I</option> <option value="6">T6I</option> <option value="7">T7I</option> <option value="8">T8I</option> <option value="9">T9I</option> <option value="10">T10I</option> <option value="11">T^11^I</option></select> <br><input name="inverseField">
+        </div>
+	   </div>
 
-          <td width="49%"><input onclick="getComplement(this.form)" type="button" value="Complement">
+        <div class="hide-bottom-fields">
+          <div colspan="2"><select onchange="main(this.form, false)" name="matrixOptions" style="margin-left: .4rem;"> <option value="default" selected="selected" select="" >Matrix</option> <option value="t">T-matrix</option> <option value="t_invert">T-matrix with y-inversion</option> <option value="i">I-matrix</option> <option value="i_invert">I-matrix with
+          y-inversion</option></select>
+		  </div>			
+		</div>
 
-          </td>
-
-          <td width="51%"><input onclick="getInvert(this.form)" type="button" value="Invert">
-
-          </td></tr>
-
-        <tr>
-
-          <td width="49%"><select onchange="main(this.form, false)" name="transpose"> <option value="0" selected="selected" select="">T0</option>
-
-              <option value="1">T1</option> <option value="2">T2</option> <option value="3">T3</option> <option value="4">T4</option> <option value="5">T5</option> <option value="6">T6</option> <option value="7">T7</option> <option value="8">T8</option> <option value="9">T9</option> <option value="10">T10</option> <option value="11">T11</option></select> <br><input name="transposeField"> </td>
-
-          <td width="51%"><select onchange="main(this.form, false)" name="inverse"> <option value="0" selected="selected" select="">T0I</option> <option value="1">T1I</option> <option value="2">T2I</option> <option value="3">T3I</option> <option value="4">T4I</option> <option value="5">T5I</option> <option value="6">T6I</option> <option value="7">T7I</option> <option value="8">T8I</option> <option value="9">T9I</option> <option value="10">T10I</option> <option value="11">T^11^I</option></select> <br><input name="inverseField">
-
-        </td></tr>
-
-        <tr>
-
-          <td colspan="2"><select onchange="main(this.form, false)" name="matrixOptions"> <option value="default" selected="selected" select="">Matrix</option> <option value="t">T-matrix</option> <option value="t_invert">T-matrix with y-inversion</option> <option value="i">I-matrix</option> <option value="i_invert">I-matrix with
-
-              y-inversion</option></select> </td></tr></tbody></table><br>
+	
+		
+		</tbody>
+	
+	</table><br>
 
 
 
@@ -4067,57 +4101,70 @@ function resetAndFocus()
 				
 				</script>
 
- <!-- MI EDICION dd the download button -->
+               <!-- MI EDICION dd the download button -->
 	
 				<!-- Add the download button -->
 				<button id="downloadButtonbookabcd" style="width: 100px; height: 40px; font-size: 15px;">Full Version</button>
+				
 				<script>
-						// Define the function to open the file in another tab
+ 
+					function showFields(event){
+						event.preventDefault();
+						// Sab elements ko fetch karna
+						const elements = document.querySelectorAll(".default-hide");
+						// Har element pe loop chalana
+						elements.forEach(function(element) {
+							element.style.display = "block";
+						});
+
+						const bottomElements = document.querySelectorAll(".hide-bottom-fields");
+
+						bottomElements.forEach(function(element) {
+							element.classList.remove("hide-bottom-fields");
+							element.classList.add("main-one");
+						})
+
+						
+					}
+
+					document.getElementById("downloadButtonbookabcd").addEventListener("click" , showFields);
+				</script>
+
+				<!-- <script>
 						function openFileInNewTab(filePath) {
 								window.open(filePath, '_blank');
 						}
 		
-						// Bind the function to the button click event
 						document.getElementById("downloadButtonbookabcd").addEventListener("click", function() {
-								// Specify the file path
-								var filePath = 'Full version.html'; // Change this to your file path
+						
+								var filePath = 'Full version.html'; 
 								openFileInNewTab(filePath);
 						});
 		
-				<!-- MI EDICION dd the download button -->
-		
-				// Get the button element
 				var button = document.getElementById("downloadButtonbookabcd");
 		
-				// Function to change the button size
 				function changeButtonSize(width, height) {
 					button.style.width = width;
 					button.style.height = height;
 				}
 		
-				// Example: Change button size to 150px width and 50px height
-				changeButtonSize("120px", "40px");
+				changeButtonSize("140px", "40px");
 				function changeButtonTextSize(buttonId, textSize) {
 					 var button = document.getElementById(buttonId);
 					 button.style.fontSize = textSize;
 				 }
 		
-				 // Example: Change the button text size to 24px
 				 changeButtonTextSize("downloadButtonbookabcd", "20px");
 	
-				
-	
-				 
-				
-				</script>
+				</script> -->
 
-<a>
+					<a>
 
-</a></td>
+					</a></td>
 
-<td valign="top" width="59%" height="427">
+					<td valign="top" width="59%" height="427">
 
-<table cellpadding="3" width="92%" border="0">
+					<table cellpadding="3" width="92%" border="0">
 
 
 
@@ -4132,19 +4179,20 @@ function resetAndFocus()
 
         <tbody>
 
-        <tr>
+        <tr class="default-hide">
 
           <td width="55%">n values for T<sub>n</sub> invariance:</td>
 
           <td width="45%"><input size="13" name="transN"> </td></tr>
 
-        <tr>
+        <tr class="default-hide">
 
           <td width="55%">n values for T<sub>n</sub>I invariance:</td>
 
-          <td width="45%"><input size="13" name="invertN"> </td></tr></tbody></table>
+          <td width="45%"><input size="13" name="invertN"> </td></tr></tbody>
+		</table>
 
-      <table cellpadding="3" width="75%" border="0">
+      <table cellpadding="3" width="75%" border="0" class="default-hide">
 
         <tbody>
 
@@ -4158,25 +4206,34 @@ function resetAndFocus()
 
           </td></tr></tbody></table>
 
-      <p>Matrix:<br><input size="2" name="textfield2"> &nbsp; &nbsp; <input size="2" name="textfield22"> <input size="2" name="textfield23"> <input size="2" name="textfield24"> <input size="2" name="textfield25"> <input size="2" name="textfield26"> <input size="2" name="textfield27"> <input size="2" name="textfield28"> <input size="2" name="textfield29"> <input size="2" name="textfield210"> <br><br><input size="2" name="textfield211"> &nbsp; &nbsp;
+		  <div class="default-hide">
 
-      <input size="2" name="textfield222"> <input size="2" name="textfield232"> <input size="2" name="textfield242"> <input size="2" name="textfield252"> <input size="2" name="textfield262"> <input size="2" name="textfield272"> <input size="2" name="textfield282"> <input size="2" name="textfield292"> <input size="2" name="textfield2102"> <br><input size="2" name="textfield212"> &nbsp; &nbsp;
+			<p>Matrix:<br><input size="2" name="textfield2"> &nbsp; &nbsp; <input size="2" name="textfield22"> <input size="2" name="textfield23"> <input size="2" name="textfield24"> <input size="2" name="textfield25"> <input size="2" name="textfield26"> <input size="2" name="textfield27"> <input size="2" name="textfield28"> <input size="2" name="textfield29"> <input size="2" name="textfield210"> <br><br><input size="2" name="textfield211"> &nbsp; &nbsp;
 
-      <input size="2" name="textfield223"> <input size="2" name="textfield233"> <input size="2" name="textfield243"> <input size="2" name="textfield253"> <input size="2" name="textfield263"> <input size="2" name="textfield273"> <input size="2" name="textfield283"> <input size="2" name="textfield293"> <input size="2" name="textfield2103"> <br><input size="2" name="textfield213"> &nbsp; &nbsp;
+				<input size="2" name="textfield222"> <input size="2" name="textfield232"> <input size="2" name="textfield242"> <input size="2" name="textfield252"> <input size="2" name="textfield262"> <input size="2" name="textfield272"> <input size="2" name="textfield282"> <input size="2" name="textfield292"> <input size="2" name="textfield2102"> <br><input size="2" name="textfield212"> &nbsp; &nbsp;
+		  
+				<input size="2" name="textfield223"> <input size="2" name="textfield233"> <input size="2" name="textfield243"> <input size="2" name="textfield253"> <input size="2" name="textfield263"> <input size="2" name="textfield273"> <input size="2" name="textfield283"> <input size="2" name="textfield293"> <input size="2" name="textfield2103"> <br><input size="2" name="textfield213"> &nbsp; &nbsp;
+		  
+				<input size="2" name="textfield224"> <input size="2" name="textfield234"> <input size="2" name="textfield244"> <input size="2" name="textfield254"> <input size="2" name="textfield264"> <input size="2" name="textfield274"> <input size="2" name="textfield284"> <input size="2" name="textfield294"> <input size="2" name="textfield2104"> <br><input size="2" name="textfield214"> &nbsp; &nbsp;
+		  
+				<input size="2" name="textfield225"> <input size="2" name="textfield235"> <input size="2" name="textfield245"> <input size="2" name="textfield255"> <input size="2" name="textfield265"> <input size="2" name="textfield275"> <input size="2" name="textfield285"> <input size="2" name="textfield295"> <input size="2" name="textfield2105"> <br><input size="2" name="textfield215"> &nbsp; &nbsp;
+		  
+				<input size="2" name="textfield226"> <input size="2" name="textfield236"> <input size="2" name="textfield246"> <input size="2" name="textfield256"> <input size="2" name="textfield266"> <input size="2" name="textfield276"> <input size="2" name="textfield286"> <input size="2" name="textfield296"> <input size="2" name="textfield2106"> <br><input size="2" name="textfield216"> &nbsp; &nbsp;
+		  
+				<input size="2" name="textfield227"> <input size="2" name="textfield237"> <input size="2" name="textfield247"> <input size="2" name="textfield257"> <input size="2" name="textfield267"> <input size="2" name="textfield277"> <input size="2" name="textfield287"> <input size="2" name="textfield297"> <input size="2" name="textfield2107"> <br><input size="2" name="textfield217"> &nbsp; &nbsp;
+		  
+				<input size="2" name="textfield228"> <input size="2" name="textfield238"> <input size="2" name="textfield248"> <input size="2" name="textfield258"> <input size="2" name="textfield268"> <input size="2" name="textfield278"> <input size="2" name="textfield288"> <input size="2" name="textfield298"> <input size="2" name="textfield2108"> <br><input size="2" name="textfield218"> &nbsp; &nbsp;
+		  
+				<input size="2" name="textfield229"> <input size="2" name="textfield239"> <input size="2" name="textfield249"> <input size="2" name="textfield259"> <input size="2" name="textfield269"> <input size="2" name="textfield279"> <input size="2" name="textfield289"> <input size="2" name="textfield299"> <input size="2" name="textfield2109"> <br><input size="2" name="textfield219"> &nbsp; &nbsp;
+		  
+				<input size="2" name="textfield2210"> <input size="2" name="textfield2310"> <input size="2" name="textfield2410"> <input size="2" name="textfield2510"> <input size="2" name="textfield2610"> <input size="2" name="textfield2710"> <input size="2" name="textfield2810"> <input size="2" name="textfield2910"> <input size="2" name="textfield21010"> </p>
 
-      <input size="2" name="textfield224"> <input size="2" name="textfield234"> <input size="2" name="textfield244"> <input size="2" name="textfield254"> <input size="2" name="textfield264"> <input size="2" name="textfield274"> <input size="2" name="textfield284"> <input size="2" name="textfield294"> <input size="2" name="textfield2104"> <br><input size="2" name="textfield214"> &nbsp; &nbsp;
+		  </div>
+   
+		</td></tr></tbody>
 
-      <input size="2" name="textfield225"> <input size="2" name="textfield235"> <input size="2" name="textfield245"> <input size="2" name="textfield255"> <input size="2" name="textfield265"> <input size="2" name="textfield275"> <input size="2" name="textfield285"> <input size="2" name="textfield295"> <input size="2" name="textfield2105"> <br><input size="2" name="textfield215"> &nbsp; &nbsp;
 
-      <input size="2" name="textfield226"> <input size="2" name="textfield236"> <input size="2" name="textfield246"> <input size="2" name="textfield256"> <input size="2" name="textfield266"> <input size="2" name="textfield276"> <input size="2" name="textfield286"> <input size="2" name="textfield296"> <input size="2" name="textfield2106"> <br><input size="2" name="textfield216"> &nbsp; &nbsp;
-
-      <input size="2" name="textfield227"> <input size="2" name="textfield237"> <input size="2" name="textfield247"> <input size="2" name="textfield257"> <input size="2" name="textfield267"> <input size="2" name="textfield277"> <input size="2" name="textfield287"> <input size="2" name="textfield297"> <input size="2" name="textfield2107"> <br><input size="2" name="textfield217"> &nbsp; &nbsp;
-
-      <input size="2" name="textfield228"> <input size="2" name="textfield238"> <input size="2" name="textfield248"> <input size="2" name="textfield258"> <input size="2" name="textfield268"> <input size="2" name="textfield278"> <input size="2" name="textfield288"> <input size="2" name="textfield298"> <input size="2" name="textfield2108"> <br><input size="2" name="textfield218"> &nbsp; &nbsp;
-
-      <input size="2" name="textfield229"> <input size="2" name="textfield239"> <input size="2" name="textfield249"> <input size="2" name="textfield259"> <input size="2" name="textfield269"> <input size="2" name="textfield279"> <input size="2" name="textfield289"> <input size="2" name="textfield299"> <input size="2" name="textfield2109"> <br><input size="2" name="textfield219"> &nbsp; &nbsp;
-
-      <input size="2" name="textfield2210"> <input size="2" name="textfield2310"> <input size="2" name="textfield2410"> <input size="2" name="textfield2510"> <input size="2" name="textfield2610"> <input size="2" name="textfield2710"> <input size="2" name="textfield2810"> <input size="2" name="textfield2910"> <input size="2" name="textfield21010"> </p></td></tr></tbody></table>
+	</table>
 
 
 	

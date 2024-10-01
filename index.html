@@ -3207,6 +3207,7 @@ function setLink(form) {
 function playAudioInBg() {
 	let solomonV = document.getElementById("solomonV").value;
     var audio = new Audio(`./audios/${solomonV}.mp3`); 
+
     audio.play().then(() => {
         console.log("Background audio is playing");
     }).catch((error) => {

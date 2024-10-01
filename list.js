@@ -96,7 +96,7 @@ const solomonlist = [
     },      {
         "solomonCode": "4-3",
         "link": "https://drive.google.com/file/d/1nkPmyWMbuu1TvBF0OKWHcCcw5YXTqgYJ/view?usp=drive_link",
-        "name": "mMaj9(no5) - Alternating tetracord"
+        "name": "mMaj9(no5) - Alternating tetrachord"
     },      {
         "solomonCode": "4-4",
         "link": "ww.blank.com",
@@ -116,39 +116,39 @@ const solomonlist = [
     },      {
         "solomonCode": "4-6",
         "link": "ww.no.com",
-        "name": "Perfect fourth tetracord"
+        "name": "Perfect fourth tetrachord"
     },      {
         "solomonCode": "4-7",
         "link": "https://drive.google.com/file/d/1ZuJwArdTyzSDMAtdIqwO91dmyBqAUIfP/view?usp=drive_link",
-        "name": "Arab tetracord - 1 2# 3 7"
+        "name": "Arab tetrachord - 1 2# 3 7"
     },      {
         "solomonCode": "4-8",
         "link": "https://drive.google.com/file/d/1Gwd7rKv25qYGT-K8hfKr44MjsxxLKSVS/view?usp=drive_link",
-        "name": "Double fourth tetracord - 1 4# 5 7"
+        "name": "Double fourth tetrachord - 1 4# 5 7"
     },      {
         "solomonCode": "4-9",
         "link": "https://drive.google.com/file/d/1cEs98yxFmAw66WaC9GULTR5PfkEppEgr/view?usp=drive_link",
-        "name": "Double tritone tetracord"
+        "name": "Double tritone tetrachord"
     },      {
         "solomonCode": "4-10",
         "link": "www.thissethasnopdf.com",
-        "name": "Minor tetracord"
+        "name": "Minor tetrachord (Dorian)"
     },      {
         "solomonCode": "4-11",
         "link": "https://drive.google.com/file/d/1DPvJgg106f2LrGzX2X6sr2YxvliLzsYS/view?usp=drive_link",
-        "name": "Maj9(no5) - Phrygian tetracord"
+        "name": "Maj9(no5) - Phrygian tetrachord"
     },      {
         "solomonCode": "4-11B",
         "link": "https://drive.google.com/file/d/1Par1hjp12OE705FJexzxViMvmPumrgT5/view?usp=drive_link",
-        "name": "m9(no5) - Major tetracord"
+        "name": "m9(no5) - Major tetrachord - Ionian tetrachord"
     },      {
         "solomonCode": "4-12",
         "link": "https://drive.google.com/file/d/15Y5NtFR4_zp_uTB8awzk0HkJqS3ExiXz/view?usp=drive_link",
-        "name": "7(9b no5) - mMaj6(no5) - Minor Harmonic tetracord"
+        "name": "7(9b no5) - mMaj6(no5) - Minor Harmonic tetrachord"
     },      {
         "solomonCode": "4-12B",
         "link": "https://drive.google.com/file/d/192029FjmwF8DrkPUCLLt4KHM8X31F0eA/view?usp=drive_link",
-        "name": "Diminished major third tetracord - 1 2b 3b 6"
+        "name": "Diminished major third tetrachord - 1 2b 3b 6"
     },      {
         "solomonCode": "4-13",
         "link": "https://drive.google.com/file/d/1zqTXP2Ofl3ft3GVmi30DWuby0Y1v4NCg/view?usp=drive_link",
@@ -176,7 +176,7 @@ const solomonlist = [
     },      {
         "solomonCode": "4-16",
         "link": "https://drive.google.com/file/d/1DpqCV9KUmLbonWR_ieaXiePDLkaSc0GZ/view?usp=drive_link",
-        "name": "Maj(4# no5) - Minor second Cuartal tetracord"
+        "name": "Maj(4# no5) - Minor second Cuartal tetrachord"
     },      {
         "solomonCode": "4-16B",
         "link": "https://drive.google.com/file/d/1WHlYxdWF01w0PRs-OCJTvYUEI0Bzfu0g/view?usp=drive_link",
@@ -208,7 +208,7 @@ const solomonlist = [
     },      {
         "solomonCode": "4-21",
         "link": "https://drive.google.com/file/d/1h5Stu5bz1ByFh6GwUqu_5Q6qTgqf4WvR/view?usp=drive_link",
-        "name": "7(9 no5) - Tonal tetrachord"
+        "name": "7(9 no5) - Tonal tetrachord - Lydian tetrachord"
     },      {
         "solomonCode": "4-22",
         "link": "https://drive.google.com/file/d/1N-RNu5-JtII7v8FYzIBGskqNBteecZqR/view?usp=drive_link",

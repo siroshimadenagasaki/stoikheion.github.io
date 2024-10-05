@@ -549,6 +549,11 @@ const solomonlist = [
         "name": "Traditional pentatonic"
     },
     {
+        "solomonCode": "5-35B",
+        "link": "https://drive.google.com/file/d/1dZG3jX8V1-W8Idm7EQ-JaPtWm7t4JsLv/view?usp=drive_link",
+        "name": "Traditional pentatonic"
+    },
+    {
         "solomonCode": "6-1",
         "link": "www.thissethasnopdf.com",
         "name": "Chromatic hexatonic"

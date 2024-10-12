@@ -205,7 +205,11 @@ const solomonlist = [
         "solomonCode": "4-20",
         "link": "https://drive.google.com/file/d/1jPZDxrHisJOxX4Wjw7uo3ZPFo4gfOa5q/view?usp=drive_link",
         "name": "Maj - Major seventh chord"
-    },      {
+    },     {
+        "solomonCode": "4-20B",
+        "link": "https://drive.google.com/file/d/1jPZDxrHisJOxX4Wjw7uo3ZPFo4gfOa5q/view?usp=drive_link",
+        "name": "Maj - Major seventh chord"
+    },     {
         "solomonCode": "4-21",
         "link": "https://drive.google.com/file/d/1h5Stu5bz1ByFh6GwUqu_5Q6qTgqf4WvR/view?usp=drive_link",
         "name": "7(9 no5) - Tonal tetrachord - Lydian tetrachord"

@@ -65,7 +65,7 @@ const solomonlist = [
         "solomonCode": "3-9",
         "link": "https://drive.google.com/file/d/1_yVMuQMVDMGIFRVZ7cqPxupL07FRBdrq/view?usp=drive_link",
         "name": "Cuartal triad"
-    },      {
+    },     {
         "solomonCode": "3-10",
         "link": "https://drive.google.com/file/d/1YSoV--g83b9eGJn2TuHXvfVFSyeYm4OA/view?usp=drive_link",
         "name": "Diminished triad - m6(no5)"
@@ -79,6 +79,10 @@ const solomonlist = [
         "name": "Major triad - m6(no5)"
     },         {
         "solomonCode": "3-12",
+        "link": "https://drive.google.com/file/d/1KgWtxQV8QI-rm9xEFGrvHFpcG4v2-L37/view?usp=drive_link",
+        "name": "Augmented triad"
+    },      {
+        "solomonCode": "3-12B",
         "link": "https://drive.google.com/file/d/1KgWtxQV8QI-rm9xEFGrvHFpcG4v2-L37/view?usp=drive_link",
         "name": "Augmented triad"
     },      {
@@ -205,11 +209,7 @@ const solomonlist = [
         "solomonCode": "4-20",
         "link": "https://drive.google.com/file/d/1jPZDxrHisJOxX4Wjw7uo3ZPFo4gfOa5q/view?usp=drive_link",
         "name": "Maj - Major seventh chord"
-    },     {
-        "solomonCode": "4-20B",
-        "link": "https://drive.google.com/file/d/1jPZDxrHisJOxX4Wjw7uo3ZPFo4gfOa5q/view?usp=drive_link",
-        "name": "Maj - Major seventh chord"
-    },     {
+    },      {
         "solomonCode": "4-21",
         "link": "https://drive.google.com/file/d/1h5Stu5bz1ByFh6GwUqu_5Q6qTgqf4WvR/view?usp=drive_link",
         "name": "7(9 no5) - Tonal tetrachord - Lydian tetrachord"

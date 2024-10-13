@@ -164,11 +164,11 @@ const solomonlist = [
     },      {
         "solomonCode": "4-14",
         "link": "https://drive.google.com/file/d/1XptitRDhQCnGIAZAa4_8AI8X1_KuIHWm/view?usp=drive_link",
-        "name": "m9(no7) - Maj6(no5) - Minor second major tetrachord "
+        "name": "m9(no7) - Maj6(no5) - Minor second major tetrachord - Bbm/C "
     },      {
         "solomonCode": "4-14B",
         "link": "https://drive.google.com/file/d/1IdLLelAdqGUvlIUpozfyCynHvC7_npnm/view?usp=drive_link",
-        "name": "Major perfect fourth tetrachord - 1 2 5 7"
+        "name": "Major perfect fourth tetrachord - 1 2 5 7 - G/C "
     },      {
         "solomonCode": "4-15",
         "link": "https://drive.google.com/file/d/15viK4g-DyY6S8U-7XRXboxuZ3JDX1zKs/view?usp=drive_link",
@@ -188,27 +188,27 @@ const solomonlist = [
     },      {
         "solomonCode": "4-17",
         "link": "https://drive.google.com/file/d/1WpV2g-DfCuGPdkXz6869qdWzMhoGtP4k/view?usp=drive_link",
-        "name": "Bitonal - Major/Minor tetrachord - 1 3b 3 5"
+        "name": "Bitonal - Major/Minor tetrachord - 1 3b 3 5 - A/C - Abm/C"
     },      {
         "solomonCode": "4-18",
         "link": "https://drive.google.com/file/d/1EnPOrZZD7DKV8-u1jwu5E3SSZwh9pdqc/view?usp=drive_link",
-        "name": "Dim Maj7 - Major diminish tetrachord"
+        "name": "Dim Maj7 - Major diminish tetrachord - B/C"
     },      {
         "solomonCode": "4-18B",
         "link": "https://drive.google.com/file/d/1XfHvEqVF8XYwd3Yw6JqIsiEN9zoo8Vlu/view?usp=drive_link",
-        "name": "Minor diminish tetrachord"
+        "name": "Minor diminish tetrachord - F#m/C"
     },      {
         "solomonCode": "4-19",
         "link": "https://drive.google.com/file/d/11-R4y-tuTzsi0-WRzv0kktWvqB4i12E2/view?usp=drive_link",
-        "name": "mMaj9 - minor augmented tretrachord"
+        "name": "mMaj9 - minor augmented tretrachord Dbm/C"
     },      {
         "solomonCode": "4-19B",
         "link": "https://drive.google.com/file/d/1r7N2AbQZkw2-Apn5zEmfOlvZCWGhcJ8b/view?usp=drive_link",
-        "name": "Maj+ - Major augmented tetrachord"
+        "name": "Maj+ - Major augmented tetrachord - E/C"
     },      {
         "solomonCode": "4-20",
         "link": "https://drive.google.com/file/d/1jPZDxrHisJOxX4Wjw7uo3ZPFo4gfOa5q/view?usp=drive_link",
-        "name": "Maj - Major seventh chord"
+        "name": "Maj - Major seventh chord - Db/C - Em/C"
     },      {
         "solomonCode": "4-21",
         "link": "https://drive.google.com/file/d/1h5Stu5bz1ByFh6GwUqu_5Q6qTgqf4WvR/view?usp=drive_link",
@@ -216,11 +216,11 @@ const solomonlist = [
     },      {
         "solomonCode": "4-22",
         "link": "https://drive.google.com/file/d/1N-RNu5-JtII7v8FYzIBGskqNBteecZqR/view?usp=drive_link",
-        "name": "Major 9 - 1 2 3 5 - Coltrane major pattern"
+        "name": "Major 9 - 1 2 3 5 - Coltrane major pattern - Bb/C"
     },      {
         "solomonCode": "4-22B",
         "link": "https://drive.google.com/file/d/1AoYypZbkXik3hjh9WXn6cLUXN6IWK8DV/view?usp=drive_link",
-        "name": "Perfect fourth minor tetrachord - Minor 11"
+        "name": "Perfect fourth minor tetrachord - Minor 11 - Gm/C"
     },      {
         "solomonCode": "4-23",
         "link": "https://drive.google.com/file/d/1vKDVjEOmvmsJT10yK8-YvxGAZxWlxvOl/view?usp=drive_link",
@@ -236,15 +236,15 @@ const solomonlist = [
     },      {
         "solomonCode": "4-26",
         "link": "https://drive.google.com/file/d/1yYPahaFH_L5xp--s-b1eBpC5B-ZmrOVv/view?usp=drive_link",
-        "name": "Minor seventh chord - m7"
+        "name": "Minor seventh chord - m7 - Eb/C - Dm/C"
     },      {
         "solomonCode": "4-27",
         "link": "https://drive.google.com/file/d/12nQ8qRlnHVVxt6b72qdit-vqic_cVtU9/view?usp=drive_link",
-        "name": "half diminished chord - m7(5b)"
+        "name": "Half diminished chord - m7(5b) - Ebm/C"
     },      {
         "solomonCode": "4-27B",
         "link": "https://drive.google.com/file/d/1EBpEAJcf7UnZoFpL2jRJuA1sL2-e0gxl/view?usp=drive_link",
-        "name": "Seventh chord - German sixth"
+        "name": "Seventh chord - D/C - German sixth"
     },      {
         "solomonCode": "4-28",
         "link": "https://drive.google.com/file/d/1iKDTGoFbzonRkZLp9nSJg9Smg9_vSiUP/view?usp=drive_link",
@@ -252,11 +252,11 @@ const solomonlist = [
     },      {
         "solomonCode": "4-29",
         "link": "https://drive.google.com/file/d/10XpPfBnuvc9Y0h3f9gfOIjHFVZJmEhmq/view?usp=drive_link",
-        "name": "7(6 no5) - All intervals tetrachord n3"
+        "name": "7(6 no5) - All intervals tetrachord n3 - Bm/C"
     },      {
         "solomonCode": "4-29B",
         "link": "https://drive.google.com/file/d/1x-Vla4D_rFMMylDE89NmEba1sIDUh-qk/view?usp=drive_link",
-        "name": "Major 4# - All intervals tetrachord n4"
+        "name": "Major 4# - All intervals tetrachord n4 - F#/C"
     },
     {        "solomonCode": "5-1",
         "link": "https://drive.google.com/file/d/1LyJXJ61_iY8FVNNBzjZaajCFwKDqo-zs/view?usp=drive_link",

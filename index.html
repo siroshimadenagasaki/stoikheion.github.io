@@ -3,11 +3,11 @@
 <meta http-equiv="content-type" content="text/html; charset=UTF-8">
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-   
+  
    <style>
 		/* Set fixed zoom level */
 		body {
-			transform: scale(1.25); /* Adjust the scale value as per your requirement */
+			transform: scale(1.25); 
 			transform-origin: top left;
 		}
 		.checkboxes{
@@ -27,6 +27,79 @@
 		.main-two{
 			width: 25%;
 			margin-left: .4rem;
+		}
+		input:focus , select:focus , textarea:focus , button:focus{
+		 outline: none;
+		}
+		.switch-to-instrument{
+			margin: 0rem 0rem 1rem .3rem;
+		}
+
+		.show-guitar{
+			margin: 0rem 0rem 1rem .3rem;
+		}
+
+		.row-one , .row-two , .row-three , .row-four , .row-five , .row-six{
+			display: flex;
+			justify-content: space-around;
+			background-color: #fff;
+			width: 50%;
+		}
+        
+		.guitar-box-one , .guitar-box-two , .guitar-box-three , .guitar-box-four , .guitar-box-five , .guitar-box-six{
+			border: 1px solid black;
+			width: 100%;
+			justify-content: center;
+			padding: 1.2rem 0rem;
+			position: relative;
+		}
+
+		.guitar-box-one-inner , .guitar-box-two-inner , .guitar-box-three-inner , .guitar-box-four-inner , .guitar-box-five-inner , .guitar-box-six-inner{
+			background-color: #fff;
+			height: 32px;
+			width: 32px;
+			display: flex;
+			justify-content: center;
+			align-items: center;
+			font-size: 17px;
+			font-weight: bold;
+			border-radius: 50%;
+			border: 1px solid black;
+			position: absolute;
+			top: -30%;
+			left: 24%;
+			cursor: pointer;
+		}
+		.show-piaono{
+			display: block;
+		}
+		.hide-piano{
+			display: none;
+		}
+		.hide-guitar{
+			display: none;
+		}
+
+		/* resposnive guitar */
+
+		@media screen and (max-width:1300px) {
+			.row-one , .row-two , .row-three , .row-four , .row-five , .row-six{
+			width: 70%;
+		}
+		.guitar-box-one-inner , .guitar-box-two-inner , .guitar-box-three-inner , .guitar-box-four-inner , .guitar-box-five-inner , .guitar-box-six-inner{
+			left: 25%;
+		}
+		}
+
+		@media screen and (max-width:1150px) {
+			.row-one , .row-two , .row-three , .row-four , .row-five , .row-six{
+			width: 80%;
+		}
+		}
+		@media screen and (max-width:1000px) {
+			.row-one , .row-two , .row-three , .row-four , .row-five , .row-six{
+			width: 90%;
+		}
 		}
 	</style>
 	
@@ -309,57 +382,20 @@ function scanField(form)
 
 // to the "yourSet" field
 
-function allCheckboxestoText(form)
+function allCheckboxestoText(form) {
+    form.yourSet.value = ""; // Clear the input field
 
-{
+    // Get selected checkbox values
+    const selectedValues = Array.from(document.querySelectorAll('input[type="checkbox"]:checked'))
+        .map(cb => cb.id.replace('checkbox-', '')) // Get the checkbox number
+        .join(' '); // Join values as a string
 
-	form.yourSet.value = "";
+    // Set the selected values in the input field
+    form.yourSet.value = selectedValues;
 
-	for (var i = 0; i < form.length; i++)
-
-	{
-
-		//assumes the first 12 elements are the 12 pc checkboxes
-
-		if(form.elements[i].type == "checkbox" && form.elements[i].checked)
-
-		{
-
-			// The following lines ensure that as the box is checked
-
-			// the number will display in the yourSet field.
-
-			if (i <= 9)
-
-			{
-
-				if (form.yourSet.value.indexOf("" + i) == -1)
-
-					form.yourSet.value += "" + i + " ";
-
-			}
-
-			if (i == 10)
-
-			{
-
-				if (form.yourSet.value.indexOf("t") == -1 && form.yourSet.value.indexOf("T") == -1)
-
-					form.yourSet.value += "t ";
-
-			}
-
-			if (i == 11)
-
-				if (form.yourSet.value.indexOf("e") == -1 && form.yourSet.value.indexOf("E") == -1)
-
-				form.yourSet.value += "e ";
-
-		}
-
-	}
-
+    console.log("Checkbox values set to input:", selectedValues);
 }
+
 
 
 
@@ -1732,7 +1768,6 @@ function getPrime(norm, size)
 }
 
 
-
 // Returns the prime form.  intervals is the interval array mentioned above.
 
 // This function is only used inside getPrime(). size is the size of the
@@ -1864,31 +1899,6 @@ function displayForte(primeForm, form, size, chord)
 	if (size < 3)
 
 	/* There is actually no way to get to this line of code because the main function returns before it even gets to this point if size < 3.  I just included it for completeness and in case anyone else wants to use this function for their own purpose. */
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
 
 
 	{
@@ -3166,9 +3176,18 @@ document.getElementById("open-link").addEventListener("click", () => {
 function setLink(form) {
     const solomonValue = form.solomon.value;
 
-    // Find the Value
+    // Remove "B" from solomonCode if it exists
+    let cleanSolomonValue = solomonValue.replace('B', '');
+
+    // Find the matching object, first trying with "B" and then without if no match
     let newObj = solomonlist.find((obj) => obj.solomonCode == solomonValue);
-    if (!newObj) return;
+    
+    // If the exact "B" value isn't found, try without "B"
+    if (!newObj) {
+        newObj = solomonlist.find((obj) => obj.solomonCode == cleanSolomonValue);
+    }
+
+    if (!newObj) return;  // Exit if no matching object is found
 
     // Find the Name
     let solomonName = newObj.name;
@@ -3203,6 +3222,8 @@ function setLink(form) {
         console.error('No link available');
     }
 }
+
+
 
 function playAudioInBg() {
 	let solomonV = document.getElementById("solomonV").value;
@@ -3713,128 +3734,215 @@ function resetAndFocus()
 
     <td valign="top" width="50%" height="427">
 
-      <p><font size="5"><b>Stoikheion Oracle</b></font><br></p>	 
+      <p><font size="5"><b style="margin-left: .5rem;">Stoikheion Oracle</b></font><br></p>	 
 
 
 
-      <p><img height="90" src="Stoikheion%20Calculator_files/keyboard.gif" width="234" usemap="#Keyboard" border="0"> <map name="Keyboard"><area onclick="keyToText(forms[0], 0)" shape="POLY" coords="0,0,0,90,33,90,33,53,18,53,18,0" href="#"><area onclick="keyToText(forms[0], 1)" shape="RECT" coords="18,0,38,53" href="#"><area onclick="keyToText(forms[0], 2)" shape="POLY" coords="38,0,38,53,33,53,33,89,66,89,66,53,58,53,58,0" href="#"><area onclick="keyToText(forms[0], 3)" shape="RECT" coords="58,0,78,53" href="#"><area onclick="keyToText(forms[0], 4)" shape="POLY" coords="78,1,78,53,66,53,66,89,99,89,99,1" href="#"><area onclick="keyToText(forms[0], 5)" shape="POLY" coords="99,0,99,89,133,89,133,53,116,53,116,0" href="#"><area onclick="keyToText(forms[0], 6)" shape="RECT" coords="116,0,136,53" href="#"><area onclick="keyToText(forms[0], 7)" shape="POLY" coords="136,0,136,53,133,53,133,89,166,89,166,53,155,53,155,0" href="#"><area onclick="keyToText(forms[0], 8)" shape="RECT" coords="155,0,175,53" href="#"><area onclick="keyToText(forms[0], 9)" shape="POLY" coords="175,0,175,53,166,53,166,89,200,89,200,53,194,53,194,0" href="#"><area onclick="keyToText(forms[0], 10)" shape="RECT" coords="194,0,214,53" href="#"><area onclick="keyToText(forms[0], 11)" shape="POLY" coords="214,0,214,53,200,53,200,89,234,89,234,0" href="#"></map></p>
+    <div class="show-piaono">
+	  <p><img height="90" src="Stoikheion%20Calculator_files/keyboard.gif" width="234" usemap="#Keyboard" border="0"> <map name="Keyboard"><area onclick="keyToText(forms[0], 0)" shape="POLY" coords="0,0,0,90,33,90,33,53,18,53,18,0" href="#"><area onclick="keyToText(forms[0], 1)" shape="RECT" coords="18,0,38,53" href="#"><area onclick="keyToText(forms[0], 2)" shape="POLY" coords="38,0,38,53,33,53,33,89,66,89,66,53,58,53,58,0" href="#"><area onclick="keyToText(forms[0], 3)" shape="RECT" coords="58,0,78,53" href="#"><area onclick="keyToText(forms[0], 4)" shape="POLY" coords="78,1,78,53,66,53,66,89,99,89,99,1" href="#"><area onclick="keyToText(forms[0], 5)" shape="POLY" coords="99,0,99,89,133,89,133,53,116,53,116,0" href="#"><area onclick="keyToText(forms[0], 6)" shape="RECT" coords="116,0,136,53" href="#"><area onclick="keyToText(forms[0], 7)" shape="POLY" coords="136,0,136,53,133,53,133,89,166,89,166,53,155,53,155,0" href="#"><area onclick="keyToText(forms[0], 8)" shape="RECT" coords="155,0,175,53" href="#"><area onclick="keyToText(forms[0], 9)" shape="POLY" coords="175,0,175,53,166,53,166,89,200,89,200,53,194,53,194,0" href="#"><area onclick="keyToText(forms[0], 10)" shape="RECT" coords="194,0,214,53" href="#"><area onclick="keyToText(forms[0], 11)" shape="POLY" coords="214,0,214,53,200,53,200,89,234,89,234,0" href="#"></map></p>
+	</div>
+
+	<div class="show-guitar">
+		<div class="row-one">
+			<div class="guitar-box-one" onclick="selectCheckbox(5)"><div class="guitar-box-one-inner">5</div></div>
+			<div class="guitar-box-two" onclick="selectCheckbox(6)"><div class="guitar-box-two-inner">6</div></div>
+			<div class="guitar-box-three" onclick="selectCheckbox(7)"><div class="guitar-box-three-inner">7</div></div>
+			<div class="guitar-box-four" onclick="selectCheckbox(8)"><div class="guitar-box-four-inner">8</div></div>
+			<div class="guitar-box-five" onclick="selectCheckbox(9)"><div class="guitar-box-five-inner">9</div></div>
+			<div class="guitar-box-six" onclick="selectCheckbox(10)"><div class="guitar-box-six-inner">10</div></div>
+		</div>
+	
+		<div class="row-two">
+			<div class="guitar-box-one" onclick="selectCheckbox(0)"><div class="guitar-box-one-inner">0</div></div>
+			<div class="guitar-box-two" onclick="selectCheckbox(1)"><div class="guitar-box-two-inner">1</div></div>
+			<div class="guitar-box-three" onclick="selectCheckbox(2)"><div class="guitar-box-three-inner">2</div></div>
+			<div class="guitar-box-four" onclick="selectCheckbox(3)"><div class="guitar-box-four-inner">3</div></div>
+			<div class="guitar-box-five" onclick="selectCheckbox(4)"><div class="guitar-box-five-inner">4</div></div>
+			<div class="guitar-box-six" onclick="selectCheckbox(5)"><div class="guitar-box-six-inner">5</div></div>
+		</div>
+	
+		<div class="row-three">
+			<div class="guitar-box-one" onclick="selectCheckbox(8)"><div class="guitar-box-one-inner">8</div></div>
+			<div class="guitar-box-two" onclick="selectCheckbox(9)"><div class="guitar-box-two-inner">9</div></div>
+			<div class="guitar-box-three" onclick="selectCheckbox(10)"><div class="guitar-box-three-inner">10</div></div>
+			<div class="guitar-box-four" onclick="selectCheckbox(11)"><div class="guitar-box-four-inner">11</div></div>
+			<div class="guitar-box-five" onclick="selectCheckbox(0)"><div class="guitar-box-five-inner">0</div></div>
+			<div class="guitar-box-six" onclick="selectCheckbox(1)"><div class="guitar-box-six-inner">1</div></div>
+		</div>
+	
+		<div class="row-four">
+			<div class="guitar-box-one" onclick="selectCheckbox(3)"><div class="guitar-box-one-inner">3</div></div>
+			<div class="guitar-box-two" onclick="selectCheckbox(4)"><div class="guitar-box-two-inner">4</div></div>
+			<div class="guitar-box-three" onclick="selectCheckbox(5)"><div class="guitar-box-three-inner">5</div></div>
+			<div class="guitar-box-four" onclick="selectCheckbox(6)"><div class="guitar-box-four-inner">6</div></div>
+			<div class="guitar-box-five" onclick="selectCheckbox(7)"><div class="guitar-box-five-inner">7</div></div>
+			<div class="guitar-box-six" onclick="selectCheckbox(8)"><div class="guitar-box-six-inner">8</div></div>
+		</div>
+	
+		<div class="row-five">
+			<div class="guitar-box-one" onclick="selectCheckbox(10)"><div class="guitar-box-one-inner">10</div></div>
+			<div class="guitar-box-two" onclick="selectCheckbox(11)"><div class="guitar-box-two-inner">11</div></div>
+			<div class="guitar-box-three" onclick="selectCheckbox(0)"><div class="guitar-box-three-inner">0</div></div>
+			<div class="guitar-box-four" onclick="selectCheckbox(1)"><div class="guitar-box-four-inner">1</div></div>
+			<div class="guitar-box-five" onclick="selectCheckbox(2)"><div class="guitar-box-five-inner">2</div></div>
+			<div class="guitar-box-six" onclick="selectCheckbox(3)"><div class="guitar-box-six-inner">3</div></div>
+		</div>
+	
+		<div class="row-six">
+			<div class="guitar-box-one" onclick="selectCheckbox(5)"><div class="guitar-box-one-inner">5</div></div>
+			<div class="guitar-box-two" onclick="selectCheckbox(6)"><div class="guitar-box-two-inner">6</div></div>
+			<div class="guitar-box-three" onclick="selectCheckbox(7)"><div class="guitar-box-three-inner">7</div></div>
+			<div class="guitar-box-four" onclick="selectCheckbox(8)"><div class="guitar-box-four-inner">8</div></div>
+			<div class="guitar-box-five" onclick="selectCheckbox(9)"><div class="guitar-box-five-inner">9</div></div>
+			<div class="guitar-box-six" onclick="selectCheckbox(10)"><div class="guitar-box-six-inner">10</div></div>
+		</div>
+	</div>
+
+
+	  <script>
+
+			
+function selectCheckbox(value) {
+    const checkbox = document.getElementById(`checkbox-${value}`);
+    
+    // Toggle the checkbox state
+    checkbox.checked = !checkbox.checked;
+
+    // Get selected values from both guitars and pianos
+    const selectedValues = Array.from(document.querySelectorAll('input[type="checkbox"]:checked'))
+        .map(cb => cb.id.replace('checkbox-', '')) // Get the checkbox number
+        .join(' '); // Join values as a string
+
+    // Set the selected values in the input field
+    document.getElementsByName('yourSet')[0].value = selectedValues;
+}
+
+
+
+     </script>
+
+
+<button type="button" class="switch-to-instrument" onclick="switchInstrument(event, this)">Switch to Piano</button>
+
+<script>
+	// Initially, guitar view hidden hoga
+	document.querySelector(".show-piaono").style.display = "none";
+
+	function switchInstrument(event, button) {
+		event.preventDefault(); // Prevent any default behavior (important in case of form)
+		
+		// Button ka text toggle karna
+		if (button.innerHTML === "Switch to Piano") {
+			button.innerHTML = "Switch to Guitar";
+			document.querySelector(".show-piaono").style.display = "block";  // Show Piano
+			document.querySelector(".show-guitar").style.display = "none";  // Hide Guitar
+		} else {
+			button.innerHTML = "Switch to Piano";
+			document.querySelector(".show-guitar").style.display = "block";  // Show Guitar
+			document.querySelector(".show-piaono").style.display = "none";  // Hide Piano
+		}
+	}
+</script>
 
       <form name="pcset" style="margin-top: -1.5rem;">
 
-      <table height="40" cellspacing="0" cellpadding="0" width="234" border="0">
+		<table height="40" cellspacing="0" cellpadding="0" width="234" border="0">
 
-        <tbody>
-
-        <tr>
-
-          <td>
-
-            <p align="center">0</p></td>
-
-          <td>
-
-            <div align="center">1</div></td>
-
-          <td>
-
-            <div align="center">2</div></td>
-
-          <td>
-
-            <div align="center">3</div></td>
-
-          <td>
-
-            <div align="center">4</div></td>
-
-          <td>
-
-            <div align="center">5</div></td>
-
-          <td>
-
-            <div align="center">6</div></td>
-
-          <td>
-
-            <div align="center">7</div></td>
-
-          <td>
-
-            <div align="center">8</div></td>
-
-          <td>
-
-            <div align="center">9</div></td>
-
-          <td>
-
-            <div align="center">10</div></td>
-
-          <td>
-
-            <div align="center">11</div></td></tr>
-
-        <tr>
-			
-
-          <td > 
-
-            <div align="center"  class="checkboxes"><input onclick="checkboxToText(this.form, 0)" type="checkbox" name="pc0"> </div></td>
-
-          <td>
-
-            <div align="center" class="checkboxes"><input onclick="checkboxToText(this.form, 1)" type="checkbox" name="pc1"> </div></td>
-
-          <td>
-
-            <div align="center" class="checkboxes"><input onclick="checkboxToText(this.form, 2)" type="checkbox" name="pc2"> </div></td>
-
-          <td>
-
-            <div align="center" class="checkboxes"><input onclick="checkboxToText(this.form, 3)" type="checkbox" name="pc3"> </div></td>
-
-          <td>
-
-            <div align="center" class="checkboxes"><input onclick="checkboxToText(this.form, 4)" type="checkbox" name="pc4"> </div></td>
-
-          <td>
-
-            <div align="center" class="checkboxes"><input onclick="checkboxToText(this.form, 5)" type="checkbox" name="pc5"> </div></td>
-
-          <td>
-
-            <div align="center" class="checkboxes"><input onclick="checkboxToText(this.form, 6)" type="checkbox" name="pc6"> </div></td>
-
-          <td>
-
-            <div align="center" class="checkboxes"><input onclick="checkboxToText(this.form, 7)" type="checkbox" name="pc7"> </div></td>
-
-          <td>
-
-            <div align="center" class="checkboxes"><input onclick="checkboxToText(this.form, 8)" type="checkbox" name="pc8"> </div></td>
-
-          <td>
-
-            <div align="center" class="checkboxes"><input onclick="checkboxToText(this.form, 9)" type="checkbox" name="pc9"> </div></td>
-
-          <td>
-
-            <div align="center" class="checkboxes"><input onclick="checkboxToText(this.form, 10)" type="checkbox" name="pc10"> </div></td>
-
-          <td>
-
-            <div align="center" class="checkboxes"><input onclick="checkboxToText(this.form, 11)" type="checkbox" name="pc11"> </div></td>
-
-          <td>
-
-            <div align="center" class="checkboxes"><input onclick="document.forms[0].reset()" type="button" value="reset" name="button">
-
-            </div>
-
-          </td><td></td></tr></tbody>
+			<tbody>
+	
 		
-		</table>
+	
+			<tr>
+	
+			  <td>
+	
+				<p align="center">0</p></td>
+	
+			  <td>
+	
+				<div align="center">1</div></td>
+	
+			  <td>
+	
+				<div align="center">2</div></td>
+	
+			  <td>
+	
+				<div align="center">3</div></td>
+	
+			  <td>
+	
+				<div align="center">4</div></td>
+	
+			  <td>
+	
+				<div align="center">5</div></td>
+	
+			  <td>
+	
+				<div align="center">6</div></td>
+	
+			  <td>
+	
+				<div align="center">7</div></td>
+	
+			  <td>
+	
+				<div align="center">8</div></td>
+	
+			  <td>
+	
+				<div align="center">9</div></td>
+	
+			  <td>
+	
+				<div align="center">10</div></td>
+	
+			  <td>
+	
+				<div align="center">11</div></td></tr>
+	
+			<tr>
+				
+	
+			  <td><div align="center"  class="checkboxes"><input id="checkbox-0" onclick="checkboxToText(this.form, 0)" type="checkbox" name="pc0"> </div></td>
+			  <td><div align="center" class="checkboxes"><input id="checkbox-1" onclick="checkboxToText(this.form, 1)" type="checkbox" name="pc1"> </div></td>
+			  <td><div align="center" class="checkboxes"><input id="checkbox-2" onclick="checkboxToText(this.form, 2)" type="checkbox" name="pc2"> </div></td>
+			  <td><div align="center" class="checkboxes"><input id="checkbox-3" onclick="checkboxToText(this.form, 3)" type="checkbox" name="pc3"> </div></td>
+	     	  <td><div align="center" class="checkboxes"><input id="checkbox-4" onclick="checkboxToText(this.form, 4)" type="checkbox" name="pc4"> </div></td>
+			  <td><div align="center" class="checkboxes"><input id="checkbox-5" onclick="checkboxToText(this.form, 5)" type="checkbox" name="pc5"> </div></td>
+			  <td><div align="center" class="checkboxes"><input id="checkbox-6" onclick="checkboxToText(this.form, 6)" type="checkbox" name="pc6"> </div></td>
+			  <td><div align="center" class="checkboxes"><input id="checkbox-7" onclick="checkboxToText(this.form, 7)" type="checkbox" name="pc7"> </div></td>
+			  <td><div align="center" class="checkboxes"><input id="checkbox-8" onclick="checkboxToText(this.form, 8)" type="checkbox" name="pc8"> </div></td>
+			  <td><div align="center" class="checkboxes"><input id="checkbox-9" onclick="checkboxToText(this.form, 9)" type="checkbox" name="pc9"> </div></td>
+			  <td><div align="center" class="checkboxes"><input id="checkbox-10" onclick="checkboxToText(this.form, 10)" type="checkbox" name="pc10"> </div></td>
+			  <td><div align="center" class="checkboxes"><input id="checkbox-11" onclick="checkboxToText(this.form, 11)" type="checkbox" name="pc11"> </div></td>
+			  <td><div align="center" class="checkboxes"><input onclick="document.forms[0].reset()" type="button" value="reset" name="button"></div></td>
+
+
+			  <!-- <td><div align="center" class="checkboxes"><input type="checkbox" name="pc0"></div></td>
+			  <td><div align="center" class="checkboxes"><input  type="checkbox" name="pc1"></div></td>
+			  <td><div align="center" class="checkboxes"><input  type="checkbox" name="pc2"></div></td>
+			  <td><div align="center" class="checkboxes"><input  type="checkbox" name="pc3"></div></td>
+			  <td><div align="center" class="checkboxes"><input  type="checkbox" name="pc4"></div></td>
+			  <td><div align="center" class="checkboxes"><input type="checkbox" name="pc5"></div></td>
+			  <td><div align="center" class="checkboxes"><input  type="checkbox" name="pc6"></div></td>
+			  <td><div align="center" class="checkboxes"><input  type="checkbox" name="pc7"></div></td>
+			  <td><div align="center" class="checkboxes"><input  type="checkbox" name="pc8"></div></td>
+			  <td><div align="center" class="checkboxes"><input  type="checkbox" name="pc9"></div></td>
+			  <td><div align="center" class="checkboxes"><input  type="checkbox" name="pc10"></div></td>
+			  <td><div align="center" class="checkboxes"><input  type="checkbox" name="pc11"></div></td> -->
+			  
+			  
+			  <td></td></tr></tbody>
+			
+			</table>
+			
+		
+
+	
+
+
 
       <table cellpadding="1" width="91%" border="0">
 
@@ -3844,20 +3952,33 @@ function resetAndFocus()
 
           <div valign="top"  class="main-two">User set:</div>
 
-          <div width="51%"><input onkeydown="return yourSetOnEnter(this.form, event)" name="yourSet"> <input onclick="submitSet(this.form)" type="button" value="GO!"> </div></div>
+		  <div width="51%">
+			<input onkeydown="return yourSetOnEnter(this.form, event)" name="yourSet" id="yourSet">
+			<input onclick="submitSet(this.form)" type="button" value="GO!">
 
-        <div  class="main-one">
-
-         <div valign="top" class="main-two">Forte:</div>
-
-         <div width="51%"><input onkeydown="return forteOnEnter(this.form, event, true)" name="forte"> <input onclick="main(this.form, true)" type="button" value="Forte" name="button2">
-
-          </div>
-		
 		</div>
+		
+
+		 
+
+     
+
+
+		
+		
+		
 
 		  <tbody>
 
+			<div  class="main-one">
+
+				<div valign="top" class="main-two default-hide">Forte:</div>
+	   
+				<div width="51%" class="default-hide"><input onkeydown="return forteOnEnter(this.form, event, true)" name="forte"> <input onclick="main(this.form, true)" type="button" value="Forte" name="button2">
+	   
+				 </div>
+			   
+			   </div>
 
 
 

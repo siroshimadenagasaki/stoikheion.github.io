@@ -3822,24 +3822,24 @@ function selectCheckbox(value) {
      </script>
 
 
-<button type="button" class="switch-to-instrument" onclick="switchInstrument(event, this)">Switch to Piano</button>
+<button type="button" class="switch-to-instrument" onclick="switchInstrument(event, this)">Switch to Guitar</button>
 
 <script>
 	// Initially, guitar view hidden hoga
-	document.querySelector(".show-piaono").style.display = "none";
+	document.querySelector(".show-guitar").style.display = "none";
 
 	function switchInstrument(event, button) {
 		event.preventDefault(); // Prevent any default behavior (important in case of form)
 		
 		// Button ka text toggle karna
-		if (button.innerHTML === "Switch to Piano") {
-			button.innerHTML = "Switch to Guitar";
-			document.querySelector(".show-piaono").style.display = "block";  // Show Piano
-			document.querySelector(".show-guitar").style.display = "none";  // Hide Guitar
-		} else {
+		if (button.innerHTML === "Switch to Guitar") {
 			button.innerHTML = "Switch to Piano";
-			document.querySelector(".show-guitar").style.display = "block";  // Show Guitar
-			document.querySelector(".show-piaono").style.display = "none";  // Hide Piano
+			document.querySelector(".show-piaono").style.display = "none";  // Show Piano
+			document.querySelector(".show-guitar").style.display = "block";  // Hide Guitar
+		} else {
+			button.innerHTML = "Switch to Guitar";
+			document.querySelector(".show-guitar").style.display = "none";  // Show Guitar
+			document.querySelector(".show-piaono").style.display = "block";  // Hide Piano
 		}
 	}
 </script>

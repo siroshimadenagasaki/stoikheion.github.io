@@ -3808,14 +3808,24 @@ function selectCheckbox(value) {
     // Toggle the checkbox state
     checkbox.checked = !checkbox.checked;
 
-    // Get selected values from both guitars and pianos
+    // Get selected values from checkboxes
     const selectedValues = Array.from(document.querySelectorAll('input[type="checkbox"]:checked'))
-        .map(cb => cb.id.replace('checkbox-', '')) // Get the checkbox number
+        .map(cb => {
+            // Check for special cases for 10 and 11
+            if (cb.id.replace('checkbox-', '') === '10') {
+                return 't'; // For checkbox 10, return 't'
+            } else if (cb.id.replace('checkbox-', '') === '11') {
+                return 'e'; // For checkbox 11, return 'e'
+            } else {
+                return cb.id.replace('checkbox-', ''); // For others, return the number
+            }
+        })
         .join(' '); // Join values as a string
 
     // Set the selected values in the input field
     document.getElementsByName('yourSet')[0].value = selectedValues;
 }
+
 
 
 

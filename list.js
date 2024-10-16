@@ -9,6 +9,7 @@ const solomonlist = [
         "link": "www.thissethasnopdf.com",
         "name": "Phrygian triad"
     },
+    
     {
         "solomonCode": "3-2B",
         "link": "www.thissethasnopdf.com",

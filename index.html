@@ -136,8 +136,10 @@
 
 function reset(evt, form)
 
-{
 
+{
+	
+	
 	thingPressed = getThingPressed(evt);
 
 	if (thingPressed == 114) // pressing "r" resets the form
@@ -145,6 +147,8 @@ function reset(evt, form)
 	{
 
 		document.pcset.reset();
+
+
 
 		return;
 
@@ -442,6 +446,8 @@ function main(form, forteEntered)
 		{
 
 			form.reset();
+
+			
 
 			alert(field + ": Invalid Forte name");
 
@@ -1094,7 +1100,6 @@ function main(form, forteEntered)
 			{
 
 				form.reset();
-
 
 
 				if (field.search("-z"))
@@ -3149,20 +3154,29 @@ function getInvert(form)
 
 // calculations.
 
-function submitSet(form)
+let isSubmitted = false; // Flag to track submission
 
-{
+function submitSet(form) {
+    // Check if the form has already been submitted
+    if (isSubmitted) {
+        console.log("Form already submitted. Please enter a new number.");
+        return; // Exit the function if already submitted
+    }
 
-	scanField(form);
-  
-	allCheckboxestoText(form);
-
-	main(form, false);
-	
+    scanField(form);
+    allCheckboxestoText(form);
+    main(form, false);
     updatecal(form);
+    setLink(form);
 
-	setLink(form)
+    isSubmitted = true; // Set the flag to true after submission
 }
+
+
+// function resetSubmission() {
+//     isSubmitted = false; // Reset the flag
+// }
+
 
 
 function setLink(form) {
@@ -3697,9 +3711,9 @@ function resetAndFocus()
 {
 
 	document.forms[0].reset();
-
 	document.forms[0].yourSet.focus();
 
+	
 }
 
 
@@ -3964,7 +3978,7 @@ function selectCheckbox(value) {
 
 		  <div width="51%">
 			<input onkeydown="return yourSetOnEnter(this.form, event)" name="yourSet" id="yourSet">
-			<input onclick="submitSet(this.form)" type="button" style="font-size: 19px;" value="GO!">
+			<input onclick="submitSet(this.form)" id="go-button" type="button" value="GO!">
 
 		</div>
 		
@@ -4238,7 +4252,7 @@ function selectCheckbox(value) {
                <!-- MI EDICION dd the download button -->
 	
 				<!-- Add the download button -->
-				<button id="downloadButtonbookabcd" style="width: 100px; height: 30px; font-size: 15px;">Full Version</button>
+				<button id="downloadButtonbookabcd" style="width: 100px; height: 40px; font-size: 15px;">Full Version</button>
 				
 				<script>
  

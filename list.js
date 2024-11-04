@@ -164,7 +164,7 @@ const solomonlist = [
     },      {
         "solomonCode": "4-14",
         "link": "https://drive.google.com/file/d/1XptitRDhQCnGIAZAa4_8AI8X1_KuIHWm/view?usp=drive_link",
-        "name": "m9(no7) - Maj6(no5) - Minor second major tetrachord "
+        "name": "m9(no7) - Maj6(no5) - Coltrane minor pattern "
     },      {
         "solomonCode": "4-14B",
         "link": "https://drive.google.com/file/d/1IdLLelAdqGUvlIUpozfyCynHvC7_npnm/view?usp=drive_link",

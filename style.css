@@ -1,0 +1,455 @@
+@import url("https://fonts.googleapis.com/css2?family=Manrope:wght@200..800&family=Poppins:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&display=swap");
+
+* {
+  margin: 0;
+  padding: 0;
+}
+
+body {
+  font-family: "Poppins";
+  min-height: 100%;
+  width: 100vw;
+  background-image: url("./bg-image.jpg");
+  background-size: cover;
+  background-position: center;
+  background-repeat: no-repeat;
+  position: relative;
+}
+body::before {
+  content: "";
+  position: absolute;
+  top: 0;
+  left: 0;
+
+  height: 100%;
+  width: 100%;
+  z-index: 1;
+}
+textarea {
+  padding: 0.4rem 0.5rem;
+  border: none;
+  outline: none;
+  font-size: 18px;
+  border-radius: 4px;
+  background-color: rgb(201, 241, 255);
+  height: 120px;
+  resize: none;
+}
+
+.second-textarea {
+  margin-left: -9.5rem;
+}
+
+.pc-set-form {
+  margin-top: -0.5rem;
+}
+
+.second-table {
+  height: 40px;
+  width: 550px;
+  margin: 1rem 0rem;
+}
+
+td,
+sub {
+  color: #fff;
+}
+
+.td-main {
+  width: 50%;
+  height: 427px;
+}
+
+.td-main-2 {
+  width: 59%;
+  height: 427px;
+}
+
+.main-t {
+  border: 1px solid #757575;
+  width: 100%;
+  padding: 1rem;
+}
+
+.piano-m {
+  background-color: #fff;
+  display: flex;
+  position: relative;
+  width: 540px;
+}
+
+.piano-main {
+  display: flex;
+  align-items: center;
+  padding: 1rem 0.5rem;
+}
+
+/* White keys */
+.piano-m > div[class^="piano-box"] {
+  width: 80px;
+  height: 230px;
+  background-color: white;
+  border: 1.5px solid #7e7e7e;
+  display: flex;
+  align-items: flex-end;
+  font-size: 14px;
+  position: relative;
+  z-index: 1;
+}
+
+/* Black keys */
+.piano-m > .black-key-1,
+.piano-m > .black-key-2,
+.piano-m > .black-key-3,
+.piano-m > .black-key-4,
+.piano-m > .black-key-5 {
+  width: 45px;
+  height: 150px;
+  background-color: black;
+  position: absolute;
+  margin-left: -1px;
+  z-index: 2;
+  color: white;
+  display: flex;
+  justify-content: center;
+  align-items: flex-end;
+  font-size: 14px;
+}
+
+/* Positioning for black keys */
+.black-key-1 {
+  position: fixed;
+  left: 10.1%;
+}
+.black-key-2 {
+  position: fixed;
+  left: 24.6%;
+}
+.black-key-3 {
+  position: fixed;
+  left: 53%;
+}
+.black-key-4 {
+  position: fixed;
+  left: 67.5%;
+}
+.black-key-5 {
+  position: fixed;
+  left: 81.7%;
+}
+
+input[type="checkbox"] {
+  transform: scale(1.5);
+  -webkit-transform: scale(1.5);
+  height: 20px;
+  width: 12px;
+  margin-top: 0.3rem;
+  accent-color: rgb(201, 241, 255);
+}
+
+.left-checkboxes {
+  margin-left: 1rem;
+}
+
+::-webkit-scrollbar {
+  display: none;
+}
+
+.switch-to-instrument {
+  padding: 0.3rem 1rem;
+  font-size: 16px;
+  font-family: "Poppins";
+  background-color: rgb(201, 241, 255);
+  border: none;
+  outline: none;
+  border-radius: 4px;
+  cursor: pointer;
+}
+
+.reset-button {
+  padding: 0.3rem 1rem;
+  margin: -1.5rem 0rem -2rem 0.5rem;
+  font-size: 16px;
+  font-family: "Poppins";
+  background-color: rgb(201, 241, 255);
+  border: none;
+  outline: none;
+  border-radius: 4px;
+  cursor: pointer;
+}
+
+body * {
+  position: relative;
+  z-index: 2;
+}
+
+div {
+  color: #fff;
+}
+
+b {
+  color: #fff;
+  font-size: 32px;
+}
+
+input {
+  padding: 0.4rem 0.5rem;
+  border: none;
+  outline: none;
+  font-size: 18px;
+  border-radius: 4px;
+  background-color: rgb(201, 241, 255);
+  margin-bottom: 0.7rem;
+}
+
+select {
+  padding: 0.3rem 0.5rem;
+  border: none;
+  outline: none;
+  font-size: 16px;
+  border-radius: 4px;
+  background-color: rgb(201, 241, 255);
+  margin-bottom: 0.7rem;
+}
+
+.complement-ins,
+.invert-ins {
+  padding: 0.3rem 0.5rem;
+  border: none;
+  outline: none;
+  font-size: 16px;
+  border-radius: 4px;
+  background-color: rgb(201, 241, 255);
+  margin-bottom: 0.6rem;
+}
+
+#go-button,
+#forte-button,
+.pdf_btn,
+.play_btn {
+  padding: 0.45rem 0.5rem;
+  border: none;
+  outline: none;
+  font-size: 17px;
+  border-radius: 4px;
+  background-color: rgb(201, 241, 255);
+}
+
+.overlapping-fixing {
+  display: flex;
+  justify-content: space-between;
+  width: 49.5%;
+}
+
+.checkboxes {
+  margin-top: -0.3rem;
+  margin-bottom: 1.5rem;
+}
+.default-hide {
+  display: none;
+}
+.hide-bottom-fields {
+  display: none;
+}
+.main-one {
+  display: flex;
+  margin-bottom: 0.2rem;
+}
+.main-two {
+  width: 25%;
+  margin-left: 0.4rem;
+}
+input:focus,
+select:focus,
+textarea:focus,
+button:focus {
+  outline: none;
+}
+.switch-to-instrument {
+  margin: 0rem 0rem 2rem 0.3rem;
+}
+
+.checkbxmain {
+  width: 400px;
+}
+
+.show-guitar {
+  margin: 1.5rem 0rem 0rem 0.3rem;
+  display: none;
+  width: 100%;
+}
+
+.row-one,
+.row-two,
+.row-three,
+.row-four,
+.row-five,
+.row-six {
+  display: flex;
+  justify-content: space-around;
+  background-color: #fff;
+  width: 60%;
+  border-left: 1px solid #fff;
+}
+
+.guitar-box-one,
+.guitar-box-two,
+.guitar-box-three,
+.guitar-box-four,
+.guitar-box-five,
+.guitar-box-six {
+  border-right: 1px solid #595856;
+  width: 100%;
+  justify-content: center;
+  padding: 1.6rem 0rem;
+  position: relative;
+}
+
+.guitar-box-one-inner,
+.guitar-box-two-inner,
+.guitar-box-three-inner,
+.guitar-box-four-inner,
+.guitar-box-five-inner,
+.guitar-box-six-inner {
+  /* background-color:#151718; */
+  background-color: #fff;
+  height: 44px;
+  width: 44px;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  font-size: 17px;
+  font-weight: bold;
+  border-radius: 50%;
+  border: 1px solid #484848;
+  position: absolute;
+  top: -50%;
+  left: 24%;
+  cursor: pointer;
+}
+.show-piaono {
+  display: block;
+}
+.hide-piano {
+  display: none;
+}
+.hide-guitar {
+  display: none;
+}
+
+.downloadButtonbook {
+  background-color: rgb(201, 241, 255);
+  border: none;
+  outline: none;
+  border-radius: 4px;
+  cursor: pointer;
+  font-size: 20px;
+  font-family: "Poppins";
+  padding: 0.2rem 1rem;
+  margin-bottom: 4rem;
+}
+
+.selected-highlight {
+  background-color: #d3d3d3; /* light gray background */
+  color: #666; /* gray font color */
+}
+
+@media screen and (max-width: 1260px) {
+  .overlapping-fixing {
+    width: 58%;
+  }
+}
+
+/* resposnive guitar */
+
+@media screen and (max-width: 1300px) {
+  .row-one,
+  .row-two,
+  .row-three,
+  .row-four,
+  .row-five,
+  .row-six {
+    width: 70%;
+  }
+  .guitar-box-one-inner,
+  .guitar-box-two-inner,
+  .guitar-box-three-inner,
+  .guitar-box-four-inner,
+  .guitar-box-five-inner,
+  .guitar-box-six-inner {
+    left: 25%;
+  }
+}
+
+@media screen and (max-width: 1150px) {
+  .row-one,
+  .row-two,
+  .row-three,
+  .row-four,
+  .row-five,
+  .row-six {
+    width: 80%;
+  }
+}
+@media screen and (max-width: 1000px) {
+  .row-one,
+  .row-two,
+  .row-three,
+  .row-four,
+  .row-five,
+  .row-six {
+    width: 90%;
+  }
+}
+
+.parent-div {
+  display: flex;
+  min-height: 100%;
+  width: 100vw;
+  background-color: rgb(0, 0, 0, 0.5);
+  padding: 1rem;
+}
+
+.div-1 {
+  width: 50vw;
+  min-height: 100%;
+}
+.div-2 {
+  padding-left: 2rem;
+  min-height: 100%;
+  width: 50vw;
+}
+
+@media screen and (max-width: 1053px) {
+  .parent-div {
+    display: flex;
+    flex-direction: column;
+    width: 210vw;
+  }
+  .div-2 {
+    min-height: 100%;
+    width: 200vw;
+  }
+
+  .div-1 {
+    width: 80vw;
+    min-height: 100%;
+  }
+}
+@media screen and (max-width: 850px) {
+  .div-1 {
+    width: 120vw;
+    min-height: 100%;
+  }
+  .div-2 {
+    min-height: 100%;
+    width: 200vw;
+    margin-left: -1rem;
+  }
+}
+@media screen and (max-width: 558px) {
+  .div-1 {
+    width: 160vw;
+    min-height: 100%;
+  }
+}

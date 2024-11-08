@@ -499,12 +499,12 @@ const solomonlist = [
         "name": "Augmented sixth pentatonic n2"
     },
     {
-        "solomonCode": "5-z29",
+        "solomonCode": "5-29",
         "link": "https://drive.google.com/file/d/1gCHPqn1Q-6PTaes7ERJnWt2FMD_47347/view?usp=drive_link",
         "name": "Kumoi pentatonic n2"
     },
     {
-        "solomonCode": "5-z29B",
+        "solomonCode": "5-29B",
         "link": "https://drive.google.com/file/d/1wb8-yTkGk031p1kCPZSWz8Nz16Ws3IlE/view?usp=drive_link",
         "name": "Kumoi pentatonic n1"
     },
@@ -769,7 +769,7 @@ const solomonlist = [
         "name": "no name to this set"
     },
     {
-        "solomonCode": "6-23",
+        "solomonCode": "6-z23",
         "link": "www.thissethasnopdf.com",
         "name": "Super locrian Hexatonic"
     },
@@ -884,7 +884,7 @@ const solomonlist = [
         "name": "no name to this set"
     },
     {
-        "solomonCode": "6-38",
+        "solomonCode": "6-z38",
         "link": "www.thissethasnopdf.com",
         "name": "Two quartal triads one semitone apart"
     },
@@ -924,12 +924,12 @@ const solomonlist = [
         "name": "no name to this set"
     },
     {
-        "solomonCode": "6-43",
+        "solomonCode": "6-z43",
         "link": "www.thissethasnopdf.com",
         "name": "no name to this set"
     },
     {
-        "solomonCode": "6-43B",
+        "solomonCode": "6-z43B",
         "link": "www.thissethasnopdf.com",
         "name": "no name to this set"
     },

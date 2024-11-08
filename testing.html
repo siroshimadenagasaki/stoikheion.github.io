@@ -1,0 +1,146 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <style>
+        .large-checkbox {
+            width: 25px;
+            height: 25px;
+            cursor: pointer;
+            margin: 5px;
+        }
+        .eachnumber {
+            display: flex;
+            flex-direction: column; 
+            align-items: center; 
+            justify-content: center;
+        }
+    </style>
+</head>
+<body>
+
+    <div style="border:1px solid black; padding: 20px;">
+        <div style="display: flex;">
+            <!-- Add checkboxes from 0 to 11 -->
+            <div class="eachnumber">
+                <h2>0</h2>
+                <input type="checkbox" id="check1" name="0" class="large-checkbox">
+            </div>
+            <div class="eachnumber">
+                <h2>1</h2>
+                <input type="checkbox" id="check2" name="1" class="large-checkbox">
+            </div>
+            <div class="eachnumber">
+                <h2>2</h2>
+                <input type="checkbox" id="check3" name="2" class="large-checkbox">
+            </div>
+            <div class="eachnumber">
+                <h2>3</h2>
+                <input type="checkbox" id="check4" name="3" class="large-checkbox">
+            </div>
+            <div class="eachnumber">
+                <h2>4</h2>
+                <input type="checkbox" id="check5" name="4" class="large-checkbox">
+            </div>
+            <div class="eachnumber">
+                <h2>5</h2>
+                <input type="checkbox" id="check6" name="5" class="large-checkbox">
+            </div>
+            <div class="eachnumber">
+                <h2>6</h2>
+                <input type="checkbox" id="check7" name="6" class="large-checkbox">
+            </div>
+            <div class="eachnumber">
+                <h2>7</h2>
+                <input type="checkbox" id="check8" name="7" class="large-checkbox">
+            </div>
+            <div class="eachnumber">
+                <h2>8</h2>
+                <input type="checkbox" id="check9" name="8" class="large-checkbox">
+            </div>
+            <div class="eachnumber">
+                <h2>9</h2>
+                <input type="checkbox" id="check10" name="9" class="large-checkbox">
+            </div>
+            <div class="eachnumber">
+                <h2>10</h2>
+                <input type="checkbox" id="check11" name="10" class="large-checkbox">
+            </div>
+            <div class="eachnumber">
+                <h2>11</h2>
+                <input type="checkbox" id="check12" name="11" class="large-checkbox">
+            </div>
+        </div>
+
+        <h2>User Set:</h2>
+        <input type="text" id="userset" style="padding: 5px; font-size: 24px;">
+        <button id="goBtn" style="padding: 12px 30px;">Go!</button>
+
+        <h2>Result:</h2>
+        <textarea type="text" id="seq" style="padding: 5px; font-size: 24px; width: 500px; height: 200px"></textarea>
+        <br>
+
+        <h1 id="conclusion"></h1>
+        <button id="resetBtn" style="padding: 12px 30px; margin-top: 20px;">Reset</button>
+    </div>
+
+    <script>
+        const checkboxes = document.querySelectorAll('.large-checkbox');
+        const userSetInput = document.getElementById('userset');
+        const seqInput = document.getElementById('seq');
+        const goBtn = document.getElementById('goBtn');
+        const resetBtn = document.getElementById('resetBtn');
+        const conclusion = document.getElementById('conclusion');
+
+        checkboxes.forEach(checkbox => {
+            checkbox.addEventListener('change', (event) => {
+                const number = event.target.name;
+                if (event.target.checked) {
+                    userSetInput.value += number + ' ';
+                } else {
+                    userSetInput.value = userSetInput.value.replace(number + ' ', '');
+                }
+            });
+        });
+
+        goBtn.addEventListener('click', () => {
+            let checkedNumbers = userSetInput.value.trim().split(' ').map(Number);
+        
+            // Sort the selected numbers
+            checkedNumbers.sort((a, b) => a - b);
+
+            const differences = [];
+            for (let i = 0; i < checkedNumbers.length; i++) {
+                const nextIndex = (i + 1) % checkedNumbers.length;
+                let diff = checkedNumbers[nextIndex] - checkedNumbers[i];
+                if (diff < 0) diff += 12;
+                differences.push(diff);
+            }
+
+            const seqset = differences.join(' ');
+            const calculatedPermutations = generatePermutations(differences);
+            seqInput.value = calculatedPermutations.map(p => p.join(' ')).join(', ');
+            
+        });
+
+        function generatePermutations(arr) {
+            const permutations = [];
+            for (let i = 0; i < arr.length; i++) {
+                permutations.push(arr.slice(i).concat(arr.slice(0, i)));
+            }
+            return permutations;
+        }
+
+        resetBtn.addEventListener('click', () => {
+            userSetInput.value = '';
+            seqInput.value = '';
+            conclusion.innerHTML = '';
+            checkboxes.forEach(checkbox => {
+                checkbox.checked = false;
+            });
+        });
+    </script>
+</body>
+</html>

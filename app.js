@@ -832,6 +832,11 @@ function main(form, forteEntered) {
 
   form.prime.value = displayPcs(primeForm, "[]", size);
 
+
+
+
+  //alert(primeForm);
+
   displayForte(primeForm, form, size, chord);
 
   form.zmate.value = ZMate(primeForm, chord, size);
@@ -2248,6 +2253,10 @@ function updatecal(form) {
     }
   }
 
+  
+
+
+  
   var interval = changeinterval(spaceremove);
 
   //var prime_value=convertToArray(form.prime.value.substring(form.prime.value.indexOf("(")+1,form.prime.value.lastIndexOf(")")));
@@ -2257,6 +2266,7 @@ function updatecal(form) {
     form.prime.value.lastIndexOf("]")
   );
 
+ 
   var j = 0;
   for (var i = 0; i < prime_value.length; i++) {
     if (prime_value[i] != ",") {
@@ -2273,38 +2283,137 @@ function updatecal(form) {
     }
   }
 
-  var prime_value_new_interval = changeinterval(prime_value_new);
+  var primestring = "";
+// Initialize as an array
 
-  if (arraysEqual(interval, prime_value_new) == true) {
-    console.log("s" + interval);
-    console.log("t" + prime_value_new);
-    form.solomon.value = form.forte.value;
-  } else if (
-    check_clockwise_rotation(prime_value_new_interval, interval) == false
-  ) {
-    form.solomon.value = form.forte.value + "B";
-  } else if (arraysEqual(interval, prime_value_new_interval) == true) {
-    console.log("u" + interval);
-    console.log("v" + prime_value_new_interval);
-    form.solomon.value = form.forte.value;
-  } else {
-    var diffpermutation = permute(interval);
+for (var i = 0; i < prime_value.length; i++) {
+  primestring += String(prime_value[i]); // Append each number as string
+}
 
-    var k = 0;
+var spaceremovestring = "";
+// Initialize as an array
 
-    for (var i = 0; i < diffpermutation.length; i++) {
-      console.log(diffpermutation[i]);
-      console.log(prime_value_new_interval);
-      if (arraysEqual(diffpermutation[i], prime_value_new_interval) == true) {
-        form.solomon.value = form.forte.value;
-        k = 1;
-        break;
-      }
-    }
-    if (k == 0) {
-      form.solomon.value = form.forte.value + "B";
-    }
+for (var i = 0; i < spaceremove.length; i++) {
+  if(i == spaceremove.length-1){
+    spaceremovestring += String(spaceremove[i]); // Append each number as string
   }
+  else spaceremovestring += String(spaceremove[i])+','; // Append each number as string
+}
+
+
+
+var string1 = generaterotation(primestring);
+var string2 = generaterotation1(spaceremovestring);
+
+var restring1="";
+var restring2="";
+for (var i = 0; i < string1.length; i++) {
+  restring1 += String(string1[i]); // Append each number as string
+}
+
+for (var i = 0; i < string2.length; i++) {
+  if(i == string2.length-1){
+    restring2 += String(string2[i]); // Append each number as string
+  }
+  else restring2 += String(string2[i])+" "; // Append each number as string
+}
+
+// alert(restring1);
+// alert(restring2);
+
+// alert (restring1.includes(restring2));
+
+if(!restring1.includes(restring2)){
+  form.solomon.value = form.forte.value + "B";
+}
+else form.solomon.value = form.forte.value;
+//alert(res);
+
+  
+
+  
+
+
+  // if (arraysEqual(interval, prime_value_new) == true) {
+  //   console.log("s" + interval);
+  //   console.log("t" + prime_value_new);
+  //   form.solomon.value = form.forte.value;
+  // } else if (
+  //   check_clockwise_rotation(prime_value_new_interval, interval) == false
+  // ) {
+  //   form.solomon.value = form.forte.value + "B";
+  // } else if (arraysEqual(interval, prime_value_new_interval) == true) {
+  //   console.log("u" + interval);
+  //   console.log("v" + prime_value_new_interval);
+  //   form.solomon.value = form.forte.value;
+  // } else {
+  //   var diffpermutation = permute(interval);
+
+  //   var k = 0;
+
+  //   for (var i = 0; i < diffpermutation.length; i++) {
+  //     console.log(diffpermutation[i]);
+  //     console.log(prime_value_new_interval);
+  //     if (arraysEqual(diffpermutation[i], prime_value_new_interval) == true) {
+  //       form.solomon.value = form.forte.value;
+  //       k = 1;
+  //       break;
+  //     }
+  //   }
+  //   if (k == 0) {
+  //     form.solomon.value = form.forte.value + "B";
+  //   }
+  // }
+}
+
+
+function generaterotation1 (userSetInput) {
+  //alert(userSetInput);
+  let checkedNumbers = userSetInput.trim().split(',').map(Number);
+  
+  // Sort the selected numbers
+  checkedNumbers.sort((a, b) => a - b);
+ 
+  const differences = [];
+  for (let i = 0; i < checkedNumbers.length; i++) {
+      const nextIndex = (i + 1) % checkedNumbers.length;
+      let diff = checkedNumbers[nextIndex] - checkedNumbers[i];
+      if (diff < 0) diff += 12;
+      differences.push(diff);
+  }
+  return differences;
+}
+function generaterotation (userSetInput) {
+  //alert(userSetInput);
+  let checkedNumbers = userSetInput.trim().split(',').map(Number);
+  
+  // Sort the selected numbers
+  checkedNumbers.sort((a, b) => a - b);
+ 
+  const differences = [];
+  for (let i = 0; i < checkedNumbers.length; i++) {
+      const nextIndex = (i + 1) % checkedNumbers.length;
+      let diff = checkedNumbers[nextIndex] - checkedNumbers[i];
+      if (diff < 0) diff += 12;
+      differences.push(diff);
+  }
+  //alert(differences);
+
+  const seqset = differences.join(' ');
+  const calculatedPermutations = generatePermutations(differences);
+  
+  const rotationvalue = calculatedPermutations.map(p => p.join(' ')).join(', ');
+  
+ 
+  return rotationvalue;
+}
+
+function generatePermutations(arr) {
+  const permutations = [];
+  for (let i = 0; i < arr.length; i++) {
+      permutations.push(arr.slice(i).concat(arr.slice(0, i)));
+  }
+  return permutations;
 }
 
 function swap(array, i, j) {

@@ -104,8 +104,8 @@ const solomonlist = [
         "name": "mMaj9(no5) - Alternating tetrachord"
     },      {
         "solomonCode": "4-4",
-        "link": "ww.blank.com",
-        "name": "Minor third tetracluster no2"
+        "link": "https://drive.google.com/file/d/1-00E3mRvMsKRT3euDNbOI-XNzQUGra--/view?usp=drive_link",
+        "name": "Minor third tetracluster no2 - 1 2b 3 7"
     },      {
         "solomonCode": "4-4B",
         "link": "ww.blank.com",

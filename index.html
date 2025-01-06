@@ -1,377 +1,360 @@
 <!DOCTYPE html>
-<html lang="en"><head>
-<meta http-equiv="content-type" content="text/html; charset=UTF-8">
-    <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-	<meta http-equiv="Content-Type" content="text/html; charset=UTF-8">
-    <meta content="MSHTML 5.50.4616.200" name="GENERATOR">
-	<link rel="stylesheet" href="style.css">
-	<title>Stoikheion Oracle 2.0</title>
-</head>
-   
-
-
-  <tbody>
-
-	
-	<div class="parent-div">
-		<div class="div-1">
-				<p><font size="5"><b style="margin-left: .5rem;">Stoikheion Oracle</b></font><br></p>	  
-				<div class="piano-main" id="piano">
-					<div class="piano-m">
-						<div class="piano-box-one" onclick="hello1('0')">0</div>
-						<div class="black-key-1" onclick="hello1('1')" style="color: black;">1</div>
-						<div class="piano-box-two" onclick="hello1('2')">2</div>
-						<div class="black-key-2" onclick="hello1('3')" style="color: black;">3</div>
-						<div class="piano-box-three" onclick="hello1('4')">4</div>
-						<div class="piano-box-four" onclick="hello1('5')">5</div>
-						<div class="black-key-3" onclick="hello1('6')" style="color: black;">6</div>
-						<div class="piano-box-five" onclick="hello1('7')">7</div>
-						<div class="black-key-4" onclick="hello1('8')" style="color: black;">8</div>
-						<div class="piano-box-six" onclick="hello1('9')">9</div>
-						<div class="black-key-5" onclick="hello1('10')" style="color: black;">10</div>
-						<div class="piano-box-seven" onclick="hello1('11')">11</div>						
-					</div>
-				</div>
-		  
-		  
-			  <div class="show-guitar">
-				  <div class="row-one" style="border-bottom: 1px solid #595856;">
-					  <div class="guitar-box-one" onclick="selectCheckbox(5)"><div class="guitar-box-one-inner">5</div></div>
-					  <div class="guitar-box-two" onclick="selectCheckbox(6)"><div class="guitar-box-two-inner">6</div></div>
-					  <div class="guitar-box-three" onclick="selectCheckbox(7)"><div class="guitar-box-three-inner">7</div></div>
-					  <div class="guitar-box-four" onclick="selectCheckbox(8)"><div class="guitar-box-four-inner">8</div></div>
-					  <div class="guitar-box-five" onclick="selectCheckbox(9)"><div class="guitar-box-five-inner">9</div></div>
-					  <div class="guitar-box-six" onclick="selectCheckbox(10)"><div class="guitar-box-six-inner">10</div></div>
-				  </div>
-			  
-				  <div class="row-two" style="border-bottom: 1px solid #595856; border-right: 1px solid #595856;">
-					  <div class="guitar-box-one" onclick="selectCheckbox(0)"><div class="guitar-box-one-inner">0</div></div>
-					  <div class="guitar-box-two" onclick="selectCheckbox(1)"><div class="guitar-box-two-inner">1</div></div>
-					  <div class="guitar-box-three" onclick="selectCheckbox(2)"><div class="guitar-box-three-inner">2</div></div>
-					  <div class="guitar-box-four" onclick="selectCheckbox(3)"><div class="guitar-box-four-inner">3</div></div>
-					  <div class="guitar-box-five" onclick="selectCheckbox(4)"><div class="guitar-box-five-inner">4</div></div>
-					  <div class="guitar-box-six" onclick="selectCheckbox(5)"><div class="guitar-box-six-inner">5</div></div>
-				  </div>
-			  
-				  <div class="row-three" style="border-bottom: 1px solid #595856; border-right: 1px solid #595856;">
-					  <div class="guitar-box-one" onclick="selectCheckbox(8)"><div class="guitar-box-one-inner">8</div></div>
-					  <div class="guitar-box-two" onclick="selectCheckbox(9)"><div class="guitar-box-two-inner">9</div></div>
-					  <div class="guitar-box-three" onclick="selectCheckbox(10)"><div class="guitar-box-three-inner">10</div></div>
-					  <div class="guitar-box-four" onclick="selectCheckbox(11)"><div class="guitar-box-four-inner">11</div></div>
-					  <div class="guitar-box-five" onclick="selectCheckbox(0)"><div class="guitar-box-five-inner">0</div></div>
-					  <div class="guitar-box-six" onclick="selectCheckbox(1)"><div class="guitar-box-six-inner">1</div></div>
-				  </div>
-			  
-				  <div class="row-four" style="border-bottom: 1px solid #595856; border-right: 1px solid #595856;">
-					  <div class="guitar-box-one" onclick="selectCheckbox(3)"><div class="guitar-box-one-inner">3</div></div>
-					  <div class="guitar-box-two" onclick="selectCheckbox(4)"><div class="guitar-box-two-inner">4</div></div>
-					  <div class="guitar-box-three" onclick="selectCheckbox(5)"><div class="guitar-box-three-inner">5</div></div>
-					  <div class="guitar-box-four" onclick="selectCheckbox(6)"><div class="guitar-box-four-inner">6</div></div>
-					  <div class="guitar-box-five" onclick="selectCheckbox(7)"><div class="guitar-box-five-inner">7</div></div>
-					  <div class="guitar-box-six" onclick="selectCheckbox(8)"><div class="guitar-box-six-inner">8</div></div>
-				  </div>
-			  
-				  <div class="row-five" style="border-bottom: 1px solid #595856; border-right: 1px solid #595856;">
-					  <div class="guitar-box-one" onclick="selectCheckbox(10)"><div class="guitar-box-one-inner">10</div></div>
-					  <div class="guitar-box-two" onclick="selectCheckbox(11)"><div class="guitar-box-two-inner">11</div></div>
-					  <div class="guitar-box-three" onclick="selectCheckbox(0)"><div class="guitar-box-three-inner">0</div></div>
-					  <div class="guitar-box-four" onclick="selectCheckbox(1)"><div class="guitar-box-four-inner">1</div></div>
-					  <div class="guitar-box-five" onclick="selectCheckbox(2)"><div class="guitar-box-five-inner">2</div></div>
-					  <div class="guitar-box-six" onclick="selectCheckbox(3)"><div class="guitar-box-six-inner">3</div></div>
-				  </div>
-			  
-				  <div class="row-six" style="background: none; border: none;">
-					  <div class="guitar-box-one" style="border-right: none;" onclick="selectCheckbox(5)"><div class="guitar-box-one-inner">5</div></div>
-					  <div class="guitar-box-two" style="border-right: none;" onclick="selectCheckbox(6)"><div class="guitar-box-two-inner">6</div></div>
-					  <div class="guitar-box-three" style="border-right: none;" onclick="selectCheckbox(7)"><div class="guitar-box-three-inner">7</div></div>
-					  <div class="guitar-box-four" style="border-right: none;" onclick="selectCheckbox(8)"><div class="guitar-box-four-inner">8</div></div>
-					  <div class="guitar-box-five" style="border-right: none;" onclick="selectCheckbox(9)"><div class="guitar-box-five-inner">9</div></div>
-					  <div class="guitar-box-six"  style="border-right: none;" onclick="selectCheckbox(10)"><div class="guitar-box-six-inner">10</div></div>
-				  </div>
-			  </div>
-		  
-	  
-			  <button type="button" onclick="switchIns()" class="switch-to-instrument">Guitar</button>
-		  		  
-				<form name="pcset" style="margin-top: -1rem;" >
-		  
-				  <table height="40" cellspacing="0" cellpadding="0" width="234" border="0">	  
-					  <tbody  style=" width: 50%;" >
-			  
-				  
-			  
-					  <div style=" display: flex; justify-content: space-between; margin-left: .6rem; width: 50%;">
-			  
-						<div style=" display: flex;">			  
-						  <p align="center">0</p>
-						</div>		
-
-						<div>
-						<div align="center">1</div>
-					    </div>
-			  
-						<div>		  
-						  <div align="center">2</div>
-						</div>							
-						
-						<div>
-						  <div align="center">3</div>
-						</div>
-			  
-						<div>  
-						  <div align="center">4</div>
-						</div>
-
-						<div>
-						  <div align="center">5</div>
-						</div>
-			  
-						<div>
-						  <div align="center">6</div>
-						</div>
-
-						<div>
-						  <div align="center">7</div>
-						</div>
-			  
-						<div>
-						  <div align="center">8</div>
-						</div>
-
-						<div>
-						  <div align="center">9</div>
-						</div>
-			  
-						<div>
-						  <div align="center">10</div>
-						</div>
-
-						<div>
-						<div align="center">11</div>
-					    </div>
-
-			        </div>
-			  
-					<div style=" display: flex; justify-content: space-between; margin-left: .5rem; width: 50%;">			  
-						<div><div align="center"  class="checkboxes"><input id="checkbox-0" onclick="checkboxToText(this.form, 0)" type="checkbox" name="pc0"> </div></div>
-						<div><div align="center" class="checkboxes"><input id="checkbox-1" onclick="checkboxToText(this.form, 1)" type="checkbox" name="pc1"> </div></div>
-						<div><div align="center" class="checkboxes"><input id="checkbox-2" onclick="checkboxToText(this.form, 2)" type="checkbox" name="pc2"> </div></div>
-						<div><div align="center" class="checkboxes"><input id="checkbox-3" onclick="checkboxToText(this.form, 3)" type="checkbox" name="pc3"> </div></div>
-						 <div><div align="center" class="checkboxes"><input id="checkbox-4" onclick="checkboxToText(this.form, 4)" type="checkbox" name="pc4"> </div></div>
-						<div><div align="center" class="checkboxes"><input id="checkbox-5" onclick="checkboxToText(this.form, 5)" type="checkbox" name="pc5"> </div></div>
-						<div><div align="center" class="checkboxes"><input id="checkbox-6" onclick="checkboxToText(this.form, 6)" type="checkbox" name="pc6"> </div></div>
-						<div><div align="center" class="checkboxes"><input id="checkbox-7" onclick="checkboxToText(this.form, 7)" type="checkbox" name="pc7"> </div></div>
-						<div><div align="center" class="checkboxes"><input id="checkbox-8" onclick="checkboxToText(this.form, 8)" type="checkbox" name="pc8"> </div></div>
-						<div><div align="center" class="checkboxes"><input id="checkbox-9" onclick="checkboxToText(this.form, 9)" type="checkbox" name="pc9"> </div></div>
-						<div><div align="center" class="checkboxes"><input id="checkbox-10" onclick="checkboxToText(this.form, 10)" type="checkbox" name="pc10"> </div></div>
-						<div><div align="center" class="checkboxes"><input id="checkbox-11" onclick="checkboxToText(this.form, 11)" type="checkbox" name="pc11"> </div></div>	
-						</td>
-				    </div>
-
-					  </tbody>
-						
-						<div>
-					   <button type="button"  class="reset-button" onclick="resetAll()"> reset</button></div>
-
-				  </table>
-					  
-				  
-		  
-		  
-				<table cellpadding="1" width="91%" border="0">
-		  
-				  <tbody>
-		  
-				  <div  class="main-one">
-					<div valign="top"  class="main-two">User set:</div>
-		  
-					<div width="51%">
-					  <input onkeydown="return yourSetOnEnter(this.form, event)" name="yourSet" id="yourSet">
-					  <button onclick="submitSet(this.form)" id="go-button" type="button">GO!</button>
-		  
-				  </div>
-		  
-		  
-					<tbody>
-		  
-					  <div  class="main-one">
-						<div valign="top" class="main-two default-hide">Forte:</div>	 
-						<div width="51%" class="default-hide"><input onkeydown="return forteOnEnter(this.form, event, true)" name="forte"> 
-							<button onclick="main(this.form, true)" type="button"  id="forte-button" name="button2">Forte</button>
-						</div>
-						 
-					  </div>  
-		  
-					  <div  class="main-one">
-						<div class="default-hide main-two">Normal form: </div> 
-						<div width="64%"><input name="normal" class="default-hide"> </div>		  
-					  </div>
-			  
-					  <div  class="main-one">
-						<div class="main-two">Prime form: </div>
-						<div><input name="prime"> </div>
-					  </div>
-			  
-					  <div  class="main-one">
-						<div class="main-two">ic vector: </div>
-						<div><input name="icVector"> </div>
-				   	 </div>
-			  
-				    <div  class="main-one">
-						<div class="default-hide main-two">Z-Mate:</div>
-						<div ><input size="6" name="zmate" class="default-hide"> </div>
-					</div>
-		  
-							<div  class="main-one">	
-									  <div class="main-two">Solomon:</div>
-										  <div >
-											  <input size="6" name="solomon" id="solomonV">
-											  <button type="button" id="open-link" class="pdf_btn" name="pdfButton">PDF</button>
-											  <button type="button" name="playButton" class="play_btn" onclick="playAudioInBg()">PLAY</button>
-										  </div>
-
-										</div>
-											  
-										  <div  class="main-one">		
-											  <div class="main-two">Name:</div>
-											  <div><input size="28" name="solomonName" id="solomonN"> </div>
-										  </div>
-								  </tbody>
-			  
-				
-				<div class="main-hide">					
-					<div class="hide-bottom-fields">
-						<div class="main-two">Subset: <br><select onchange="main(this.form, false)" name="subCardinality" > <option  value="2" selected="selected">cardinality</option>
-						<option value="3">Trichords</option> <option value="4">Tetrachords</option> <option value="5">Pentachords</option>
-						<option value="6">Hexachords</option> <option value="7">Septachords</option> <option value="8">Octachords</option>
-						<option value="9">Nonachords</option></select>
-						</div>
-			
-						<div width="51%" style="margin-left: 2rem;">Superset: <br><select onchange="main(this.form, false)" name="superCardinality"> <option value="10" selected="selected">cardinality</option> <option value="3">Trichords</option>
-						<option value="4">Tetrachords</option> <option value="5">Pentachords</option> <option value="6">Hexachords</option>
-						<option value="7">Septachords</option> <option value="8">Octachords</option> <option value="9">Nonachords</option></select> 
-						</div>		
-					</div>
-								
-			    	<div class="hide-bottom-fields">
-					<div class="main-two"><button onclick="getComplement(this.form)" type="button"  class="complement-ins">Complement</button> </div>
-					<div width="51%"  style="margin-left: 2rem;"><button onclick="getInvert(this.form)" type="button" class="invert-ins">Invert</button></div>
-					</div>
-			
-					<div class="hide-bottom-fields overlapping-fixing">
-					<div  class="main-two"><select onchange="main(this.form, false)" name="transpose" > <option value="0" selected="selected" select="" >T0</option>
-						<option value="1">T1</option> <option value="2">T2</option> <option value="3">T3</option> <option value="4">T4</option> <option value="5">T5</option> <option value="6">T6</option> <option value="7">T7</option> <option value="8">T8</option> <option value="9">T9</option> <option value="10">T10</option> <option value="11">T11</option></select> <br><input name="transposeField" style="width: 130px; font-size: 15px;"> </div>
-					<div width="51%"  style="margin-left: 2rem;"><select onchange="main(this.form, false)" name="inverse"> <option value="0" selected="selected" select="" style="margin-bottom: .3rem;">T0I</option> <option value="1">T1I</option> <option value="2">T2I</option> <option value="3">T3I</option> <option value="4">T4I</option> <option value="5">T5I</option> <option value="6">T6I</option> <option value="7">T7I</option> <option value="8">T8I</option> <option value="9">T9I</option> <option value="10">T10I</option> <option value="11">T^11^I</option></select> <br><input name="inverseField" style="width: 130px; font-size: 15px;">
-					</div>
-			     </div>
-			
-					<div class="hide-bottom-fields">
-					<div colspan="2"><select onchange="main(this.form, false)" name="matrixOptions" style="margin-left: .4rem;"> <option value="default" selected="selected" select="" >Matrix</option> <option value="t">T-matrix</option> <option value="t_invert">T-matrix with y-inversion</option> <option value="i">I-matrix</option> <option value="i_invert">I-matrix with
-					y-inversion</option></select>
-					</div>			
-					</div>
-		
-				</div>
-					
-				  
-				  </tbody>
-			  
-			  </table>
-			  
-			  <br>
-		  
-		  
-		  
-			  <button  class="downloadButtonbook" onclick="downloads(event)"><a href="Downloads.html" style="color: black; text-decoration: none;" target="_blank">Downloads</a></button>					  
-			  <button class="downloadButtonbook" onclick="howToUse(event)"><a href="Instructions.html" style="color: black; text-decoration: none;"  target="_blank">How to use</a></button>	  
-			  <button  class="downloadButtonbook" onclick="copyRight(event)"><a href="Copyright.html" style="color: black; text-decoration: none;"  target="_blank">©</a></button>	  
-			  <button class="downloadButtonbook" id="lite-and-full-version-toogle" onclick="toggleFields(event)">Full Version</button>
-
-		  
-					  
-			</td>
-	
-		</div>
-		  
-			 
-			 <div class="div-2">	  
-				<table cellpadding="3" width="75%" border="0" class="default-hide">
-		    	  <tbody>
-
-					<tbody>
-		  
-						<tr class="default-hide">
-						  <td width="55%">n values for T<sub>n</sub> invariance:</td>	
-						  <td width="45%"><input size="13" name="transN" style="margin-left: .5rem;"> </td></tr>	
-						  <tr class="default-hide">	
-						  <td width="55%">n values for T<sub>n</sub>I invariance:</td>	
-						  <td width="45%"><input size="13" name="invertN"  style="margin-left: .5rem;"> </td></tr>
-						  
-					</tbody>
-		  
-					<tr>
-						<td>Subsets:<br><textarea name="subResults" rows="7" columns="10"></textarea>
-			
-						</td>
-			
-						<td> <span  class="second-textarea">Supersets:</span> <br><textarea name="superResults" rows="7" columns="10" class="second-textarea"></textarea>
-			
-						</td>	
-					</tr>
-
-				</tbody>
-				</table>
-		  
-					<div class="default-hide">
-		
-				   	     <p>Matrix:<br><input size="2" name="textfield2"> &nbsp; &nbsp; <input size="2" name="textfield22"> <input size="2" name="textfield23"> <input size="2" name="textfield24"> <input size="2" name="textfield25"> <input size="2" name="textfield26"> <input size="2" name="textfield27"> <input size="2" name="textfield28"> <input size="2" name="textfield29"> <input size="2" name="textfield210"> <br><br><input size="2" name="textfield211"> &nbsp; &nbsp;
-		  
-						  <input size="2" name="textfield222"> <input size="2" name="textfield232"> <input size="2" name="textfield242"> <input size="2" name="textfield252"> <input size="2" name="textfield262"> <input size="2" name="textfield272"> <input size="2" name="textfield282"> <input size="2" name="textfield292"> <input size="2" name="textfield2102"> <br><input size="2" name="textfield212"> &nbsp; &nbsp;
-					
-						  <input size="2" name="textfield223"> <input size="2" name="textfield233"> <input size="2" name="textfield243"> <input size="2" name="textfield253"> <input size="2" name="textfield263"> <input size="2" name="textfield273"> <input size="2" name="textfield283"> <input size="2" name="textfield293"> <input size="2" name="textfield2103"> <br><input size="2" name="textfield213"> &nbsp; &nbsp;
-					
-						  <input size="2" name="textfield224"> <input size="2" name="textfield234"> <input size="2" name="textfield244"> <input size="2" name="textfield254"> <input size="2" name="textfield264"> <input size="2" name="textfield274"> <input size="2" name="textfield284"> <input size="2" name="textfield294"> <input size="2" name="textfield2104"> <br><input size="2" name="textfield214"> &nbsp; &nbsp;
-					
-						  <input size="2" name="textfield225"> <input size="2" name="textfield235"> <input size="2" name="textfield245"> <input size="2" name="textfield255"> <input size="2" name="textfield265"> <input size="2" name="textfield275"> <input size="2" name="textfield285"> <input size="2" name="textfield295"> <input size="2" name="textfield2105"> <br><input size="2" name="textfield215"> &nbsp; &nbsp;
-					
-						  <input size="2" name="textfield226"> <input size="2" name="textfield236"> <input size="2" name="textfield246"> <input size="2" name="textfield256"> <input size="2" name="textfield266"> <input size="2" name="textfield276"> <input size="2" name="textfield286"> <input size="2" name="textfield296"> <input size="2" name="textfield2106"> <br><input size="2" name="textfield216"> &nbsp; &nbsp;
-					
-						  <input size="2" name="textfield227"> <input size="2" name="textfield237"> <input size="2" name="textfield247"> <input size="2" name="textfield257"> <input size="2" name="textfield267"> <input size="2" name="textfield277"> <input size="2" name="textfield287"> <input size="2" name="textfield297"> <input size="2" name="textfield2107"> <br><input size="2" name="textfield217"> &nbsp; &nbsp;
-					
-						  <input size="2" name="textfield228"> <input size="2" name="textfield238"> <input size="2" name="textfield248"> <input size="2" name="textfield258"> <input size="2" name="textfield268"> <input size="2" name="textfield278"> <input size="2" name="textfield288"> <input size="2" name="textfield298"> <input size="2" name="textfield2108"> <br><input size="2" name="textfield218"> &nbsp; &nbsp;
-					
-						  <input size="2" name="textfield229"> <input size="2" name="textfield239"> <input size="2" name="textfield249"> <input size="2" name="textfield259"> <input size="2" name="textfield269"> <input size="2" name="textfield279"> <input size="2" name="textfield289"> <input size="2" name="textfield299"> <input size="2" name="textfield2109"> <br><input size="2" name="textfield219"> &nbsp; &nbsp;
-					
-						  <input size="2" name="textfield2210"> <input size="2" name="textfield2310"> <input size="2" name="textfield2410"> <input size="2" name="textfield2510"> <input size="2" name="textfield2610"> <input size="2" name="textfield2710"> <input size="2" name="textfield2810"> <input size="2" name="textfield2910"> <input size="2" name="textfield21010"> </p>
-		  
-					</div>
-			 
-		
-	
-			</div>
-	
-	
-
-	</div>
-
-	
-
-  
-	</tbody>
-
-
-
-
-	
- </form>
-	 
- <script src="list.js"></script>
- <script src="app.js"></script>
-		
-
-
-
-</body>
-
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Document</title>
+    <link rel="stylesheet" href="style.css" />
+  </head>
+  <body>
+    <header><h1>Stoikheion Oracle</h1></header>
+    <nav>
+      <div class="flex-row row-group">
+        <button type="button" id="donwloads-button" for-modal="donwloads-modal">Downloads</button>
+        <button type="button" id="instructions-button" onclick="window.open('./instructions.html', '_blank')">How to use</button>
+        <button type="button" id="page-mode-button">Full</button>
+      </div>
+      <div class="combo-button" id="instrument-selector">
+        <input type="radio" id="show-piano" name="instrument-option" value="piano" checked />
+        <label for="show-piano" title="Show piano">🎹</label>
+        <input type="radio" id="show-guitar" name="instrument-option" value="guitar" />
+        <label for="show-guitar" title="Show simple guitar">🎸</label>
+        <input type="radio" id="show-full-guitar" name="instrument-option" value="guitar-full" />
+        <label for="show-full-guitar" title="Show complete guitar">x2🎸</label>
+      </div>
+      <div class="flex-row row-group">
+        <button class="flex-grow" type="button" title="Reset" id="reset-button">↺</button>
+        <button class="flex-grow" type="button" title="Complement" id="complement-button">∁</button>
+        <button class="flex-grow" type="button" title="Invert by 0" id="invert-zero-button">T<sub>0</sub>I</button>
+      </div>
+    </nav>
+    <div class="main-content">
+      <div class="container flex-col align-center" id="instruments">
+        <div id="piano">
+          <div class="piano-key" data-note="0">0</div>
+          <div class="piano-key" data-note="1" data-accidental>1</div>
+          <div class="piano-key" data-note="2">2</div>
+          <div class="piano-key" data-note="3" data-accidental>3</div>
+          <div class="piano-key" data-note="4">4</div>
+          <div class="piano-key" data-note="5">5</div>
+          <div class="piano-key" data-note="6" data-accidental>6</div>
+          <div class="piano-key" data-note="7">7</div>
+          <div class="piano-key" data-note="8" data-accidental>8</div>
+          <div class="piano-key" data-note="9">9</div>
+          <div class="piano-key" data-note="10" data-accidental>10</div>
+          <div class="piano-key" data-note="11">11</div>
+        </div>
+        <div id="guitar" hidden>
+          <div class="guitar-string">
+            <div class="guitar-finger" data-note="5">5</div>
+            <div class="guitar-finger" data-note="6">6</div>
+            <div class="guitar-finger" data-note="7">7</div>
+            <div class="guitar-finger" data-note="8">8</div>
+            <div class="guitar-finger" data-note="9">9</div>
+            <div class="guitar-finger" data-note="10">10</div>
+            <div class="guitar-finger full-guitar" data-note="11">11</div>
+            <div class="guitar-finger full-guitar" data-note="0">0</div>
+            <div class="guitar-finger full-guitar" data-note="1">1</div>
+            <div class="guitar-finger full-guitar" data-note="2">2</div>
+            <div class="guitar-finger full-guitar" data-note="3">3</div>
+            <div class="guitar-finger full-guitar" data-note="4">4</div>
+          </div>
+          <div class="guitar-string">
+            <div class="guitar-finger" data-note="0">0</div>
+            <div class="guitar-finger" data-note="1">1</div>
+            <div class="guitar-finger" data-note="2">2</div>
+            <div class="guitar-finger" data-note="3">3</div>
+            <div class="guitar-finger" data-note="4">4</div>
+            <div class="guitar-finger" data-note="5">5</div>
+            <div class="guitar-finger full-guitar" data-note="6">6</div>
+            <div class="guitar-finger full-guitar" data-note="7">7</div>
+            <div class="guitar-finger full-guitar" data-note="8">8</div>
+            <div class="guitar-finger full-guitar" data-note="9">9</div>
+            <div class="guitar-finger full-guitar" data-note="10">10</div>
+            <div class="guitar-finger full-guitar" data-note="11">11</div>
+          </div>
+          <div class="guitar-string">
+            <div class="guitar-finger" data-note="8">8</div>
+            <div class="guitar-finger" data-note="9">9</div>
+            <div class="guitar-finger" data-note="10">10</div>
+            <div class="guitar-finger" data-note="11">11</div>
+            <div class="guitar-finger" data-note="0">0</div>
+            <div class="guitar-finger" data-note="1">1</div>
+            <div class="guitar-finger full-guitar" data-note="2">2</div>
+            <div class="guitar-finger full-guitar" data-note="3">3</div>
+            <div class="guitar-finger full-guitar" data-note="4">4</div>
+            <div class="guitar-finger full-guitar" data-note="5">5</div>
+            <div class="guitar-finger full-guitar" data-note="6">6</div>
+            <div class="guitar-finger full-guitar" data-note="7">7</div>
+          </div>
+          <div class="guitar-string">
+            <div class="guitar-finger" data-note="3">3</div>
+            <div class="guitar-finger" data-note="4">4</div>
+            <div class="guitar-finger" data-note="5">5</div>
+            <div class="guitar-finger" data-note="6">6</div>
+            <div class="guitar-finger" data-note="7">7</div>
+            <div class="guitar-finger" data-note="8">8</div>
+            <div class="guitar-finger full-guitar" data-note="9">9</div>
+            <div class="guitar-finger full-guitar" data-note="10">10</div>
+            <div class="guitar-finger full-guitar" data-note="11">11</div>
+            <div class="guitar-finger full-guitar" data-note="0">0</div>
+            <div class="guitar-finger full-guitar" data-note="1">1</div>
+            <div class="guitar-finger full-guitar" data-note="2">2</div>
+          </div>
+          <div class="guitar-string">
+            <div class="guitar-finger" data-note="10">10</div>
+            <div class="guitar-finger" data-note="11">11</div>
+            <div class="guitar-finger" data-note="0">0</div>
+            <div class="guitar-finger" data-note="1">1</div>
+            <div class="guitar-finger" data-note="2">2</div>
+            <div class="guitar-finger" data-note="3">3</div>
+            <div class="guitar-finger full-guitar" data-note="4">4</div>
+            <div class="guitar-finger full-guitar" data-note="5">5</div>
+            <div class="guitar-finger full-guitar" data-note="6">6</div>
+            <div class="guitar-finger full-guitar" data-note="7">7</div>
+            <div class="guitar-finger full-guitar" data-note="8">8</div>
+            <div class="guitar-finger full-guitar" data-note="9">9</div>
+          </div>
+          <div class="guitar-string">
+            <div class="guitar-finger" data-note="5">5</div>
+            <div class="guitar-finger" data-note="6">6</div>
+            <div class="guitar-finger" data-note="7">7</div>
+            <div class="guitar-finger" data-note="8">8</div>
+            <div class="guitar-finger" data-note="9">9</div>
+            <div class="guitar-finger" data-note="10">10</div>
+            <div class="guitar-finger full-guitar" data-note="11">11</div>
+            <div class="guitar-finger full-guitar" data-note="0">0</div>
+            <div class="guitar-finger full-guitar" data-note="1">1</div>
+            <div class="guitar-finger full-guitar" data-note="2">2</div>
+            <div class="guitar-finger full-guitar" data-note="3">3</div>
+            <div class="guitar-finger full-guitar" data-note="4">4</div>
+          </div>
+        </div>
+      </div>
+      <div class="container gap-sm" id="analysis-data">
+        <div class="input-group">
+          <div class="flex-row gap-md no-wrap">
+            <label for="user-pitch-class" class="text-no-wrap">User set</label>
+            <p play-for="user-pitch-class">▶</p>
+          </div>
+          <input type="text" title="Double click to copy" id="user-pitch-class" pattern="^(?:\b(?:[0-9]|10|11|[teTE])\b\s?)+$" placeholder="0 1 2 3 4 5 6 7 8 9 10 11" inputmode="numeric" />
+        </div>
+        <div class="input-group">
+          <label for="cardinality">Cardinality</label>
+          <input type="text" title="Click to copy" id="cardinality" readonly aria-readonly="true" placeholder="-" />
+        </div>
+        <div class="input-group">
+          <div class="flex-row gap-md">
+            <label for="normal-form">Normal form</label>
+            <p play-for="normal-form">▶</p>
+          </div>
+          <input type="text" title="Click to copy" id="normal-form" readonly aria-readonly="true" placeholder="-" />
+        </div>
+        <div class="input-group">
+          <div class="flex-row gap-md">
+            <label for="prime-form">Prime form</label>
+            <p play-for="prime-form">▶</p>
+          </div>
+          <input type="text" title="Click to copy" id="prime-form" readonly aria-readonly="true" placeholder="-" />
+        </div>
+        <div class="input-group">
+          <label for="ic-vector">IC Vector</label>
+          <input type="text" title="Click to copy" id="ic-vector" readonly aria-readonly="true" placeholder="-" />
+        </div>
+        <div class="input-group">
+          <label for="forte-code">Forte</label>
+          <input list="forte-codes" type="text" title="Double click to copy" id="forte-code" placeholder="3-1 | 5-Z37 | 7-3B | ..." />
+        </div>
+        <div class="input-group">
+          <label for="z-mate">Z-Mate</label>
+          <input type="text" title="Click to copy" id="z-mate" readonly aria-readonly="true" placeholder="-" />
+        </div>
+        <div class="input-group">
+          <label for="solomon-code">Solomon</label>
+          <div class="flex-row row-group">
+            <input class="flex-grow" type="text" id="solomon-code" readonly aria-readonly="true" placeholder="-" />
+            <!-- prettier-ignore -->
+            <button
+              disabled-like
+              type="button"
+              onclick="showNotification('No documentation available for this Solomon code.')"
+              id="solomon-get-pdf"
+              title="Get the PDF for current pitch class set"
+            >PDF</button>
+            <!-- prettier-ignore -->
+            <button
+              disabled-like
+              type="button"
+              onclick="showNotification('No audio available for this Solomon code.')"
+              id="solomon-play-audio"
+              title="Play the current pitch class chord"
+            >▶</button>
+          </div>
+        </div>
+        <div class="input-group">
+          <label for="solomon-name">Name</label>
+          <input type="text" title="Click to copy" id="solomon-name" readonly aria-readonly="true" placeholder="-" />
+        </div>
+      </div>
+      <div class="container gap-sm" id="sub-super-sets">
+        <div class="flex-col gap-sm" id="subsets-div">
+          <div class="input-group">
+            <label for="subsets-selector">Subset cardinality </label>
+            <select id="subsets-selector" title="Select the subset cardinality to show">
+              <option value="0">-NONE-</option>
+              <option value="2" hidden>2 - Dyad</option>
+              <option value="3" hidden>3 - Trichord</option>
+              <option value="4" hidden>4 - Tetrachord</option>
+              <option value="5" hidden>5 - Pentachord</option>
+              <option value="6" hidden>6 - Hexachord</option>
+              <option value="7" hidden>7 - Septachord</option>
+              <option value="8" hidden>8 - Octachord</option>
+              <option value="9" hidden>9 - Nonachord</option>
+              <option value="10" hidden>10 - Decachord</option>
+              <option value="11" hidden>11 - Undecachord</option>
+              <option value="12" hidden>12 - Aggregate</option>
+            </select>
+          </div>
+          <div id="subsets-display" readonly wrap="soft" title="Click to copy" disabled></div>
+        </div>
+        <div class="flex-col gap-sm" id="supersets-div">
+          <div class="input-group">
+            <label for="supersets-selector">Superset cardinality </label>
+            <select id="supersets-selector" title="Select the superset cardinality to show">
+              <option value="0">-NONE-</option>
+              <option value="2" hidden>2 - Dyad</option>
+              <option value="3" hidden>3 - Trichord</option>
+              <option value="4" hidden>4 - Tetrachord</option>
+              <option value="5" hidden>5 - Pentachord</option>
+              <option value="6" hidden>6 - Hexachord</option>
+              <option value="7" hidden>7 - Septachord</option>
+              <option value="8" hidden>8 - Octachord</option>
+              <option value="9" hidden>9 - Nonachord</option>
+              <option value="10" hidden>10 - Decachord</option>
+              <option value="11" hidden>11 - Undecachord</option>
+              <option value="12" hidden>12 - Aggregate</option>
+            </select>
+          </div>
+          <div id="supersets-display" readonly wrap="soft" title="Click to copy" disabled></div>
+        </div>
+      </div>
+      <div class="container flex-col gap-sm align-center" id="analysis-matrix">
+        <div class="input-group">
+          <label for="matrix-selector">Matrix type</label>
+          <select id="matrix-selector" title="Select the matrix type to show">
+            <option value="none">-NONE-</option>
+            <option value="t">T-Matrix</option>
+            <option value="t-invert">T-Matrix with y-inversion</option>
+            <option value="i">I-Matrix</option>
+            <option value="i-invert">I-Matrix with y-inversion</option>
+          </select>
+        </div>
+        <div title="Click to copy" id="matrix-display">
+          <table>
+            <thead>
+              <tr>
+                <th>&nbsp</th>
+                <th>0</th>
+              </tr>
+            </thead>
+            <tbody>
+              <tr>
+                <th>0</th>
+                <th>&nbsp</th>
+              </tr>
+            </tbody>
+          </table>
+        </div>
+      </div>
+      <div class="container flex-row gap-sm" id="analysis-transpose-invert">
+        <row class="flex-col flex-grow">
+          <div class="input-group">
+            <div class="flex-row gap-md">
+              <label for="transpose">Transpose</label>
+              <p play-for="transpose">▶</p>
+            </div>
+            <div class="flex-row row-group">
+              <select id="transpose-selector" title="Select the transpose to show">
+                <option value="0">T₀</option>
+                <option value="1">T₁</option>
+                <option value="2">T₂</option>
+                <option value="3">T₃</option>
+                <option value="4">T₄</option>
+                <option value="5">T₅</option>
+                <option value="6">T₆</option>
+                <option value="7">T₇</option>
+                <option value="8">T₈</option>
+                <option value="9">T₉</option>
+                <option value="10">T₁₀</option>
+                <option value="11">T₁₁</option>
+              </select>
+              <input class="flex-grow" type="text" title="Click to copy" id="transpose" readonly aria-readonly="true" placeholder="-" />
+            </div>
+          </div>
+          <div class="input-group">
+            <label for="transpose-invariance">Nº values for T<sub>n</sub> invariance</label>
+            <input type="text" title="Click to copy" id="transpose-invariance" readonly aria-readonly="true" placeholder="-" />
+          </div>
+        </row>
+        <div class="flex-col flex-grow">
+          <div class="input-group">
+            <div class="flex-row gap-md">
+              <label for="invert">Invert</label>
+              <p play-for="invert">▶</p>
+            </div>
+            <div class="flex-row row-group">
+              <select id="invert-selector" title="Select the invert to show">
+                <option value="0">T₀I</option>
+                <option value="1">T₁I</option>
+                <option value="2">T₂I</option>
+                <option value="3">T₃I</option>
+                <option value="4">T₄I</option>
+                <option value="5">T₅I</option>
+                <option value="6">T₆I</option>
+                <option value="7">T₇I</option>
+                <option value="8">T₈I</option>
+                <option value="9">T₉I</option>
+                <option value="10">T₁₀I</option>
+                <option value="11">T₁₁I</option>
+              </select>
+              <input class="flex-grow" type="text" title="Click to copy" id="invert" readonly aria-readonly="true" placeholder="-" />
+            </div>
+          </div>
+          <div class="input-group">
+            <label for="invert-invariance">Nº values for T<sub>n</sub>I invariance</label>
+            <input type="text" title="Click to copy" id="invert-invariance" readonly aria-readonly="true" placeholder="-" />
+          </div>
+        </div>
+      </div>
+    </div>
+    <footer>
+      <p>
+        Copyright &copy; 2023 Sergio Terebeiko - 2024 Hassan S. All rights reserved. Contact
+        <a target="_blank" rel="noopener" href="mailto:sergioterebeiko@gmail.com">sergioterebeiko@gmail.com</a>
+      </p>
+    </footer>
+    <div class="modal" id="donwloads-modal" hidden>
+      <div class="modal-content">
+        <button type="button" class="modal-close-button">X</button>
+        <h1>Downloads</h1>
+        <p>
+          <a href="https://drive.google.com/file/d/1ChGPP-Phz5u2VjLHF6M7AfupPzDbqQb-/view?usp=drive_link" target="_blank" rel="noopener">Download full ebok</a>
+        </p>
+        <p>Stoikheion : <b>Elementos musicales</b> / Sergio Javier Terebeiko. - 1ª ed. - Villa la Angostura : Sergio Terebeiko, 2021. Libro digital</p>
+        <p>PDF. Archivo Digital: descarga y online ISBN 978-987-88-2250-1</p>
+        <br />
+        <p><a href="https://drive.google.com/file/d/1124q-dfTNRLPvo1mU9D2WzDlhe72mhjG/view?usp=drive_link" target="_blank" rel="noopener">Full offline calculator</a></p>
+        <p class="text-small">
+          For playing audios on local index.html, you need a Web Server. You can download one in
+          <a href="https://simplewebserver.org/download.html" target="_blank" rel="noopener">https://simplewebserver.org/</a>
+        </p>
+        <br />
+        <p><a href="https://drive.google.com/file/d/1KnURlqLNExFCrRlZH06k328iOHARSJXl/view?usp=drive_link">List of all sets</a></p>
+      </div>
+    </div>
+    <datalist id="forte-codes"> </datalist>
+  </body>
+  <script src="chords.js"></script>
+  <script src="audio.js"></script>
+  <script src="script.js"></script>
 </html>

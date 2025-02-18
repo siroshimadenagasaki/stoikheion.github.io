@@ -679,7 +679,7 @@ const CHORDS = {
       'forte-code': '4-Z29B',
       'pitch-classes': [0, 4, 6, 7],
       'name': 'Major 4# - All intervals tetrachord n4 - F#/C',
-      'carter-number': null,
+      'carter-number': '23',
       'complement-forte-code': '8-Z29A',
       'documentation-link': 'https://drive.google.com/file/d/1x-Vla4D_rFMMylDE89NmEba1sIDUh-qk/view?usp=drive_link'
     },

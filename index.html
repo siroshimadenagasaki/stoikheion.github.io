@@ -27,11 +27,55 @@
       body {
         opacity: 0;
       }
+      #audio-enable-overlay {
+        position: fixed;
+        top: 0;
+        left: 0;
+        width: 100%;
+        height: 100%;
+        background: rgba(0, 0, 0, 0.8);
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        z-index: 9999;
+        backdrop-filter: blur(5px);
+      }
+      #audio-enable-overlay.hidden {
+        display: none;
+      }
+      #audio-enable-button {
+        padding: 15px 30px;
+        font-size: 1.2em;
+        background: #4a90e2;
+        color: white;
+        border: none;
+        border-radius: 8px;
+        cursor: pointer;
+        transition: transform 0.2s, background 0.2s;
+        display: flex;
+        align-items: center;
+        gap: 10px;
+      }
+      #audio-enable-button:hover {
+        background: #357abd;
+        transform: scale(1.05);
+      }
+      #audio-enable-button i {
+        font-size: 1.4em;
+      }
     </style>
 
     <link rel="stylesheet" href="style.css" />
   </head>
   <body>
+    <!-- Add the audio enable overlay -->
+    <div id="audio-enable-overlay">
+      <button id="audio-enable-button">
+        <i class="ri-volume-up-line"></i>
+        Click to Start
+      </button>
+    </div>
+
     <header><h1>Stoikheion Oracle</h1></header>
     <nav>
       <div class="flex-row row-group">
@@ -778,6 +822,14 @@
     </div>
     <datalist id="forte-codes"> </datalist>
   </body>
+  <script>
+    // Add the audio overlay handler
+    document
+      .getElementById("audio-enable-button")
+      .addEventListener("click", function () {
+        document.getElementById("audio-enable-overlay").classList.add("hidden");
+      });
+  </script>
   <script src="chords.js"></script>
   <script src="audio.js"></script>
   <script src="script.js"></script>

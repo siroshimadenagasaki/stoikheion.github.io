@@ -1382,9 +1382,9 @@ function showNotification(message, duration = 3000) {
 }
 
 function playAudio(audioUrl) {
-  const audio = new Audio(audioUrl);
-  audio
-    .play()
+  const fileName = audioUrl.split("/").pop().replace(".mp3", "");
+  audioPlayer
+    .playAudioFile(fileName)
     .then(() => showNotification("Audio is playing", 3000))
     .catch((error) =>
       showNotification(`Audio playback failed: ${error}`, 3000)
@@ -1441,123 +1441,7 @@ function toogleFullPageMode(fullPageEnabled = true) {
   );
 }
 
-// Add touch event handling
-function addTouchSupport() {
-  // Add touch feedback
-  document
-    .querySelectorAll(
-      "button, input, select, .piano-key, .guitar-finger, [play-for]"
-    )
-    .forEach((element) => {
-      element.addEventListener(
-        "touchstart",
-        function (e) {
-          this.style.transform = "scale(0.95)";
-        },
-        { passive: true }
-      );
-
-      element.addEventListener(
-        "touchend",
-        function (e) {
-          this.style.transform = "";
-        },
-        { passive: true }
-      );
-    });
-
-  // Prevent double-tap zoom on interactive elements
-  document
-    .querySelectorAll(
-      "button, input, select, .piano-key, .guitar-finger, [play-for]"
-    )
-    .forEach((element) => {
-      element.addEventListener("touchend", function (e) {
-        e.preventDefault();
-        // Trigger click event for compatibility
-        this.click();
-      });
-    });
-
-  // Add swipe to scroll for piano
-  const piano = document.querySelector("#piano");
-  let touchStartX = 0;
-  let scrollLeft = 0;
-
-  piano.addEventListener(
-    "touchstart",
-    function (e) {
-      touchStartX = e.touches[0].pageX - piano.offsetLeft;
-      scrollLeft = piano.scrollLeft;
-    },
-    { passive: true }
-  );
-
-  piano.addEventListener(
-    "touchmove",
-    function (e) {
-      if (!touchStartX) return;
-      const x = e.touches[0].pageX - piano.offsetLeft;
-      const walk = (x - touchStartX) * 2;
-      piano.scrollLeft = scrollLeft - walk;
-    },
-    { passive: true }
-  );
-
-  piano.addEventListener(
-    "touchend",
-    function () {
-      touchStartX = null;
-    },
-    { passive: true }
-  );
-
-  // Improve matrix scrolling on mobile
-  const matrixDisplay = document.querySelector("#matrix-display");
-  if (matrixDisplay) {
-    let touchStartX = 0;
-    let touchStartY = 0;
-    let scrollLeft = 0;
-    let scrollTop = 0;
-
-    matrixDisplay.addEventListener(
-      "touchstart",
-      function (e) {
-        touchStartX = e.touches[0].pageX - matrixDisplay.offsetLeft;
-        touchStartY = e.touches[0].pageY - matrixDisplay.offsetTop;
-        scrollLeft = matrixDisplay.scrollLeft;
-        scrollTop = matrixDisplay.scrollTop;
-      },
-      { passive: true }
-    );
-
-    matrixDisplay.addEventListener(
-      "touchmove",
-      function (e) {
-        if (!touchStartX) return;
-        const x = e.touches[0].pageX - matrixDisplay.offsetLeft;
-        const y = e.touches[0].pageY - matrixDisplay.offsetTop;
-        const walkX = (x - touchStartX) * 2;
-        const walkY = (y - touchStartY) * 2;
-        matrixDisplay.scrollLeft = scrollLeft - walkX;
-        matrixDisplay.scrollTop = scrollTop - walkY;
-      },
-      { passive: true }
-    );
-
-    matrixDisplay.addEventListener(
-      "touchend",
-      function () {
-        touchStartX = null;
-        touchStartY = null;
-      },
-      { passive: true }
-    );
-  }
-}
-
 // Call the function after initialization
 window.addEventListener("load", function () {
   initialize();
-  addTouchSupport();
 });

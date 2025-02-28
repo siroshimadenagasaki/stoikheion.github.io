@@ -1,94 +1,203 @@
 class AudioPlayer {
   constructor() {
-    this.playNote = this.playNote.bind(this)
-    this.resumeAudioContext = this.resumeAudioContext.bind(this)
+    this.playNote = this.playNote.bind(this);
+    this.resumeAudioContext = this.resumeAudioContext.bind(this);
+    this.isIOS = /iPad|iPhone|iPod/.test(navigator.userAgent);
+    this.samples = {};
+    this.initialized = false;
+    this.audioContext = null;
 
-    this.audioContext = this.getCrossBrowserAudioContext()
-    const audioExtension = this.getSupportedAudioExtension()
+    // Initialize immediately on mobile devices
+    if (this.isIOS) {
+      this.initAudioContext();
+    }
 
-    if (!this.audioContext || !audioExtension) return
-
-    this.applyDecodeAudioDataPolyfill()
-
-    const fileNames = ['C2v10', 'C3v10', 'C4v10', 'C5v10', 'C6v10', 'C7v10']
-
-    Promise.all(fileNames.map((fileName) => this.loadSample(`./piano-sounds/${fileName}.${audioExtension}`))).then((audioBuffers) => {
-      const [C2, C3, C4, C5, C6, C7] = audioBuffers
-      this.samples = {C2, C3, C4, C5, C6, C7}
-    })
+    ["click", "touchstart"].forEach((eventName) => {
+      document.addEventListener(
+        eventName,
+        async () => {
+          if (!this.initialized) {
+            console.log("Initializing audio context after user interaction");
+            await this.initAudioContext();
+            this.initialized = true;
+          }
+        },
+        { once: true }
+      );
+    });
   }
 
-  getCrossBrowserAudioContext() {
-    const AudioContextCrossBrowser = window.AudioContext || window.webkitAudioContext
-    if (!AudioContextCrossBrowser) return
-    return new AudioContextCrossBrowser()
-  }
+  async initAudioContext() {
+    try {
+      const AudioContextClass =
+        window.AudioContext || window.webkitAudioContext;
+      this.audioContext = new AudioContextClass();
+      console.log("Audio context created:", this.audioContext.state);
 
-  getSupportedAudioExtension() {
-    const audioElement = document.createElement('audio')
-    if (audioElement.canPlayType('audio/wav')) return 'wav'
-    if (audioElement.canPlayType('audio/x-wav')) return 'wav'
-    if (audioElement.canPlayType('audio/ogg')) return 'ogg'
-  }
+      if (this.audioContext.state === "suspended") {
+        console.log("Resuming suspended audio context");
+        await this.audioContext.resume();
+        console.log("Audio context resumed:", this.audioContext.state);
+      }
 
-  applyDecodeAudioDataPolyfill() {
-    if (!this.audioContext) return
-    // Polyfill for old callback-based syntax used in Safari
-    if (this.audioContext.decodeAudioData.length !== 1) {
-      const originalDecodeAudioData = this.audioContext.decodeAudioData.bind(this.audioContext)
-      this.audioContext.decodeAudioData = (buffer) => new Promise((resolve, reject) => originalDecodeAudioData(buffer, resolve, reject))
+      await this.loadAllSamples();
+    } catch (error) {
+      console.error("Failed to initialize audio:", error);
     }
   }
 
-  loadSample(url) {
-    return fetch(url)
-      .then((response) => response.arrayBuffer())
-      .then((buffer) => this.audioContext.decodeAudioData(buffer))
+  async loadAllSamples() {
+    const fileNames = ["C2v10", "C3v10", "C4v10", "C5v10", "C6v10", "C7v10"];
+    console.log("Starting to load samples...");
+
+    try {
+      const loadedBuffers = await Promise.all(
+        fileNames.map((fileName) =>
+          this.loadSample(`./piano-sounds/${fileName}.mp3`)
+        )
+      );
+
+      let loadedCount = 0;
+      fileNames.forEach((fileName, index) => {
+        const key = fileName.substring(0, 2);
+        if (loadedBuffers[index]) {
+          this.samples[key] = loadedBuffers[index];
+          loadedCount++;
+          console.log(`Loaded sample: ${key}`);
+        }
+      });
+
+      if (loadedCount === 0) {
+        throw new Error("No samples were loaded successfully");
+      }
+      console.log(
+        `Successfully loaded ${loadedCount} samples. Available samples:`,
+        Object.keys(this.samples)
+      );
+    } catch (error) {
+      console.error("Error loading samples:", error);
+    }
+  }
+
+  async loadSample(url) {
+    try {
+      console.log(`Loading sample: ${url}`);
+      const response = await fetch(url);
+      if (!response.ok) {
+        throw new Error(`HTTP error! status: ${response.status}`);
+      }
+
+      const arrayBuffer = await response.arrayBuffer();
+      if (!arrayBuffer || arrayBuffer.byteLength === 0) {
+        throw new Error("Empty audio buffer received");
+      }
+
+      return await new Promise((resolve, reject) => {
+        this.audioContext.decodeAudioData(
+          arrayBuffer,
+          (buffer) => {
+            console.log(`Successfully decoded: ${url}`);
+            resolve(buffer);
+          },
+          (error) => reject(new Error(`Decoding failed: ${error}`))
+        );
+      });
+    } catch (error) {
+      console.warn(`Failed to load sample ${url}:`, error);
+      return null;
+    }
   }
 
   playTone(noteValue, sample) {
-    if (!this.audioContext) return
-
-    const source = this.audioContext.createBufferSource()
-    source.buffer = sample
-
-    // first try to use the detune property for pitch shifting
-    if (source.detune) {
-      source.detune.value = noteValue * 100
-    } else {
-      // fallback to using playbackRate for pitch shifting
-      source.playbackRate.value = 2 ** (noteValue / 12)
+    if (!this.audioContext || !sample) {
+      console.warn("Cannot play tone - missing context or sample", {
+        hasContext: !!this.audioContext,
+        hasSample: !!sample,
+        noteValue,
+      });
+      return;
     }
 
-    source.connect(this.audioContext.destination)
+    try {
+      console.log(`Playing tone with noteValue: ${noteValue}`);
+      const source = this.audioContext.createBufferSource();
+      source.buffer = sample;
 
-    this.audioContext.resume().then(() => {
-      source.start(0)
-    })
+      const gainNode = this.audioContext.createGain();
+      gainNode.gain.value = this.isIOS ? 0.3 : 0.5;
+
+      source.connect(gainNode);
+      gainNode.connect(this.audioContext.destination);
+
+      if (this.isIOS || !source.detune) {
+        const rate = Math.pow(2, noteValue / 12);
+        console.log(`Using playbackRate: ${rate}`);
+        source.playbackRate.value = rate;
+      } else {
+        console.log(`Using detune: ${noteValue * 100}`);
+        source.detune.value = noteValue * 100;
+      }
+
+      source.start(0);
+      console.log("Tone started playing");
+    } catch (error) {
+      console.error("Failed to play tone:", error);
+    }
   }
 
   getBestSampleForNote(noteValue, octave) {
-    let adjustedNoteValue = noteValue
-    let adjustedOctave = octave
+    if (!this.samples || Object.keys(this.samples).length === 0) {
+      console.warn("No samples available for playback");
+      return [0, null];
+    }
 
-    // use the closest sample to minimize pitch shifting
+    let adjustedNoteValue = noteValue;
+    let adjustedOctave = octave;
+
     if (noteValue > 6 && octave <= 7) {
-      adjustedOctave = octave + 1
-      adjustedNoteValue = noteValue - 12
+      adjustedOctave = octave + 1;
+      adjustedNoteValue = noteValue - 12;
     }
 
-    return [adjustedNoteValue, this.samples[`C${adjustedOctave}`]]
+    const key = `C${adjustedOctave}`;
+    const sample = this.samples[key];
+    console.log(`Selected sample for note ${noteValue}, octave ${octave}:`, {
+      key,
+      hasSample: !!sample,
+      adjustedNoteValue,
+    });
+
+    return [adjustedNoteValue, sample];
   }
 
-  resumeAudioContext() {
-    if (this.audioContext && this.audioContext.state === 'suspended') {
-      this.audioContext.resume()
+  async resumeAudioContext() {
+    if (this.audioContext?.state === "suspended") {
+      try {
+        console.log("Attempting to resume audio context");
+        await this.audioContext.resume();
+        console.log("Audio context resumed successfully");
+      } catch (error) {
+        console.warn("Failed to resume audio context:", error);
+      }
     }
   }
 
-  playNote(noteValue, octave) {
-    if (!this.audioContext || !this.samples) return
+  async playNote(noteValue, octave) {
+    console.log(`Attempting to play note: ${noteValue} in octave ${octave}`);
 
-    this.playTone(...this.getBestSampleForNote(noteValue, octave))
+    if (!this.audioContext || this.audioContext.state === "suspended") {
+      try {
+        await this.resumeAudioContext();
+      } catch (error) {
+        console.warn("Could not resume audio context:", error);
+        return;
+      }
+    }
+
+    const [adjustedNoteValue, sample] = this.getBestSampleForNote(
+      noteValue,
+      octave
+    );
+    this.playTone(adjustedNoteValue, sample);
   }
 }

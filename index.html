@@ -3,29 +3,99 @@
   <head>
     <meta charset="UTF-8" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-    <title>Document</title>
+    <title>Stoikheion Oracle</title>
+    <!-- Add preload directives -->
+    <link rel="preload" href="style.css" as="style" />
+    <link
+      rel="preload"
+      href="https://fonts.googleapis.com/css2?family=Manrope:wght@200..800&family=Poppins:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&display=swap"
+      as="style"
+    />
+    <link rel="preload" href="bg-image.webp" as="image" />
+    <link
+      href="https://cdn.jsdelivr.net/npm/remixicon@4.2.0/fonts/remixicon.css"
+      rel="stylesheet"
+    />
+
+    <!-- Add critical CSS inline -->
+    <style>
+      .full-mode-only {
+        display: none !important;
+        visibility: hidden;
+        opacity: 0;
+      }
+      body {
+        opacity: 0;
+      }
+    </style>
+
     <link rel="stylesheet" href="style.css" />
   </head>
   <body>
     <header><h1>Stoikheion Oracle</h1></header>
     <nav>
       <div class="flex-row row-group">
-        <button type="button" id="donwloads-button" for-modal="donwloads-modal">Downloads</button>
-        <button type="button" id="instructions-button" onclick="window.open('./instructions.html', '_blank')">How to use</button>
-        <button type="button" id="page-mode-button">Full</button>
+        <button type="button" id="donwloads-button" for-modal="donwloads-modal">
+          <i class="ri-download-2-line"></i>
+          Downloads
+        </button>
+        <button
+          type="button"
+          id="instructions-button"
+          for-modal="instructions-modal"
+        >
+          <i class="ri-question-line"></i>
+        </button>
+        <button type="button" id="page-mode-button">
+          <i class="ri-fullscreen-line"></i>
+        </button>
       </div>
       <div class="combo-button" id="instrument-selector">
-        <input type="radio" id="show-piano" name="instrument-option" value="piano" checked />
-        <label for="show-piano" title="Show piano">🎹</label>
-        <input type="radio" id="show-guitar" name="instrument-option" value="guitar" />
+        <input
+          type="radio"
+          id="show-piano"
+          name="instrument-option"
+          value="piano"
+          checked
+        />
+        <label for="show-piano" title="Show piano"
+          ><i class="ri-keyboard-line"></i
+        ></label>
+        <input
+          type="radio"
+          id="show-guitar"
+          name="instrument-option"
+          value="guitar"
+        />
         <label for="show-guitar" title="Show simple guitar">🎸</label>
-        <input type="radio" id="show-full-guitar" name="instrument-option" value="guitar-full" />
-        <label for="show-full-guitar" title="Show complete guitar">x2🎸</label>
+        <input
+          type="radio"
+          id="show-full-guitar"
+          name="instrument-option"
+          value="guitar-full"
+        />
+        <label for="show-full-guitar" title="Show complete guitar">2x🎸</label>
       </div>
       <div class="flex-row row-group">
-        <button class="flex-grow" type="button" title="Reset" id="reset-button">↺</button>
-        <button class="flex-grow" type="button" title="Complement" id="complement-button">∁</button>
-        <button class="flex-grow" type="button" title="Invert by 0" id="invert-zero-button">T<sub>0</sub>I</button>
+        <button class="flex-grow" type="button" title="Reset" id="reset-button">
+          <i class="ri-refresh-line"></i>
+        </button>
+        <button
+          class="flex-grow full-mode-only"
+          type="button"
+          title="Complement"
+          id="complement-button"
+        >
+          <i class="ri-contrast-2-line"></i>
+        </button>
+        <button
+          class="flex-grow full-mode-only"
+          type="button"
+          title="Invert by 0"
+          id="invert-zero-button"
+        >
+          <i class="ri-arrow-up-down-line"></i>
+        </button>
       </div>
     </nav>
     <div class="main-content">
@@ -137,70 +207,128 @@
             <label for="user-pitch-class" class="text-no-wrap">User set</label>
             <p play-for="user-pitch-class">▶</p>
           </div>
-          <input type="text" title="Double click to copy" id="user-pitch-class" pattern="^(?:\b(?:[0-9]|10|11|[teTE])\b\s?)+$" placeholder="0 1 2 3 4 5 6 7 8 9 10 11" inputmode="numeric" />
+          <input
+            type="text"
+            title="Double click to copy"
+            id="user-pitch-class"
+            pattern="^(?:\b(?:[0-9]|10|11|[teTE])\b\s?)+$"
+            placeholder="0 1 2 3 4 5 6 7 8 9 10 11"
+            inputmode="numeric"
+          />
         </div>
-        <div class="input-group">
-          <label for="cardinality">Cardinality</label>
-          <input type="text" title="Click to copy" id="cardinality" readonly aria-readonly="true" placeholder="-" />
-        </div>
+
         <div class="input-group">
           <div class="flex-row gap-md">
             <label for="normal-form">Normal form</label>
             <p play-for="normal-form">▶</p>
           </div>
-          <input type="text" title="Click to copy" id="normal-form" readonly aria-readonly="true" placeholder="-" />
+          <input
+            type="text"
+            title="Click to copy"
+            id="normal-form"
+            readonly
+            aria-readonly="true"
+            placeholder="-"
+          />
         </div>
         <div class="input-group">
-          <div class="flex-row gap-md">
-            <label for="prime-form">Prime form</label>
-            <p play-for="prime-form">▶</p>
-          </div>
-          <input type="text" title="Click to copy" id="prime-form" readonly aria-readonly="true" placeholder="-" />
+          <label for="prime-form">Prime form</label>
+          <input
+            type="text"
+            title="Click to copy"
+            id="prime-form"
+            readonly
+            aria-readonly="true"
+            placeholder="-"
+          />
         </div>
         <div class="input-group">
-          <label for="ic-vector">IC Vector</label>
-          <input type="text" title="Click to copy" id="ic-vector" readonly aria-readonly="true" placeholder="-" />
+          <label for="ic-vector">IC</label>
+          <input
+            type="text"
+            title="Click to copy"
+            id="ic-vector"
+            readonly
+            aria-readonly="true"
+            placeholder="-"
+          />
         </div>
         <div class="input-group">
           <label for="forte-code">Forte</label>
-          <input list="forte-codes" type="text" title="Double click to copy" id="forte-code" placeholder="3-1 | 5-Z37 | 7-3B | ..." />
+          <input
+            list="forte-codes"
+            type="text"
+            title="Double click to copy"
+            id="forte-code"
+            placeholder="3-1 | 5-Z37 | 7-3B | ..."
+          />
         </div>
         <div class="input-group">
           <label for="z-mate">Z-Mate</label>
-          <input type="text" title="Click to copy" id="z-mate" readonly aria-readonly="true" placeholder="-" />
+          <input
+            type="text"
+            title="Click to copy"
+            id="z-mate"
+            readonly
+            aria-readonly="true"
+            placeholder="-"
+          />
         </div>
         <div class="input-group">
-          <label for="solomon-code">Solomon</label>
-          <div class="flex-row row-group">
-            <input class="flex-grow" type="text" id="solomon-code" readonly aria-readonly="true" placeholder="-" />
-            <!-- prettier-ignore -->
+          <label for="solomon-code">Forte-Solomon</label>
+          <div class="flex flex-row" style="gap: 2px">
+            <input
+              class="flex-grow rounded-l bg-light-gray px-3 py-2"
+              type="text"
+              id="solomon-code"
+              readonly
+              aria-readonly="true"
+              placeholder="-"
+            />
+            <!-- PDF Button -->
             <button
               disabled-like
               type="button"
               onclick="showNotification('No documentation available for this Solomon code.')"
               id="solomon-get-pdf"
               title="Get the PDF for current pitch class set"
-            >PDF</button>
-            <!-- prettier-ignore -->
+              class="bg-blue hover:bg-dark-blue text-white px-4 py-2 font-medium transition-colors duration-200 disabled:opacity-50 disabled:cursor-not-allowed"
+            >
+              PDF
+            </button>
+            <!-- Play Button -->
             <button
               disabled-like
               type="button"
               onclick="showNotification('No audio available for this Solomon code.')"
               id="solomon-play-audio"
               title="Play the current pitch class chord"
-            >▶</button>
+              class="bg-blue hover:bg-dark-blue text-white px-4 py-2 rounded-r font-medium transition-colors duration-200 disabled:opacity-50 disabled:cursor-not-allowed"
+            >
+              <i class="ri-play-large-fill" style="color: black"></i>
+            </button>
           </div>
         </div>
         <div class="input-group">
           <label for="solomon-name">Name</label>
-          <input type="text" title="Click to copy" id="solomon-name" readonly aria-readonly="true" placeholder="-" />
+          <input
+            type="text"
+            title="Click to copy"
+            id="solomon-name"
+            readonly
+            aria-readonly="true"
+            placeholder="-"
+          />
         </div>
       </div>
       <div class="container gap-sm" id="sub-super-sets">
         <div class="flex-col gap-sm" id="subsets-div">
           <div class="input-group">
             <label for="subsets-selector">Subset cardinality </label>
-            <select id="subsets-selector" title="Select the subset cardinality to show">
+            <select
+              id="subsets-selector"
+              title="Select the subset cardinality to show"
+            >
               <option value="0">-NONE-</option>
               <option value="2" hidden>2 - Dyad</option>
               <option value="3" hidden>3 - Trichord</option>
@@ -215,12 +343,21 @@
               <option value="12" hidden>12 - Aggregate</option>
             </select>
           </div>
-          <div id="subsets-display" readonly wrap="soft" title="Click to copy" disabled></div>
+          <div
+            id="subsets-display"
+            readonly
+            wrap="soft"
+            title="Click to copy"
+            disabled
+          ></div>
         </div>
         <div class="flex-col gap-sm" id="supersets-div">
           <div class="input-group">
             <label for="supersets-selector">Superset cardinality </label>
-            <select id="supersets-selector" title="Select the superset cardinality to show">
+            <select
+              id="supersets-selector"
+              title="Select the superset cardinality to show"
+            >
               <option value="0">-NONE-</option>
               <option value="2" hidden>2 - Dyad</option>
               <option value="3" hidden>3 - Trichord</option>
@@ -235,7 +372,13 @@
               <option value="12" hidden>12 - Aggregate</option>
             </select>
           </div>
-          <div id="supersets-display" readonly wrap="soft" title="Click to copy" disabled></div>
+          <div
+            id="supersets-display"
+            readonly
+            wrap="soft"
+            title="Click to copy"
+            disabled
+          ></div>
         </div>
       </div>
       <div class="container flex-col gap-sm align-center" id="analysis-matrix">
@@ -274,7 +417,10 @@
               <p play-for="transpose">▶</p>
             </div>
             <div class="flex-row row-group">
-              <select id="transpose-selector" title="Select the transpose to show">
+              <select
+                id="transpose-selector"
+                title="Select the transpose to show"
+              >
                 <option value="0">T₀</option>
                 <option value="1">T₁</option>
                 <option value="2">T₂</option>
@@ -288,12 +434,29 @@
                 <option value="10">T₁₀</option>
                 <option value="11">T₁₁</option>
               </select>
-              <input class="flex-grow" type="text" title="Click to copy" id="transpose" readonly aria-readonly="true" placeholder="-" />
+              <input
+                class="flex-grow"
+                type="text"
+                title="Click to copy"
+                id="transpose"
+                readonly
+                aria-readonly="true"
+                placeholder="-"
+              />
             </div>
           </div>
           <div class="input-group">
-            <label for="transpose-invariance">Nº values for T<sub>n</sub> invariance</label>
-            <input type="text" title="Click to copy" id="transpose-invariance" readonly aria-readonly="true" placeholder="-" />
+            <label for="transpose-invariance"
+              >Nº values for T<sub>n</sub> invariance</label
+            >
+            <input
+              type="text"
+              title="Click to copy"
+              id="transpose-invariance"
+              readonly
+              aria-readonly="true"
+              placeholder="-"
+            />
           </div>
         </row>
         <div class="flex-col flex-grow">
@@ -317,20 +480,43 @@
                 <option value="10">T₁₀I</option>
                 <option value="11">T₁₁I</option>
               </select>
-              <input class="flex-grow" type="text" title="Click to copy" id="invert" readonly aria-readonly="true" placeholder="-" />
+              <input
+                class="flex-grow"
+                type="text"
+                title="Click to copy"
+                id="invert"
+                readonly
+                aria-readonly="true"
+                placeholder="-"
+              />
             </div>
           </div>
           <div class="input-group">
-            <label for="invert-invariance">Nº values for T<sub>n</sub>I invariance</label>
-            <input type="text" title="Click to copy" id="invert-invariance" readonly aria-readonly="true" placeholder="-" />
+            <label for="invert-invariance"
+              >Nº values for T<sub>n</sub>I invariance</label
+            >
+            <input
+              type="text"
+              title="Click to copy"
+              id="invert-invariance"
+              readonly
+              aria-readonly="true"
+              placeholder="-"
+            />
           </div>
         </div>
       </div>
     </div>
     <footer>
       <p>
-        Copyright &copy; 2023 Sergio Terebeiko - 2024  Richard de Souza Morais Inácio  All rights reserved. Contact
-        <a target="_blank" rel="noopener" href="mailto:sergioterebeiko@gmail.com">sergioterebeiko@gmail.com</a>
+        Copyright &copy; 2023 Sergio Terebeiko - 2024 Richard de Souza Morais
+        Inácio All rights reserved. Contact
+        <a
+          target="_blank"
+          rel="noopener"
+          href="mailto:sergioterebeiko@gmail.com"
+          >sergioterebeiko@gmail.com</a
+        >
       </p>
     </footer>
     <div class="modal" id="donwloads-modal" hidden>
@@ -338,18 +524,256 @@
         <button type="button" class="modal-close-button">X</button>
         <h1>Downloads</h1>
         <p>
-          <a href="https://drive.google.com/file/d/1ChGPP-Phz5u2VjLHF6M7AfupPzDbqQb-/view?usp=drive_link" target="_blank" rel="noopener">Download full ebok</a>
+          <a
+            href="https://drive.google.com/file/d/1ChGPP-Phz5u2VjLHF6M7AfupPzDbqQb-/view?usp=drive_link"
+            target="_blank"
+            rel="noopener"
+            >Download full ebok</a
+          >
         </p>
-        <p>Stoikheion : <b>Elementos musicales</b> / Sergio Javier Terebeiko. - 1ª ed. - Villa la Angostura : Sergio Terebeiko, 2021. Libro digital</p>
+        <p>
+          Stoikheion : <b>Elementos musicales</b> / Sergio Javier Terebeiko. -
+          1ª ed. - Villa la Angostura : Sergio Terebeiko, 2021. Libro digital
+        </p>
         <p>PDF. Archivo Digital: descarga y online ISBN 978-987-88-2250-1</p>
         <br />
-        <p><a href="https://drive.google.com/file/d/1124q-dfTNRLPvo1mU9D2WzDlhe72mhjG/view?usp=drive_link" target="_blank" rel="noopener">Full offline calculator</a></p>
+        <p>
+          <a
+            href="https://drive.google.com/file/d/1124q-dfTNRLPvo1mU9D2WzDlhe72mhjG/view?usp=drive_link"
+            target="_blank"
+            rel="noopener"
+            >Full offline calculator</a
+          >
+        </p>
         <p class="text-small">
-          For playing audios on local index.html, you need a Web Server. You can download one in
-          <a href="https://simplewebserver.org/download.html" target="_blank" rel="noopener">https://simplewebserver.org/</a>
+          For playing audios on local index.html, you need a Web Server. You can
+          download one in
+          <a
+            href="https://simplewebserver.org/download.html"
+            target="_blank"
+            rel="noopener"
+            >https://simplewebserver.org/</a
+          >
         </p>
         <br />
-        <p><a href="https://drive.google.com/file/d/1KnURlqLNExFCrRlZH06k328iOHARSJXl/view?usp=drive_link">List of all sets</a></p>
+        <p>
+          <a
+            href="https://drive.google.com/file/d/1KnURlqLNExFCrRlZH06k328iOHARSJXl/view?usp=drive_link"
+            >List of all sets</a
+          >
+        </p>
+      </div>
+    </div>
+    <div class="modal" id="instructions-modal" hidden>
+      <div class="modal-content">
+        <button type="button" class="modal-close-button">×</button>
+        <h1>Instructions / Instrucciones</h1>
+
+        <h2>English</h2>
+        <h3>Quick Start</h3>
+        <ol>
+          <li>Select notes using the piano or guitar interface</li>
+          <li>View analysis results in real-time</li>
+          <li>Click "Full" for advanced features</li>
+        </ol>
+
+        <h3>Input Methods</h3>
+        <ol>
+          <li>
+            Visual Input:
+            <blockquote>
+              <p>• Click piano keys or guitar frets to select/deselect notes</p>
+              <p>
+                • Switch between piano and guitar using the instrument selector
+                (🎹/🎸)
+              </p>
+              <p>• Use full guitar mode (x2🎸) for extended fretboard</p>
+            </blockquote>
+          </li>
+          <li>
+            Text Input (PC field):
+            <blockquote>
+              <p>• Enter numbers separated by spaces (0-11)</p>
+              <p>• Use 't' for 10, 'e' for 11</p>
+              <p>• Type 'r' to reset while typing</p>
+              <p>• Invalid characters are ignored</p>
+              <p>• Double-click to copy content</p>
+            </blockquote>
+          </li>
+          <li>
+            Forte Code Input:
+            <blockquote>
+              <p>
+                • Enter a Forte name (e.g., "3-11", "7-35") in the Forte field
+              </p>
+              <p>• Use autocomplete suggestions</p>
+            </blockquote>
+          </li>
+        </ol>
+
+        <h3>Basic Mode Features</h3>
+        <ul>
+          <li>Real-time pitch class set analysis</li>
+          <li>Normal form calculation and display</li>
+          <li>Prime form identification</li>
+          <li>Interval class vector (IC) with detailed tooltips</li>
+          <li>Forte code identification</li>
+          <li>Z-mate detection</li>
+          <li>Solomon name and documentation access</li>
+          <li>Audio playback for selected sets</li>
+        </ul>
+
+        <h3>Full Mode Features</h3>
+        <p>Click "Full" to access:</p>
+        <ul>
+          <li>
+            Matrix Operations:
+            <blockquote>
+              <p>• T-Matrix (transposition matrix)</p>
+              <p>• T-Matrix with y-inversion</p>
+              <p>• I-Matrix (inversion matrix)</p>
+              <p>• I-Matrix with y-inversion</p>
+              <p>• Click matrix to copy as table</p>
+            </blockquote>
+          </li>
+          <li>
+            Set Operations:
+            <blockquote>
+              <p>• Subset analysis by cardinality</p>
+              <p>• Superset analysis by cardinality</p>
+              <p>• Complement calculation (∁)</p>
+              <p>• Inversion by zero (T₀I)</p>
+            </blockquote>
+          </li>
+          <li>
+            Advanced Analysis:
+            <blockquote>
+              <p>• Transposition operations (T₀ to T₁₁)</p>
+              <p>• Inversion operations (T₀I to T₁₁I)</p>
+              <p>• Transposition invariance</p>
+              <p>• Inversion invariance</p>
+            </blockquote>
+          </li>
+        </ul>
+
+        <h3>Additional Features</h3>
+        <ul>
+          <li>Audio playback for input fields (click ▶)</li>
+          <li>Copy content by clicking any output field</li>
+          <li>PDF documentation for supported Solomon codes</li>
+          <li>Audio examples for supported Solomon codes</li>
+          <li>URL sharing with current state</li>
+        </ul>
+
+        <h2>Español</h2>
+        <h3>Inicio Rápido</h3>
+        <ol>
+          <li>Selecciona notas usando el piano o la guitarra</li>
+          <li>Observa los resultados del análisis en tiempo real</li>
+          <li>Haz clic en "Full" para funciones avanzadas</li>
+        </ol>
+
+        <h3>Métodos de Entrada</h3>
+        <ol>
+          <li>
+            Entrada Visual:
+            <blockquote>
+              <p>
+                • Haz clic en teclas del piano o trastes de guitarra para
+                seleccionar/deseleccionar notas
+              </p>
+              <p>
+                • Cambia entre piano y guitarra usando el selector de
+                instrumentos (🎹/🎸)
+              </p>
+              <p>
+                • Usa el modo guitarra completa (x2🎸) para diapasón extendido
+              </p>
+            </blockquote>
+          </li>
+          <li>
+            Entrada de Texto (campo PC):
+            <blockquote>
+              <p>• Ingresa números separados por espacios (0-11)</p>
+              <p>• Usa 't' para 10, 'e' para 11</p>
+              <p>• Escribe 'r' para restablecer mientras escribes</p>
+              <p>• Los caracteres inválidos son ignorados</p>
+              <p>• Doble clic para copiar contenido</p>
+            </blockquote>
+          </li>
+          <li>
+            Entrada por Código Forte:
+            <blockquote>
+              <p>
+                • Ingresa un nombre Forte (ej: "3-11", "7-35") en el campo Forte
+              </p>
+              <p>• Usa las sugerencias autocompletadas</p>
+            </blockquote>
+          </li>
+        </ol>
+
+        <h3>Características del Modo Básico</h3>
+        <ul>
+          <li>Análisis de conjuntos de clases de altura en tiempo real</li>
+          <li>Cálculo y visualización de forma normal</li>
+          <li>Identificación de forma prima</li>
+          <li>Vector de clases de intervalo (IC) con tooltips detallados</li>
+          <li>Identificación de código Forte</li>
+          <li>Detección de Z-mate</li>
+          <li>Nombre Solomon y acceso a documentación</li>
+          <li>Reproducción de audio para conjuntos seleccionados</li>
+        </ul>
+
+        <h3>Características del Modo Completo</h3>
+        <p>Haz clic en "Full" para acceder a:</p>
+        <ul>
+          <li>
+            Operaciones Matriciales:
+            <blockquote>
+              <p>• Matriz T (matriz de transposición)</p>
+              <p>• Matriz T con inversión y</p>
+              <p>• Matriz I (matriz de inversión)</p>
+              <p>• Matriz I con inversión y</p>
+              <p>• Clic en la matriz para copiar como tabla</p>
+            </blockquote>
+          </li>
+          <li>
+            Operaciones de Conjuntos:
+            <blockquote>
+              <p>• Análisis de subconjuntos por cardinalidad</p>
+              <p>• Análisis de superconjuntos por cardinalidad</p>
+              <p>• Cálculo de complemento (∁)</p>
+              <p>• Inversión por cero (T₀I)</p>
+            </blockquote>
+          </li>
+          <li>
+            Análisis Avanzado:
+            <blockquote>
+              <p>• Operaciones de transposición (T₀ a T₁₁)</p>
+              <p>• Operaciones de inversión (T₀I a T₁₁I)</p>
+              <p>• Invariancia de transposición</p>
+              <p>• Invariancia de inversión</p>
+            </blockquote>
+          </li>
+        </ul>
+
+        <h3>Características Adicionales</h3>
+        <ul>
+          <li>Reproducción de audio para campos de entrada (clic en ▶)</li>
+          <li>Copia contenido haciendo clic en cualquier campo de salida</li>
+          <li>Documentación PDF para códigos Solomon soportados</li>
+          <li>Ejemplos de audio para códigos Solomon soportados</li>
+          <li>Compartir URL con estado actual</li>
+        </ul>
+
+        <p class="note">
+          * Normal form calculations are performed from right to left, following
+          standard pitch-class set theory conventions.
+          <br />
+          * Los cálculos de forma normal se realizan de derecha a izquierda,
+          siguiendo las convenciones estándar de la teoría de conjuntos de
+          clases de altura.
+        </p>
       </div>
     </div>
     <datalist id="forte-codes"> </datalist>

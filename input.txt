@@ -1,0 +1,801 @@
+Lista de Sets
+(Forte-Solomon)
+
+1316 Elementos musicales Sergio Terebeiko
+Nombre
+Forte-Solomon
+
+Forma Prima
+Nombre/
+Propiedades
+
+Nombre/Propiedades
+
+Vector de
+intervalos #
+
+0-1 Vacio Set Nulo 000000 1
+1-1* 0 Unísono 000000 2
+2-1* 01 Semitono 100000 3
+2-2* 02 Tono 010000 4
+2-3* 03 Tercera Menor 001000 5
+2-4* 04 Tercera Mayor 000100 6
+2-5* 05 Cuarta Mayor 000010 7
+2-6* 06 Cuarta Aumentada (Tritono) 000001 8
+3-1* 012 Tríada Cromática 210000 9
+3-2 013 Tríada Frigia 111000 10
+3-2B 023 Tricorde Menor 111000 11
+3-3 014 Tríada Mayor-menor.1
+
+mMaj7(no5)
+
+101100 12
+
+3-3B 034 Tríada Mayor-menor.2 101100 13
+3-4 015 Tríada Séptima mayor incompleto.1
+
+Maj7(no5)
+
+100110 14
+
+3-4B 045 Tríada Séptima mayor incompleto.2 100110 15
+3-5 016 Tríada Cuarta-Tritono (Rito 1)
+
+Triada Lidia
+
+100011 16
+
+3-5B 056 Tríada Tritono-Cuarta (Rito 2)
+
+Triada Frigia 2
+
+100011 17
+
+3-6 024 Tríada Tonal 020100 18
+3-7 025 Tríada Séptima menor incompleto
+
+m7(no5)
+
+011010 19
+
+Elementos musicales Sergio Terebeiko 1317
+3-7B 035 Acorde Dominante incompleto 2
+
+7(no3)
+
+011010 20
+
+3-8 026 Acorde Dominante incompleto 1 (Sexta Italiana)
+
+7(no5)
+
+010101 21
+
+3-8B 046 Triada 5b (1 3 5b) 010101 22
+3-9* 027 Tríada Cuartal 010020 23
+3-10* 036 Tríada Disminuida / m6(no5) 002001 24
+3-11 037 Tríada Menor / 6(no5) 001110 25
+
+3-11B 047 Tríada Mayor / m6(no5) 001110 26
+3-12* 048 Tríada Aumentada 000300 27
+4-1* 0123 Tetracordio Cromático
+
+X cell
+
+321000 28
+
+4-2 0124 Segunda Mayor Tetracluster.2 221100 29
+4-2B 0234 Segunda Mayor Tetracluster.1 221100 30
+4-3* 0134 Tetracordio Alternado
+mMaj9(no5)
+
+212100 31
+
+4-4 0125 Tercera Menor Tetracluster.2 211110 32
+4-4B 0345 Tercera Menor Tetracluster.1 211110 33
+4-5 0126 Tercera Mayor Tetracluster.2
+
+1 2b 5 7
+
+210111 34
+
+4-5B 0456 Tercera Mayor Tetracluster.1 210111 35
+4-6* 0127 Tetracordio Cuarta justa 210021 36
+4-7* 0145 Tetracordio Árabe 201210 37
+4-8* 0156 Tetracordio Doble Cuarta
+
+1 4# 5 7
+
+200121 38
+
+4-9* 0167 Tetracordio Doble Tritono 200022 39
+4-10* 0235 Tetracordio Menor 122010 40
+
+1318 Elementos musicales Sergio Terebeiko
+4-11 0135 Tetracordio Frigia
+Maj9(no5)
+
+121110 41
+
+4-11B 0245 Tetracordio Mayor
+
+m9(no5)
+
+121110 42
+
+4-12 0236 Tetracordio Menor Armónica
+
+7(9b)
+
+112101 43
+
+4-12B 0346 Tetracordio Disminuido tercera mayor
+
+1 2b 3b 6
+
+112101 44
+
+4-13 0136 Tetracordio Disminuido 9b
+
+1 2 3b 6
+
+112011 45
+
+4-13B 0356 Tetracordio Disminuido cuarta justa
+
+1 2 3b 6
+
+112011 46
+
+4-14 0237 Tetracordio Menor segunda mayor
+
+m9
+
+111120 47
+
+4-14B 0457 Tetracordio Mayor cuarta justa
+
+1 2 5 7
+
+111120 48
+
+4-Z15 0146 Todos los intervalos Tetracordio.1
+
+mMaj7(4)
+
+111111 49
+
+4-Z15B 0256 Todos los intervalos Tetracordio.2
+
+7(9# no5)
+
+111111 50
+
+4-16 0157 Tetracordio Cuartal segunda-menor
+
+Maj7(4#)
+
+110121 51
+
+4-16B 0267 Tetracordio Tritono Cuartal
+
+7(4 no5)
+
+110121 52
+
+4-17* 0347 Tetracordio Mayor-Menor / Bitonal 102210 53
+4-18 0147 Tetracordio Mayor-disminuido
+
+Dism Maj7
+
+102111 54
+
+4-18B 0367 Tetracordio Menor-disminuido 102111 55
+4-19 0148 Tetracordio Menor-aumentado
+
+mMaj
+
+101310 56
+
+4-19B 0348 Tetracordio Mayor-aumentado
+
+Maj+
+
+101310 57
+
+Elementos musicales Sergio Terebeiko 1319
+4-20* 0158 Acorde Mayor séptima
+
+Maj7
+
+101220 58
+
+4-21* 0246 Tetracordio Tonal
+7(9 no5)
+
+030201 59
+
+4-22 0247 Tetracordio Mayor 9
+
+1 2 3 5
+
+021120 60
+
+4-22B 0357 Tetracordio Menor cuarta-justa
+
+m11
+
+021120 61
+
+4-23* 0257 Tetracordio Cuartal / m7(11 no5)
+
+7sus4
+
+021030 62
+
+4-24* 0248 Acorde Séptima aumentado
+
+7+
+
+020301 63
+
+4-25* 0268 Acorde Sexta francesa [C7(no5) + F#7(no5)]
+
+7(5b)
+
+020202 64
+
+4-26* 0358 Acorde Menor séptima
+
+m7
+
+012120 65
+
+4-27 0258 Acorde Semi-disminuido / m7(5b)
+
+menor 6
+
+012111 66
+
+4-27B 0368 Acorde Dominante-séptima (Sexta alemana)
+
+7
+
+012111 67
+
+4-28* 0369 Acorde disminuido séptima
+
+Dism7
+
+004002 68
+
+4-Z29 0137 Tetracordio todos los intervalos.3
+
+7(6 no5)
+
+111111 69
+
+4-Z29B 0467 Tetracordio todos los intervalos.4
+
+Mayor (4#)
+
+111111 70
+
+5-1* 01234 Pentatónica Cromática 432100 71
+5-2 01235 Pentacluster Segunda mayor.2 332110 72
+5-2B 02345 Pentacluster Segunda mayor.1 332110 73
+5-3 01245 Pentatónica Mayor 9b 322210 74
+5-3B 01345 Pentacluster Español 322210 75
+5-4 01236 Pentacluster Blues 322111 76
+
+1320 Elementos musicales Sergio Terebeiko
+5-4B 03456 Pentacluster Tercera menor 322111 77
+5-5 01237 Pentacluster Tercera mayor.2 321121 78
+5-5B 04567 Pentacluster Tercera mayor.1 321121 79
+5-6 01256 Pentacluster Oriental.1
+(Raga Megharanji -13161-)
+
+311221 80
+
+5-6B 01456 Pentacluster Oriental.2 311221 81
+5-7 01267 Pentacluster Doble.1
+(Raga Nabhomani -11415-)
+
+310132 82
+
+5-7B 01567 Pentacluster Doble.2 310132 83
+5-8* 02346 Pentatónica Tritono-Simétrico
+
+(Espejo)
+
+232201 84
+
+5-9 01246 Pentatónica Tritono-expandido 231211 85
+5-9B 02456 Pentatónica Tritono-contraído 231211 86
+5-10 01346 Pentatónica Alternada.1 223111 87
+5-10B 02356 Pentatónica Alternada.2 223111 88
+5-11 02347 Pentatónica Cluster-central.1 222220 89
+5-11B 03457 Pentatónica Cluster-central.2 222220 90
+5-Z12* 01356 Pentatónica Locria 222121 91
+5-13 01248 Pentatónica Aumentada.1 221311 92
+5-13B 02348 Pentatónica Aumentada.2 221311 93
+5-14 01257 Pentatónica Doble-segunda triple-cuarta.1 221131 94
+5-14B 02567 Pentatónica Doble-segunda triple-cuarta.2 221131 95
+5-15* 01268 Pentatónica Asimetrico 220222 96
+5-16 01347 Pentatónica Mayor-menor-disminuido.1 213211 97
+5-16B 03467 Pentatónica Mayor-menor-disminuido.2 213211 98
+5-Z17* 01348 Acorde Menor 9
+Maj7+(6)
+
+212320 99
+
+Elementos musicales Sergio Terebeiko 1321
+5-Z18 01457 Pentatónica Gypsy.1 212221 100
+5-Z18B 02367 Pentatónica Gypsy.2 212221 101
+5-19 01367 Pentatónica Javanesa 212122 102
+5-19B 01467 Pentatónica Balinesa 212122 103
+5-20 01378 Pentatónica Pelog (12414) 211231 104
+5-20B 01578 Pentatónica Hirajoshi -21414-
+(Sakura/Raga Saveri -14214-)
+
+211231 105
+
+5-21 01458 Pentatónica Siria (Raga Megharanji -13134-) 202420 106
+5-21B 03478 Pentatónica Libanesa
+(Acorde Menor aumentado)
+
+202420 107
+
+5-22* 01478 Pentatónica Persa
+
+(Raga Reva/Ramkali -13314-)
+
+202321 108
+
+5-23 02357 Pentatónica menor 132130 109
+5-23B 02457 Pentatónica mayor
+m11(no5)
+
+132130 110
+
+5-24 01357 Pentatónica Frigia 131221 111
+5-24B 02467 Pentatónica Lidia 131221 112
+5-25 02358 Acode disminuido novena mayor 123121 113
+5-25B 03568 Acorde Menor 9b 123121 114
+5-26 02458 Acorde Disminuido 9#
+
+mMaj7(6)
+
+122311 115
+
+5-26B 03468 Acorde Aumentado 9b 122311 116
+5-27 01358 Acorde Mayor 9
+
+Maj9
+
+122230 117
+
+5-27B 03578 Acorde Menor 9
+
+m9
+Maj7(6)
+
+122230 118
+
+5-28 02368 Pentatónica Aumentada-sexta.1 122212 119
+5-28B 02568 Pentatónica Aumentada-sexta.2 122212 120
+
+1322 Elementos musicales Sergio Terebeiko
+5-29 01368 Pentatónica Kumoi.2 122131 121
+5-29B 02578 Pentatónica Kumoi.1 122131 122
+5-30 01468 Pentatónica Enigmatica .1 121321 123
+5-30B 02478 Pentatónica Enigmatica .2
+(Pentatónica alterada -14223-)
+
+121321 124
+
+5-31 01369 Acorde Disminuido 9b 114112 125
+5-31B 02369 Acorde Disminuido 9
+(Pentatónica Ranjaniraga)
+Disminuida Maj7
+
+114112 126
+
+5-32 01469 Pentatónica Napolitana.1 113221 127
+5-32B 01479 Pentatónica Napolitana.2 113221 128
+5-33* 02468 Pentatónica Tonal 040402 129
+5-34* 02469 Pentatónica Prometeo
+
+m(4 6)
+(Menor 6/Dominante -22332-)
+
+032221 130
+
+5-35* 02479 Pentatónica “Tradicional”
+(Slendro/Bilahariraga)
+
+032140 131
+
+5-Z36 01247 Pentacluster Mayor septima.2 222121 132
+5-Z36B 03567 Pentacluster Menor septima.1 222121 133
+5-Z37* 03458 Pentatónica Cluster-central 212320 134
+5-Z38 01258 Pentacluster Disminuido.1 212221 135
+5-Z38B 03678 Pentacluster Disminuido.2 212221 136
+6-1* 012345 Hexatónica Cromática 543210 137
+6-2 012346 443211 138
+6-2B 023456 443211 139
+6-Z3 012356 433221 140
+6-Z3B 013456 433221 141
+6-Z4* 012456 432321 142
+6-5 012367 422232 143
+
+Elementos musicales Sergio Terebeiko 1323
+6-5B 014567 422232 144
+6-Z6* 012567 Hexatónica Doble-cluster 421242 145
+6-7* 012678 Messiaen modo 5
+
+[Cmaj7(no5) + F#Maj7(no5)]
+
+420243 146
+
+6-8* 023457 343230 147
+6-9 012357 342231 148
+6-9B 024567 342231 149
+6-Z10 013457 333321 150
+6-Z10B 023467 333321 151
+6-Z11 012457 333231 152
+6-Z11B 023567 333231 153
+6-Z12 012467 332232 154
+6-Z12B 013567 332232 155
+6-Z13* 013467 Hexatónica Alternada 324222 156
+6-14 013458 323430 157
+6-14B 034578 323430 158
+6-15 012458 323421 159
+6-15B 034678 323421 160
+6-16 014568 322431 161
+6-16B 023478 Megha Raga 322431 162
+6-Z17 012478 ”Todos los intervalos” 322332 163
+6-Z17B 014678 322332 164
+6-18 012578 322242 165
+6-18B 013678 322242 166
+6-Z19 013478 Lidia 3b (no6)
+mMaj9(4#)
+Pseudo aumentada menor
+
+313431 167
+
+1324 Elementos musicales Sergio Terebeiko
+6-Z19B 014578 Lidia 2# (no6)
+Maj7(2#4#)
+
+313431 168
+
+6-20* 014589 Escala Aumentada
+(Genus Tertium/Ditone)
+
+303630 169
+
+6-21 023468 242412 170
+6-21B 024568 242412 172
+6-22B 024678 241422 173
+6-Z23* 023568 Hexatónica Super-locria 234222 174
+6-Z24 013468 233331 175
+6-Z24B 024578 Hexatónica Melódica menor
+
+mMaj9(6)
+
+233331 176
+
+6-Z25 013568 Hexacordio Locrio no7
+(Suddha Saveriraga)
+Jonica no 6
+
+233241 177
+
+6-Z25B 023578 Hexatónica Menor
+Dorica no4
+m9(6)
+
+233241 178
+
+6-Z26* 013578 Hexatónica Frigia no7
+
+Lidia no6
+Maj9(4#)
+
+232341 179
+
+6-27 013469 225222 180
+6-27B 023569 Hexatónica Pirámide 225222 181
+6-Z28* 013569 Hexatónica Frigia-doble 224322 182
+6-Z29* 013689 224232 183
+6-30 013679 Hexatónica Menor-bitonal 224223 184
+6-30B 023689 Hexacordio Mayor-bitonal
+(Acorde Petrushka)
+
+224223 185
+
+6-31 013589 223431 186
+6-31B 014689 223431 187
+
+Elementos musicales Sergio Terebeiko 1325
+6-32* 024579 Hexatónica mayor
+
+m11
+(Arezzo Mayor diatónica -221223-)
+
+143250 188
+
+6-33 023579 Hexatónica Dórica no7
+
+Lidia no 5
+Maj9(4# 6)
+
+143241 189
+
+6-33B 024679 Hexatónica Lidia no7
+Dominante 11
+9(6)
+
+143241 190
+
+6-34 013579 Acorde Prometeo
+Mixolidia 4# no5
+9(4# 6 no5)
+
+142422 191
+
+6-34B 024689 Hexatónica Armónica
+Aumentada 11
+Mixolidia 4# no6
+9(4#)
+
+142422 192
+
+6-35* 02468A Escala Tonal 060603 193
+6-Z36 012347 433221 194
+6-Z36B 034567 433221 195
+6-Z37* 012348 432321 196
+6-Z38* 012378 Triadas cuartales a un semitono de distancia 421242 197
+6-Z39 023458 333321 198
+6-Z39B 034568 333321 199
+6-Z40 012358 333231 200
+6-Z40B 035678 333231 201
+6-Z41 012368 332232 202
+6-Z41B 025678 332232 203
+6-Z42* 012369 324222 204
+6-Z43 012568 322332 205
+6-Z43B 023678 322332 206
+6-Z44 012569 Hexatónica Anagrama de Schoemberg 313431 207
+
+1326 Elementos musicales Sergio Terebeiko
+6-Z44B 012589 Bauli Raga (133131) 313431 208
+6-Z45* 023469 234222 209
+6-Z46 012469 233331 210
+6-Z46B 024569 233331 211
+6-Z47 012479 233241 212
+6-Z47B 023479 Blues Modo.1 (321132) 233241 213
+6-Z48* 012579 232341 214
+6-Z49* 013479 Napolitana Prometeo (132312) 224322 215
+6-Z50* 014679 C + F#m 224232 216
+7-1* 0123456 Heptatónica Cromática 654321 217
+7-2 0123457 554331 218
+7-2B 0234567 554331 219
+7-3 0123458 544431 220
+7-3B 0345678 544431 221
+7-4 0123467 544332 222
+7-4B 0134567 544332 223
+7-5 0123567 543342 224
+7-5B 0124567 543342 225
+7-6 0123478 533442 226
+7-6B 0145678 533442 227
+7-7 0123678 532353 228
+7-7B 0125678 532353 229
+7-8* 0234568 454422 230
+7-9 0123468 453432 231
+7-9B 0245678 453432 232
+7-10 0123469 445332 233
+
+Elementos musicales Sergio Terebeiko 1327
+7-10B 0234569 445332 234
+7-11 0134568 444441 235
+7-11B 0234578 444441 236
+7-Z12* 0123479 Blues Afro-americana 444342 237
+7-13 0124568 443532 238
+7-13B 0234678 443532 239
+7-14 0123578 443352 240
+7-14B 0135678 443352 241
+7-15* 0124678 442443 242
+7-16 0123569 435432 243
+7-16B 0134569 435432 244
+7-Z17* 0124569 434541 245
+7-Z18 0123589 434442 246
+7-Z18B 0146789 434442 247
+7-19 0123679 434343 248
+7-19B 0123689 434343 249
+7-20 0124789 Frigia Cromática inversa (1123113) 433452 250
+7-20B 0125789 Mixolidia cromática -1131132-
+Pantuvarali Raga -1321131-
+Dórica cromática
+Mela Kanakangi -1132113-
+
+433452 251
+
+7-21 0124589 424641 252
+7-21B 0134589 Heptatónica Gypsy -1312113- 424641 253
+7-22* 0125689 Húngara Menor
+
+Persa
+Mayor Gypsy
+Doble Armónica
+Bhairav That/Mayamdavagaula Raga
+-1312131-/Oriental -1311312-)
+
+424542 254
+
+7-23 0234579 354351 255
+
+1328 Elementos musicales Sergio Terebeiko
+7-23B 0245679 Heptatónica Mayor + Tritono 354351 256
+7-24 0123579 353442 257
+7-24B 0246789 Heptatónica Enigmática (1322211) 353442 258
+7-25 0234679 Heptatónica Blues 345342 259
+7-25B 0235679 345342 260
+7-26 0134579 344532 261
+7-26B 0245689 344532 262
+7-27 0124579 344451 263
+7-27B 0245789 Blues Modificada (2121132) 344451 264
+7-28 0135679 344433 265
+7-28B 0234689 344433 266
+7-29 0124679 Locria 7 344352 267
+7-29B 0235789 Jónica 5b 344352 268
+7-30 0124689 Menor Napolitana
+Mela Dhenuka
+
+343542 269
+
+7-30B 0135789 343542 270
+7-31 0134679 Húngara Mayor (Heptatónica Alternada.1) 336333 271
+7-31B 0235689 Heptatónica Alternada.2 336333 272
+7-32 0134689 Menor armónica
+Gypsy española
+Mela Kiravani
+Pilu That
+
+335442 273
+
+7-32B 0135689 Mayor armónica
+Dharmavati Scale -2131221
+Mela Cakravana
+Raga Ahir Bhairav
+
+335442 274
+
+7-33* 012468A Napolitana Mayor -1222221-
+Leading Tonal -222211-
+
+262623 275
+
+Elementos musicales Sergio Terebeiko 1329
+7-34* 013468A Menor Melódica
+Jazz Menor
+Super-Locria
+
+254442 276
+
+7-35* 013568A Diatónica
+Heptatónica Mayor
+Mayor inversa
+
+254361 277
+
+7-Z36 0123568 444342 278
+7-Z36B 0235678 444342 279
+7-Z37* 0134578 434541 280
+7-Z38 0124578 434442 281
+7-Z38B 0134678 434442 282
+8-1* 01234567 Octatónica Cromática 765442 283
+8-2 01234568 665542 284
+8-2B 02345678 665542 285
+8-3* 01234569 656542 286
+8-4 01234578 655552 287
+8-4B 01345678 655552 288
+8-5 01234678 654553 289
+8-5B 01245678 654553 290
+8-6* 01235678 654463 291
+8-7* 01234589 645652 292
+8-8* 01234789 644563 293
+8-9* 01236789 Messiaen Modo 4 (11131113) 644464 294
+8-10* 02345679 566452 295
+8-11 01234579 565552 296
+8-11B 02456789 Octatónica Blues.1 565552 297
+8-12 01345679 556543 298
+8-12B 02345689 556543 299
+
+1330 Elementos musicales Sergio Terebeiko
+8-13 01234679 Octatónica Blues.2 556453 300
+8-13B 02356789 556453 301
+8-14 01245679 555562 302
+8-14B 02345789 555562 303
+8-Z15 01234689 555553 304
+8-Z15B 01356789 555553 305
+8-16 01235789 554563 306
+8-16B 01246789 554563 307
+8-17* 01345689 546652 308
+8-18 01235689 546553 309
+8-18B 01346789 546553 310
+8-19 01245689 545752 311
+8-19B 01345789 545752 312
+8-20* 01245789 545662 313
+8-21* 0123468A 474643 314
+8-22 0123568A Jonica Bebop (2b-2) 465562 315
+8-22B 0123579A Escala Octatónica Española -12111222- 465562 316
+8-23* 0123578A Mixolidia Bebop (7b-7)
+Dorica bebop (3b-3)
+Octatónica Cuartal
+
+465472 317
+
+8-24* 0124568A 464743 318
+8-25* 0124678A Messiaen Modo 6 -11221122-
+Dominante 5b disminuida - Barry Harris
+
+464644 319
+
+8-26* 0124579A Frigia Española -12112122-
+Blues modo.2 -21211212-
+Jonica bebop 5 5#
+Mayor 6ta disminuida - Barry Harris
+
+456562 320
+
+8-27 0124578A Menor 6ta disminuida - Barry Harris 456553 321
+8-27B 0124679A Dominante disminuida - Barry Harris 456553 322
+
+Elementos musicales Sergio Terebeiko 1331
+8-28* 0134679A Octatónica Disminuida 448444 323
+8-Z29 01235679 555553 324
+8-Z29B 02346789 555553 325
+9-1* 012345678 Nonacordio Cromático 876663 326
+9-2 012345679 777663 327
+9-2B 023456789 777663 328
+9-3 012345689 767763 329
+9-3B 013456789 767763 330
+9-4 012345789 766773 331
+9-4B 012456789 766773 332
+9-5 012346789 766674 333
+9-5B 012356789 766674 334
+9-6* 01234568A 686763 335
+9-7 01234578A Nonatónica Blues
+
+Mayor cromática Barry Harris
+
+677673 336
+
+9-7B 01234579A 677673 337
+9-8 01234678A 676764 338
+9-8B 01234689A 676764 339
+9-9* 01235678A Raga Ramdasi Malhar -211122111- 676683 340
+9-10* 01234679A 668664 341
+9-11 01235679A 667773 342
+9-11B 01235689A Nonacordio Disminuido 667773 343
+9-12* 01245689A Tcherepnin
+
+Messiaen modo 3 -112112112-
+
+666963 344
+
+10-1* 0123456789 Decatónica Cromática 988884 345
+10-2* 012345678A 898884 346
+10-3* 012345679A 889884 347
+
+1332 Elementos musicales Sergio Terebeiko
+10-4* 012345689A 888984 347
+10-5* 012345789A Mayor-Menor mixta 888894 348
+10-6* 012346789A Messiaen modo 7 -1111211112- 888885 349
+11-1* 0123456789A Undecatónica -11111111111- AAAAA5 350
+12-1* 0123456789AB Escala Cromática
+
+(Dodecatónica -111111111111-)
+
+CCCCC6 351

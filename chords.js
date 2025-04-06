@@ -76,7 +76,7 @@ const CHORDS = {
       "carter-number": null,
       "complement-forte-code": null,
       "documentation-link":
-        "https://drive.google.com/file/d/11G26XcGI1vDzvukLQiA6C4wiz5LbZnQH/view?usp=drive_link",
+        "https://drive.google.com/file/d/1umpJSqLFN2LfPophSACteE5N_4l5IxXt/view?usp=drive_link",
     },
     {
       "forte-code": "3-4A",
@@ -84,7 +84,7 @@ const CHORDS = {
       name: "Maj7(no5) - incomplete Maj7 n1",
       "carter-number": "9",
       "complement-forte-code": "9-4B",
-      "documentation-link": "https://drive.google.com/file/d/1Fg_LOpLexrbw1vqS__PPqNwuol1aUe9o/view?usp=drive_link",
+      "documentation-link":   "https://drive.google.com/file/d/1umpJSqLFN2LfPophSACteE5N_4l5IxXt/view?usp=drive_link",
     },
     {
       "forte-code": "3-4B",
@@ -92,7 +92,7 @@ const CHORDS = {
       name: "Maj7(no3) - incomplete Maj7 n2",
       "carter-number": null,
       "complement-forte-code": "9-4A",
-      "documentation-link": "https://drive.google.com/file/d/122_7FZPxvd33meQ7Ez-rkxGiX4mihRtq/view?usp=drive_link",
+      "documentation-link": null,
     },
     {
       "forte-code": "3-5",

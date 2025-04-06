@@ -18,7 +18,7 @@ const CHORDS = {
       "carter-number": "4",
       "complement-forte-code": "9-1",
       "documentation-link":
-        "https://drive.google.com/file/d/1VF9ZlCfnjY--pqIb-k0shD4WZrkOXNAH/view?usp=drive_link",
+        "https://drive.google.com/file/d/17JZPC3QRReXdA2Vkv0g3WPHZuEfcKs0A/view?usp=drive_link",
     },
     {
       "forte-code": "3-2",

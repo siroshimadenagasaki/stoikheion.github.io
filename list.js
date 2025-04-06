@@ -2,7 +2,7 @@ const solomonlist = [
     {
         "forte-code": "3-1",
         "link": "https://drive.google.com/file/d/1VF9ZlCfnjY--pqIb-k0shD4WZrkOXNAH/view?usp=drive_link",
-        name: "Chromatic tricord"
+        name: "Chromatic tricordxxx"
     },
     {
         "forte-code": "3-2",

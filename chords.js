@@ -223,8 +223,7 @@ const CHORDS = {
       "carter-number": null,
       "complement-forte-code": "9-11A",
       "documentation-link":
-        "https://drive.google.com/file/d/19B0wNReMW1-5h_3q157HNu0KQoqer4dd/view?usp=sharing",
-    },
+        "https://drive.google.com/file/d/19B0wNReMW1-5h_3q157HNu0KQoqer4dd/view?usp=sharing",    },
     {
       "forte-code": "3-12",
       "pitch-classes": [0, 4, 8],

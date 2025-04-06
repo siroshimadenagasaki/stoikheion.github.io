@@ -47,7 +47,7 @@ const CHORDS = {
     {
       "forte-code": "3-3",
       "pitch-classes": [0, 1, 4],
-      name: "mMaj7(no5) - (Major/minor triad n1)..",
+      name: "mMaj7(no5) - (Major/minor triad n1)",
       "carter-number": null,
       "complement-forte-code": null,
       "documentation-link":
@@ -76,16 +76,14 @@ const CHORDS = {
       "carter-number": null,
       "complement-forte-code": null,
       "documentation-link":
-        "https://drive.google.com/file/d/1umpJSqLFN2LfPophSACteE5N_4l5IxXt/view?usp=drive_link",
-    },
+        "https://drive.google.com/file/d/1umpJSqLFN2LfPophSACteE5N_4l5IxXt/view?usp=sharing",    },
     {
       "forte-code": "3-4A",
       "pitch-classes": [0, 1, 5],
       name: "Maj7(no5) - incomplete Maj7 n1",
       "carter-number": "9",
       "complement-forte-code": "9-4B",
-      "documentation-link":   "https://drive.google.com/file/d/1umpJSqLFN2LfPophSACteE5N_4l5IxXt/view?usp=drive_link",
-    },
+      "documentation-link":   "https://drive.google.com/file/d/1umpJSqLFN2LfPophSACteE5N_4l5IxXt/view?usp=sharing",
     {
       "forte-code": "3-4B",
       "pitch-classes": [0, 4, 5],
@@ -101,7 +99,7 @@ const CHORDS = {
       "carter-number": null,
       "complement-forte-code": null,
       "documentation-link":
-        "https://drive.google.com/open?id=1DeIXAGoG_QE9rmSWARIxFM35Kkn_jiow&usp=drive_fs",
+        "https://drive.google.com/file/d/1DeIXAGoG_QE9rmSWARIxFM35Kkn_jiow/view?usp=sharing",
     },
     {
       "forte-code": "3-5A",
@@ -109,7 +107,7 @@ const CHORDS = {
       name: "Fourth/Tritone triad - Rite n1 - Lydian triad",
       "carter-number": "7",
       "complement-forte-code": "9-5B",
-      "documentation-link": "https://drive.google.com/open?id=1DeIXAGoG_QE9rmSWARIxFM35Kkn_jiow&usp=drive_fs",
+      "documentation-link": "https://drive.google.com/file/d/1DeIXAGoG_QE9rmSWARIxFM35Kkn_jiow/view?usp=sharing",
     },
     {
       "forte-code": "3-5B",
@@ -118,7 +116,7 @@ const CHORDS = {
       "carter-number": null,
       "complement-forte-code": "9-5A",
       "documentation-link":
-        "https://drive.google.com/open?id=1Flyn7KoK9iPKwLD8o_NsNsNA1dRX0FDG&usp=drive_fs",
+        "https://drive.google.com/file/d/1Flyn7KoK9iPKwLD8o_NsNsNA1dRX0FDG/view?usp=sharing",
     },
     {
       "forte-code": "3-6",
@@ -242,8 +240,7 @@ const CHORDS = {
       "carter-number": "1",
       "complement-forte-code": "8-1",
       "documentation-link":
-        "https://drive.google.com/file/d/1wlBcPDZJ5ci4KyflLdxDCHMy6vm2d-bR/view?usp=drive_link",
-    },
+        "https://drive.google.com/file/d/1-fuTXKuvm9GAKtTHD5oTHvzkorRrGAp2/view?usp=sharing",    },
     {
       "forte-code": "4-2",
       "pitch-classes": [0, 1, 2, 4],
@@ -275,8 +272,7 @@ const CHORDS = {
       "carter-number": "9",
       "complement-forte-code": "8-3",
       "documentation-link":
-        "https://drive.google.com/file/d/1nkPmyWMbuu1TvBF0OKWHcCcw5YXTqgYJ/view?usp=drive_link",
-    },
+        "https://drive.google.com/file/d/1Fb-l1mrwuvMGEMVUV4PsQAozzwjzu5sc/view?usp=sharing",    },
     {
       "forte-code": "4-4",
       "pitch-classes": [0, 1, 2, 5],
@@ -309,15 +305,14 @@ const CHORDS = {
       "carter-number": null,
       "complement-forte-code": null,
       "documentation-link":
-        "https://drive.google.com/file/d/12WC3EZsdWl3tpmDCsRhEFTYvSlzwo__c/view?usp=drive_link",
-    },
+        "https://drive.google.com/file/d/1rYKQz0jAyIixMSs6VtONjFFW7gQCZKX5/view?usp=sharing",    },
     {
       "forte-code": "4-5A",
       "pitch-classes": [0, 1, 2, 6],
       name: "Tercera Mayor Tetracluster.2",
       "carter-number": "22",
       "complement-forte-code": "8-5B",
-      "documentation-link": null,
+      "documentation-link": "https://drive.google.com/file/d/1rYKQz0jAyIixMSs6VtONjFFW7gQCZKX5/view?usp=sharing",,
     },
     {
       "forte-code": "4-5B",
@@ -342,8 +337,7 @@ const CHORDS = {
       "carter-number": "8",
       "complement-forte-code": "8-7",
       "documentation-link":
-        "https://drive.google.com/file/d/1ZuJwArdTyzSDMAtdIqwO91dmyBqAUIfP/view?usp=drive_link",
-    },
+        "https://drive.google.com/file/d/1A87mfWAiKB5MPVoTgRhQz_n3etOrXwFV/view?usp=sharing",    },
     {
       "forte-code": "4-8",
       "pitch-classes": [0, 1, 5, 6],
@@ -377,15 +371,14 @@ const CHORDS = {
       "carter-number": null,
       "complement-forte-code": null,
       "documentation-link":
-        "https://drive.google.com/file/d/1DPvJgg106f2LrGzX2X6sr2YxvliLzsYS/view?usp=drive_link",
-    },
+        "https://drive.google.com/file/d/1DPvJgg106f2LrGzX2X6sr2YxvliLzsYS/view?usp=sharing",    },
     {
       "forte-code": "4-11A",
       "pitch-classes": [0, 1, 3, 5],
       name: "Tetracordio Frigia",
       "carter-number": "26",
       "complement-forte-code": "8-11B",
-      "documentation-link": null,
+      "documentation-link": "https://drive.google.com/file/d/1DPvJgg106f2LrGzX2X6sr2YxvliLzsYS/view?usp=sharing",,
     },
     {
       "forte-code": "4-11B",
@@ -394,8 +387,7 @@ const CHORDS = {
       "carter-number": null,
       "complement-forte-code": "8-11A",
       "documentation-link":
-        "https://drive.google.com/file/d/1Par1hjp12OE705FJexzxViMvmPumrgT5/view?usp=drive_link",
-    },
+        "https://drive.google.com/file/d/1Par1hjp12OE705FJexzxViMvmPumrgT5/view?usp=sharing",    },
     {
       "forte-code": "4-12",
       "pitch-classes": [0, 2, 3, 6],
@@ -403,15 +395,14 @@ const CHORDS = {
       "carter-number": null,
       "complement-forte-code": null,
       "documentation-link":
-        "https://drive.google.com/file/d/15Y5NtFR4_zp_uTB8awzk0HkJqS3ExiXz/view?usp=drive_link",
-    },
+        "https://drive.google.com/file/d/1DKeAMatZQK_gXh6gpwKVKQv2Gw-9PrYe/view?usp=sharing",    },
     {
       "forte-code": "4-12A",
       "pitch-classes": [0, 2, 3, 6],
       name: "Tetracordio Menor Armónica",
       "carter-number": "28",
       "complement-forte-code": "8-12A",
-      "documentation-link": null,
+      "documentation-link": "https://drive.google.com/file/d/1DKeAMatZQK_gXh6gpwKVKQv2Gw-9PrYe/view?usp=sharing",,
     },
     {
       "forte-code": "4-12B",
@@ -420,8 +411,7 @@ const CHORDS = {
       "carter-number": null,
       "complement-forte-code": "8-12B",
       "documentation-link":
-        "https://drive.google.com/file/d/192029FjmwF8DrkPUCLLt4KHM8X31F0eA/view?usp=drive_link",
-    },
+        "https://drive.google.com/file/d/1D5Fya9aiSDuMKAsUb8uHe8sdoSjKsxax/view?usp=sharing",    },
     {
       "forte-code": "4-13",
       "pitch-classes": [0, 1, 3, 6],
@@ -429,15 +419,14 @@ const CHORDS = {
       "carter-number": null,
       "complement-forte-code": null,
       "documentation-link":
-        "https://drive.google.com/file/d/1zqTXP2Ofl3ft3GVmi30DWuby0Y1v4NCg/view?usp=drive_link",
-    },
+        "https://drive.google.com/file/d/1GsAUWikynxxG0o6t_3WrH0oomtn3UIWm/view?usp=sharing",    },
     {
       "forte-code": "4-13A",
       "pitch-classes": [0, 1, 3, 6],
       name: "Tetracordio Disminuido 9b",
       "carter-number": "7",
       "complement-forte-code": "8-13B",
-      "documentation-link": null,
+      "documentation-link": "https://drive.google.com/file/d/1GsAUWikynxxG0o6t_3WrH0oomtn3UIWm/view?usp=sharing",,
     },
     {
       "forte-code": "4-13B",
@@ -446,8 +435,7 @@ const CHORDS = {
       "carter-number": null,
       "complement-forte-code": "8-13A",
       "documentation-link":
-        "https://drive.google.com/file/d/1fd_G1dP6B9-xIUm2ZP_odlq2Rtz-WeaC/view?usp=drive_link",
-    },
+        "https://drive.google.com/file/d/1DsmhxcFVb7BnPBKOJtYLSPcbkT0C4mJ2/view?usp=sharing",    },
     {
       "forte-code": "4-14",
       "pitch-classes": [0, 2, 3, 7],
@@ -3912,8 +3900,7 @@ const CHORDS = {
       "carter-number": null,
       "complement-forte-code": "2-6",
       "documentation-link":
-        "https://drive.google.com/file/d/1MFhCF1B1DKBdCDt8Z-hzEhQ_EuI740iS/view?usp=drive_link",
-    },
+        "https://drive.google.com/file/d/1IKoFd1yzzM17-PQ9rvDK6o_7DEjayAQh/view?usp=sharing",    },
     {
       "forte-code": "11-1",
       "pitch-classes": [0, 1, 2, 3, 4, 5, 6, 7, 8, 9, 10],
@@ -3929,8 +3916,7 @@ const CHORDS = {
       "carter-number": null,
       "complement-forte-code": "0-1",
       "documentation-link":
-        "https://drive.google.com/file/d/1XMDylQSsUWToe6EOAQPgY2jBWwob59xB/view?usp=drive_link",
-    },
+        "https://drive.google.com/file/d/1IoxblakSfNSRHwpfG-AGaC2rzJNXeoA2/view?usp=sharing",    },
     {
       "forte-code": "7-Z36",
       "pitch-classes": [0, 1, 2, 3, 5, 6, 8],

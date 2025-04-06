@@ -18,7 +18,7 @@ const CHORDS = {
       "carter-number": "4",
       "complement-forte-code": "9-1",
       "documentation-link":
-        "https://drive.google.com/file/d/17JZPC3QRReXdA2Vkv0g3WPHZuEfcKs0A/view?usp=drive_link",
+        "https://drive.google.com/file/d/17JZPC3QRReXdA2Vkv0g3WPHZuEfcKs0A/view?usp=sharing",
     },
     {
       "forte-code": "3-2",
@@ -101,7 +101,7 @@ const CHORDS = {
       "carter-number": null,
       "complement-forte-code": null,
       "documentation-link":
-        "https://drive.google.com/file/d/1y5sfPFCGkDWUiXiV9jFyLZbNBdFaFU2z/view?usp=drive_link",
+        "https://drive.google.com/open?id=1DeIXAGoG_QE9rmSWARIxFM35Kkn_jiow&usp=drive_fs",
     },
     {
       "forte-code": "3-5A",
@@ -109,7 +109,7 @@ const CHORDS = {
       name: "Fourth/Tritone triad - Rite n1 - Lydian triad",
       "carter-number": "7",
       "complement-forte-code": "9-5B",
-      "documentation-link": null,
+      "documentation-link": "https://drive.google.com/open?id=1DeIXAGoG_QE9rmSWARIxFM35Kkn_jiow&usp=drive_fs",
     },
     {
       "forte-code": "3-5B",
@@ -118,7 +118,7 @@ const CHORDS = {
       "carter-number": null,
       "complement-forte-code": "9-5A",
       "documentation-link":
-        "https://drive.google.com/file/d/1jFrR8JjTuGHKMKzampx9P2ZHxWSbo8YQ/view?usp=drive_link",
+        "https://drive.google.com/open?id=1Flyn7KoK9iPKwLD8o_NsNsNA1dRX0FDG&usp=drive_fs",
     },
     {
       "forte-code": "3-6",
@@ -127,7 +127,7 @@ const CHORDS = {
       "carter-number": "3",
       "complement-forte-code": "9-6",
       "documentation-link":
-        "https://drive.google.com/file/d/1jhF-ioYnp7Ux7xYxhTxH0hACVEqmwume/view?usp=drive_link",
+       " https://drive.google.com/file/d/1FCkz_PLh5z6GHahUDTGru7U5JrbWhDi7/view?usp=sharing",
     },
     {
       "forte-code": "3-7",
@@ -136,7 +136,7 @@ const CHORDS = {
       "carter-number": null,
       "complement-forte-code": null,
       "documentation-link":
-        "https://drive.google.com/file/d/1Gj7n9HHUye9521BDmABnqwhdfbXwiE4V/view?usp=drive_link",
+        "https://drive.google.com/file/d/1FFRRQUeTAL-yUpPNyTeFamNIhr1PBBgl/view?usp=sharing",
     },
     {
       "forte-code": "3-7A",
@@ -144,7 +144,7 @@ const CHORDS = {
       name: "m7(no5) - Incomplete minor seventh",
       "carter-number": "10",
       "complement-forte-code": "9-7B",
-      "documentation-link": null,
+      "documentation-link":  "https://drive.google.com/file/d/1FFRRQUeTAL-yUpPNyTeFamNIhr1PBBgl/view?usp=sharing",
     },
     {
       "forte-code": "3-7B",
@@ -153,7 +153,7 @@ const CHORDS = {
       "carter-number": null,
       "complement-forte-code": "9-7A",
       "documentation-link":
-        "https://drive.google.com/file/d/1Ss6UMiJsLbJUxkkkma8umnPKuBs0svcT/view?usp=drive_link",
+        "https://drive.google.com/file/d/1EudLqdM0l3YsHPAyrp1Qp50-jIxcggro/view?usp=sharing",
     },
     {
       "forte-code": "3-8",
@@ -162,7 +162,7 @@ const CHORDS = {
       "carter-number": null,
       "complement-forte-code": null,
       "documentation-link":
-        "https://drive.google.com/file/d/1Ld9ltyWInviSO52W_xjXuD51vGddJMUN/view?usp=drive_link",
+        "https://drive.google.com/file/d/1DyJ3IYhMtLb5yeZqsy1UoDB0aKmPNOAf/view?usp=sharing",
     },
     {
       "forte-code": "3-8A",
@@ -170,7 +170,7 @@ const CHORDS = {
       name: "7(no5) - Incomplete dominant triad n2 - Italian sixth"    ,     
       "carter-number": "8",
       "complement-forte-code": "9-8B",
-      "documentation-link": null,
+      "documentation-link":         "https://drive.google.com/file/d/1DyJ3IYhMtLb5yeZqsy1UoDB0aKmPNOAf/view?usp=sharing",
     },
     {
       "forte-code": "3-8B",
@@ -179,7 +179,7 @@ const CHORDS = {
       "carter-number": null,
       "complement-forte-code": "9-8A",
       "documentation-link":
-        "https://drive.google.com/file/d/1bHV3UnYhdheC31krMxcdjwD8imdNGQAY/view?usp=drive_link",
+        "https://drive.google.com/file/d/1bHV3UnYhdheC31krMxcdjwD8imdNGQAY/view?usp=sharing",
     },
     {
       "forte-code": "3-9",
@@ -188,7 +188,7 @@ const CHORDS = {
       "carter-number": "5",
       "complement-forte-code": "9-9",
       "documentation-link":
-        "https://drive.google.com/file/d/1_yVMuQMVDMGIFRVZ7cqPxupL07FRBdrq/view?usp=drive_link",
+        "https://drive.google.com/file/d/1_yVMuQMVDMGIFRVZ7cqPxupL07FRBdrq/view?usp=sharing",
     },
     {
       "forte-code": "3-10",
@@ -197,7 +197,7 @@ const CHORDS = {
             "carter-number": "2",
       "complement-forte-code": "9-10",
       "documentation-link":
-        "https://drive.google.com/file/d/1YSoV--g83b9eGJn2TuHXvfVFSyeYm4OA/view?usp=drive_link",
+        "https://drive.google.com/file/d/1YSoV--g83b9eGJn2TuHXvfVFSyeYm4OA/view?usp=sharing",
     },
     {
       "forte-code": "3-11",
@@ -206,7 +206,7 @@ const CHORDS = {
       "carter-number": null,
       "complement-forte-code": null,
       "documentation-link":
-        "https://drive.google.com/file/d/1rxkvSrXy8PUCd7TXnGJaB6V4xx_5MQx4/view?usp=drive_link",
+        "https://drive.google.com/file/d/1GEvdW5adhH_sM029bpFchnNY9ygJ8hE9/view?usp=sharing",
     },
     {
       "forte-code": "3-11A",
@@ -223,7 +223,7 @@ const CHORDS = {
       "carter-number": null,
       "complement-forte-code": "9-11A",
       "documentation-link":
-        "https://drive.google.com/file/d/19B0wNReMW1-5h_3q157HNu0KQoqer4dd/view?usp=drive_link",
+        "https://drive.google.com/file/d/19B0wNReMW1-5h_3q157HNu0KQoqer4dd/view?usp=sharing",
     },
     {
       "forte-code": "3-12",

@@ -54,6 +54,14 @@ const CHORDS = {
         "https://drive.google.com/file/d/1mt0iooczHY7eGaUSPCR245dbKuvyL4ZP/view?usp=sharing",
     },
     {
+      "forte-code": "3-3A",
+      "pitch-classes": [0, 1, 4],
+      name: "mMaj7(no5) - (Major/minor triad n1)",
+      "carter-number": "11",
+      "complement-forte-code": "9-3B",
+      "documentation-link": null,
+    },
+    {
       "forte-code": "3-3B",
       "pitch-classes": [0, 3, 4],
       name: "Major/minor triad n2",

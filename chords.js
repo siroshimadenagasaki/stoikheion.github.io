@@ -14,7 +14,7 @@ const CHORDS = {
     {
       "forte-code": "3-1",
       "pitch-classes": [0, 1, 2],
-      name: "Chromatic tricord",
+      name: "Chromatic tricordddd",
       "carter-number": "4",
       "complement-forte-code": "9-1",
       "documentation-link":

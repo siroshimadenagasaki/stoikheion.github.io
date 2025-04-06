@@ -214,7 +214,7 @@ const CHORDS = {
       name: "Tríada Menor",
       "carter-number": "6",
       "complement-forte-code": "9-11B",
-      "documentation-link": null,
+      "documentation-link":      "https://drive.google.com/file/d/1GEvdW5adhH_sM029bpFchnNY9ygJ8hE9/view?usp=sharing",
     },
     {
       "forte-code": "3-11B",

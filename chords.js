@@ -51,15 +51,7 @@ const CHORDS = {
       "carter-number": null,
       "complement-forte-code": null,
       "documentation-link":
-        "https://drive.google.com/file/d/1mt0iooczHY7eGaUSPCR245dbKuvyL4ZP/view?usp=drive_link",
-    },
-    {
-      "forte-code": "3-3A",
-      "pitch-classes": [0, 1, 4],
-      name: "mMaj7(no5) - (Major/minor triad n1)",
-      "carter-number": "11",
-      "complement-forte-code": "9-3B",
-      "documentation-link": null,
+        "https://drive.google.com/file/d/1mt0iooczHY7eGaUSPCR245dbKuvyL4ZP/view?usp=sharing",
     },
     {
       "forte-code": "3-3B",
@@ -231,17 +223,8 @@ const CHORDS = {
       "carter-number": "1",
       "complement-forte-code": "9-12",
       "documentation-link":
-        "https://drive.google.com/file/d/1KgWtxQV8QI-rm9xEFGrvHFpcG4v2-L37/view?usp=drive_link",
-    },
-    {
-      "forte-code": "3-12B",
-      "pitch-classes": [0, 4, 8],
-      name: "Augmented triad",
-      "carter-number": null,
-      "complement-forte-code": null,
-      "documentation-link":
-        "https://drive.google.com/file/d/1KgWtxQV8QI-rm9xEFGrvHFpcG4v2-L37/view?usp=drive_link",
-    },
+        "https://drive.google.com/file/d/1G37_tF4biJZKpDgGhCzYY7xvHnWne7VO/view?usp=sharing",    },
+
     
    
     {

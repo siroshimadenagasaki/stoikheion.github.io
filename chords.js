@@ -56,7 +56,7 @@ const CHORDS = {
     {
       "forte-code": "3-3A",
       "pitch-classes": [0, 1, 4],
-      name: "mMaj7(no5) - (Major/minor triad n1)",
+      name: "mMaj7(no5) - (Major/minor triad n1).",
       "carter-number": "11",
       "complement-forte-code": "9-3B",
       "documentation-link": null,

@@ -205,6 +205,11 @@ function initialize() {
   const matrix = searchParams.get("matrix");
   if (matrix) UI.matrixSelector.value = matrix;
   updateUI();
+
+  // Initialize Google Drive integration if API key is available
+  if (typeof GOOGLE_API_KEY !== "undefined") {
+    fetchGoogleDriveFiles();
+  }
 }
 
 const SELECTION = {
@@ -1439,6 +1444,94 @@ function toogleFullPageMode(fullPageEnabled = true) {
     "",
     `${window.location.pathname}?${urlParams.toString()}`
   );
+}
+
+/**
+ * Maps Google Drive PDF files to their corresponding forte codes
+ */
+async function fetchGoogleDriveFiles() {
+  try {
+    const folderId = "1KF8uBhZG8BmijdPnxNwZ-cju6jnmTnUl";
+    const fileMap = {};
+    let pageToken = null;
+
+    do {
+      const queryParams = new URLSearchParams({
+        q: `'${folderId}' in parents`,
+        key: GOOGLE_API_KEY,
+        pageSize: 1000,
+      });
+
+      if (pageToken) {
+        queryParams.append("pageToken", pageToken);
+      }
+
+      const response = await fetch(
+        `https://www.googleapis.com/drive/v3/files?${queryParams.toString()}`
+      );
+
+      if (!response.ok) {
+        console.error("Failed to fetch Google Drive files");
+        return;
+      }
+
+      const data = await response.json();
+
+      // Process files and map them to forte codes
+      console.log(data.files.length);
+
+      data.files.forEach((file) => {
+        if (file.name && file.name.endsWith(".pdf")) {
+          // Extract forte code from filename (e.g., "3-1 Chromatic tricord.pdf" -> "3-1")
+          const match = file.name.match(
+            /^(\d+-\d+[AB]?)(?:\s|\w|[\(\)\.:,\-\[\]]|$)+\.pdf$/i
+          );
+
+          if (match && match[1]) {
+            const forteCode = match[1];
+            fileMap[forteCode] = file.id;
+          }
+        }
+      });
+
+      pageToken = data.nextPageToken;
+    } while (pageToken);
+
+    // Update chord documentation links
+    CHORDS.updateDocumentationLinks(fileMap);
+
+    // Update UI if there are selected pitch classes to refresh documentation links
+    if (SELECTION.array.length > 0) {
+      updateDocumentationButtons();
+    }
+  } catch (error) {
+    console.error("Error fetching Google Drive files:", error);
+  }
+}
+
+/**
+ * Updates the documentation buttons based on the current Solomon chord
+ * This is called after Google Drive files are loaded to refresh the UI
+ */
+function updateDocumentationButtons() {
+  if (SELECTION.array.length === 0) return;
+
+  const solomonChord = PITCHCLASS.getSolomonChord(SELECTION.array);
+  if (!solomonChord) return;
+
+  if (solomonChord["documentation-link"]) {
+    UI.solomonPDFButton.setAttribute(
+      "onclick",
+      `window.open('${solomonChord["documentation-link"]}', '_blank')`
+    );
+    UI.solomonPDFButton.removeAttribute("disabled-like");
+  } else {
+    UI.solomonPDFButton.setAttribute(
+      "onclick",
+      "showNotification('No documentation available for this Solomon code.')"
+    );
+    UI.solomonPDFButton.setAttribute("disabled-like", true);
+  }
 }
 
 // Call the function after initialization

@@ -1482,13 +1482,8 @@ async function fetchGoogleDriveFiles() {
 
       data.files.forEach((file) => {
         if (file.name && file.name.endsWith(".pdf")) {
-          // Extract forte code from filename (e.g., "3-1 Chromatic tricord.pdf" -> "3-1")
-          const match = file.name.match(
-            /^(\d+-\d+[AB]?)(?:\s|\w|[\(\)\.:,\-\[\]]|$)+\.pdf$/i
-          );
-
-          if (match && match[1]) {
-            const forteCode = match[1];
+          const forteCode = file.name.split(" ")[0];
+          if (forteCode) {
             fileMap[forteCode] = file.id;
           }
         }

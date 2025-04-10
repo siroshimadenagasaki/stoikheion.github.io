@@ -501,25 +501,18 @@ const CHORDS = {
     },
     
     {
-      "forte-code": "4-z29",
+      "forte-code": "4-29",
       "pitch-classes": [0, 1, 3, 7],
       name: "7(6 no5) - All intervals tetrachord n3 - Bm/C",
       "carter-number": null,
-      "complement-forte-code": null,
+        "complement-forte-code": "8-Z29B",
       "documentation-link": null,
     },
+
     {
-      "forte-code": "4-Z29A",
-      "pitch-classes": [0, 1, 3, 7],
-      name: "Tetracordio todos los intervalos.3",
-      "carter-number": "23",
-      "complement-forte-code": "8-Z29B",
-      "documentation-link": null,
-    },
-    {
-      "forte-code": "4-Z29B",
+      "forte-code": "4-29B",
       "pitch-classes": [0, 4, 6, 7],
-      name: "Tetracordio todos los intervalos.4",
+      name: " All intervals tetrachord n.4 - Major 4#",
       "carter-number": "23",
       "complement-forte-code": "8-Z29A",
       "documentation-link": null,

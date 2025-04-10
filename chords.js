@@ -192,17 +192,10 @@ const CHORDS = {
       "pitch-classes": [0, 3, 7],
       name: "Tríada Menor / 6(no5)",
       "carter-number": null,
-      "complement-forte-code": null,
-      "documentation-link": null,
-    },
-    {
-      "forte-code": "3-11A",
-      "pitch-classes": [0, 3, 7],
-      name: "Tríada Menor",
-      "carter-number": "6",
       "complement-forte-code": "9-11B",
       "documentation-link": null,
     },
+  
     {
       "forte-code": "3-11B",
       "pitch-classes": [0, 4, 7],
@@ -360,17 +353,10 @@ const CHORDS = {
       "pitch-classes": [0, 1, 3, 5],
       name: "Tetracordio Frigia",
       "carter-number": null,
-      "complement-forte-code": null,
-      "documentation-link": null,
-    },
-    {
-      "forte-code": "4-11A",
-      "pitch-classes": [0, 1, 3, 5],
-      name: "Tetracordio Frigia",
-      "carter-number": "26",
       "complement-forte-code": "8-11B",
       "documentation-link": null,
     },
+    
     {
       "forte-code": "4-11B",
       "pitch-classes": [0, 2, 4, 5],
@@ -384,15 +370,7 @@ const CHORDS = {
       "pitch-classes": [0, 2, 3, 6],
       name: "Tetracordio Menor Armónica",
       "carter-number": null,
-      "complement-forte-code": null,
-      "documentation-link": null,
-    },
-    {
-      "forte-code": "4-12A",
-      "pitch-classes": [0, 2, 3, 6],
-      name: "Tetracordio Menor Armónica",
-      "carter-number": "28",
-      "complement-forte-code": "8-12A",
+        "complement-forte-code": "8-12A",
       "documentation-link": null,
     },
     {
@@ -408,15 +386,7 @@ const CHORDS = {
       "pitch-classes": [0, 1, 3, 6],
       name: "Tetracordio Disminuido 9b",
       "carter-number": null,
-      "complement-forte-code": null,
-      "documentation-link": null,
-    },
-    {
-      "forte-code": "4-13A",
-      "pitch-classes": [0, 1, 3, 6],
-      name: "Tetracordio Disminuido 9b",
-      "carter-number": "7",
-      "complement-forte-code": "8-13B",
+        "complement-forte-code": "8-13B",
       "documentation-link": null,
     },
     {
@@ -896,15 +866,7 @@ const CHORDS = {
       "pitch-classes": [0, 2, 3, 4, 7],
       name: "Pentatónica Cluster-central.1",
       "carter-number": null,
-      "complement-forte-code": null,
-      "documentation-link": null,
-    },
-    {
-      "forte-code": "5-11A",
-      "pitch-classes": [0, 2, 3, 4, 7],
-      name: null,
-      "carter-number": null,
-      "complement-forte-code": "7-11A",
+        "complement-forte-code": "7-11A",
       "documentation-link": null,
     },
     {
@@ -928,15 +890,7 @@ const CHORDS = {
       "pitch-classes": [0, 1, 2, 4, 8],
       name: "Pentatónica Aumentada.1",
       "carter-number": null,
-      "complement-forte-code": null,
-      "documentation-link": null,
-    },
-    {
-      "forte-code": "5-13A",
-      "pitch-classes": [0, 1, 2, 4, 8],
-      name: null,
-      "carter-number": null,
-      "complement-forte-code": "7-13B",
+        "complement-forte-code": "7-13B",
       "documentation-link": null,
     },
     {
@@ -952,15 +906,7 @@ const CHORDS = {
       "pitch-classes": [0, 1, 2, 5, 7],
       name: "Pentatónica Doble-segunda triple-cuarta.1",
       "carter-number": null,
-      "complement-forte-code": null,
-      "documentation-link": null,
-    },
-    {
-      "forte-code": "5-14A",
-      "pitch-classes": [0, 1, 2, 5, 7],
-      name: null,
-      "carter-number": null,
-      "complement-forte-code": "7-14B",
+        "complement-forte-code": "7-14B",
       "documentation-link": null,
     },
     {
@@ -984,15 +930,7 @@ const CHORDS = {
       "pitch-classes": [0, 1, 3, 4, 7],
       name: "Pentatónica Mayor-menor-disminuido.1",
       "carter-number": null,
-      "complement-forte-code": null,
-      "documentation-link": null,
-    },
-    {
-      "forte-code": "5-16A",
-      "pitch-classes": [0, 1, 3, 4, 7],
-      name: null,
-      "carter-number": null,
-      "complement-forte-code": "7-16B",
+        "complement-forte-code": "7-16B",
       "documentation-link": null,
     },
     {
@@ -1008,15 +946,7 @@ const CHORDS = {
       "pitch-classes": [0, 1, 3, 6, 7],
       name: "Pentatónica Javanesa",
       "carter-number": null,
-      "complement-forte-code": null,
-      "documentation-link": null,
-    },
-    {
-      "forte-code": "5-19A",
-      "pitch-classes": [0, 1, 3, 6, 7],
-      name: null,
-      "carter-number": null,
-      "complement-forte-code": "7-19B",
+        "complement-forte-code": "7-19B",
       "documentation-link": null,
     },
     {
@@ -1032,15 +962,7 @@ const CHORDS = {
       "pitch-classes": [0, 1, 5, 6, 8],
       name: "Pentatónica Pelog (12414)",
       "carter-number": null,
-      "complement-forte-code": null,
-      "documentation-link": null,
-    },
-    {
-      "forte-code": "5-20A",
-      "pitch-classes": [0, 1, 5, 6, 8],
-      name: null,
-      "carter-number": null,
-      "complement-forte-code": "7-20B",
+        "complement-forte-code": "7-20B",
       "documentation-link": null,
     },
     {
@@ -1056,15 +978,7 @@ const CHORDS = {
       "pitch-classes": [0, 1, 4, 5, 8],
       name: "Pentatónica Siria (Raga Megharanji -13134-)",
       "carter-number": null,
-      "complement-forte-code": null,
-      "documentation-link": null,
-    },
-    {
-      "forte-code": "5-21A",
-      "pitch-classes": [0, 1, 4, 5, 8],
-      name: null,
-      "carter-number": null,
-      "complement-forte-code": "7-21B",
+        "complement-forte-code": "7-21B",
       "documentation-link": null,
     },
     {
@@ -1088,15 +1002,7 @@ const CHORDS = {
       "pitch-classes": [0, 2, 3, 5, 7],
       name: "Pentatónica menor",
       "carter-number": null,
-      "complement-forte-code": null,
-      "documentation-link": null,
-    },
-    {
-      "forte-code": "5-23A",
-      "pitch-classes": [0, 2, 3, 5, 7],
-      name: null,
-      "carter-number": null,
-      "complement-forte-code": "7-23B",
+        "complement-forte-code": "7-23B",
       "documentation-link": null,
     },
     {
@@ -1112,18 +1018,10 @@ const CHORDS = {
       "pitch-classes": [0, 1, 3, 5, 7],
       name: "Pentatónica Frigia",
       "carter-number": null,
-      "complement-forte-code": null,
+        "complement-forte-code": "7-24B",
       "documentation-link": null,
     },
-    {
-      "forte-code": "5-24A",
-      "pitch-classes": [0, 1, 3, 5, 7],
-      name: null,
-      "carter-number": null,
-      "complement-forte-code": "7-24B",
-      "documentation-link": null,
-    },
-    {
+{
       "forte-code": "5-24B",
       "pitch-classes": [0, 2, 4, 6, 7],
       name: "Pentatónica Lidia",
@@ -1136,15 +1034,7 @@ const CHORDS = {
       "pitch-classes": [0, 2, 3, 5, 8],
       name: "Acode disminuido novena mayor",
       "carter-number": null,
-      "complement-forte-code": null,
-      "documentation-link": null,
-    },
-    {
-      "forte-code": "5-25A",
-      "pitch-classes": [0, 2, 3, 5, 8],
-      name: null,
-      "carter-number": null,
-      "complement-forte-code": "7-25B",
+        "complement-forte-code": "7-25B",
       "documentation-link": null,
     },
     {
@@ -1160,15 +1050,7 @@ const CHORDS = {
       "pitch-classes": [0, 2, 4, 5, 8],
       name: "Acorde Disminuido 9#",
       "carter-number": null,
-      "complement-forte-code": null,
-      "documentation-link": null,
-    },
-    {
-      "forte-code": "5-26A",
-      "pitch-classes": [0, 2, 4, 5, 8],
-      name: null,
-      "carter-number": null,
-      "complement-forte-code": "7-26A",
+        "complement-forte-code": "7-26A",
       "documentation-link": null,
     },
     {
@@ -1184,15 +1066,7 @@ const CHORDS = {
       "pitch-classes": [0, 1, 3, 5, 8],
       name: "Acorde Mayor",
       "carter-number": null,
-      "complement-forte-code": null,
-      "documentation-link": null,
-    },
-    {
-      "forte-code": "5-27A",
-      "pitch-classes": [0, 1, 3, 5, 8],
-      name: null,
-      "carter-number": null,
-      "complement-forte-code": "7-27B",
+        "complement-forte-code": "7-27B",
       "documentation-link": null,
     },
     {
@@ -1208,15 +1082,7 @@ const CHORDS = {
       "pitch-classes": [0, 2, 3, 6, 8],
       name: "Pentatónica Aumentada-sexta.1",
       "carter-number": null,
-      "complement-forte-code": null,
-      "documentation-link": null,
-    },
-    {
-      "forte-code": "5-28A",
-      "pitch-classes": [0, 2, 3, 6, 8],
-      name: null,
-      "carter-number": null,
-      "complement-forte-code": "7-28A",
+        "complement-forte-code": "7-28A",
       "documentation-link": null,
     },
     {
@@ -1232,15 +1098,7 @@ const CHORDS = {
       "pitch-classes": [0, 1, 3, 6, 8],
       name: "Pentatónica Kumoi.2",
       "carter-number": null,
-      "complement-forte-code": null,
-      "documentation-link": null,
-    },
-    {
-      "forte-code": "5-29A",
-      "pitch-classes": [0, 1, 3, 6, 8],
-      name: null,
-      "carter-number": null,
-      "complement-forte-code": "7-29B",
+        "complement-forte-code": "7-29B",
       "documentation-link": null,
     },
     {
@@ -1256,15 +1114,7 @@ const CHORDS = {
       "pitch-classes": [0, 1, 4, 6, 8],
       name: "Pentatónica Enigmatica .1",
       "carter-number": null,
-      "complement-forte-code": null,
-      "documentation-link": null,
-    },
-    {
-      "forte-code": "5-30A",
-      "pitch-classes": [0, 1, 4, 6, 8],
-      name: null,
-      "carter-number": null,
-      "complement-forte-code": "7-30B",
+        "complement-forte-code": "7-30B",
       "documentation-link": null,
     },
     {
@@ -1280,15 +1130,7 @@ const CHORDS = {
       "pitch-classes": [0, 1, 3, 6, 9],
       name: "Acorde Disminuido 9b",
       "carter-number": null,
-      "complement-forte-code": null,
-      "documentation-link": null,
-    },
-    {
-      "forte-code": "5-31A",
-      "pitch-classes": [0, 1, 3, 6, 9],
-      name: null,
-      "carter-number": null,
-      "complement-forte-code": "7-31B",
+        "complement-forte-code": "7-31B",
       "documentation-link": null,
     },
     {
@@ -1304,15 +1146,7 @@ const CHORDS = {
       "pitch-classes": [0, 1, 4, 6, 9],
       name: "Pentatónica Napolitana.1",
       "carter-number": null,
-      "complement-forte-code": null,
-      "documentation-link": null,
-    },
-    {
-      "forte-code": "5-32A",
-      "pitch-classes": [0, 1, 4, 6, 9],
-      name: null,
-      "carter-number": null,
-      "complement-forte-code": "7-32B",
+        "complement-forte-code": "7-32B",
       "documentation-link": null,
     },
     {
@@ -1376,15 +1210,7 @@ const CHORDS = {
       "pitch-classes": [0, 1, 4, 5, 7],
       name: "Gypsy pentatonic n1",
       "carter-number": null,
-      "complement-forte-code": null,
-      "documentation-link": null,
-    },
-    {
-      "forte-code": "5-Z18A",
-      "pitch-classes": [0, 1, 4, 5, 7],
-      name: "Pentatónica Gitana.1",
-      "carter-number": null,
-      "complement-forte-code": "7-Z18B",
+        "complement-forte-code": "7-Z18B",
       "documentation-link": null,
     },
     {
@@ -1400,15 +1226,7 @@ const CHORDS = {
       "pitch-classes": [0, 1, 2, 4, 7],
       name: null,
       "carter-number": null,
-      "complement-forte-code": null,
-      "documentation-link": null,
-    },
-    {
-      "forte-code": "5-Z36A",
-      "pitch-classes": [0, 1, 2, 4, 7],
-      name: null,
-      "carter-number": null,
-      "complement-forte-code": "7-Z36B",
+        "complement-forte-code": "7-Z36B",
       "documentation-link": null,
     },
     {
@@ -1432,15 +1250,7 @@ const CHORDS = {
       "pitch-classes": [0, 1, 2, 5, 8],
       name: "Pentatónica Simétrica Disminuida",
       "carter-number": null,
-      "complement-forte-code": null,
-      "documentation-link": null,
-    },
-    {
-      "forte-code": "5-Z38A",
-      "pitch-classes": [0, 1, 2, 5, 8],
-      name: "Pentatónica Simétrica Disminuida.1",
-      "carter-number": null,
-      "complement-forte-code": "7-Z38B",
+        "complement-forte-code": "7-Z38B",
       "documentation-link": null,
     },
     {
@@ -1462,15 +1272,7 @@ const CHORDS = {
     {
       "forte-code": "6-2",
       "pitch-classes": [0, 1, 2, 3, 4, 6],
-      name: null,
-      "carter-number": null,
-      "complement-forte-code": null,
-      "documentation-link": null,
-    },
-    {
-      "forte-code": "6-2A",
-      "pitch-classes": [0, 1, 2, 3, 4, 6],
-      name: "Hexatónica Cromática.2",
+        name: "Hexatónica Cromática.2",
       "carter-number": null,
       "complement-forte-code": null,
       "documentation-link": null,
@@ -1486,17 +1288,9 @@ const CHORDS = {
     {
       "forte-code": "6-5",
       "pitch-classes": [0, 1, 2, 3, 6, 7],
-      name: null,
+        name: "Hexatónica Dórica.1",
       "carter-number": "5",
       "complement-forte-code": "6-5",
-      "documentation-link": null,
-    },
-    {
-      "forte-code": "6-5A",
-      "pitch-classes": [0, 1, 2, 3, 6, 7],
-      name: "Hexatónica Dórica.1",
-      "carter-number": "16",
-      "complement-forte-code": "6-5B",
       "documentation-link": null,
     },
     {
@@ -1526,17 +1320,9 @@ const CHORDS = {
     {
       "forte-code": "6-9",
       "pitch-classes": [0, 1, 2, 3, 5, 7],
-      name: null,
+        name: "Hexatónica Frigia.1",
       "carter-number": null,
-      "complement-forte-code": null,
-      "documentation-link": null,
-    },
-    {
-      "forte-code": "6-9A",
-      "pitch-classes": [0, 1, 2, 3, 5, 7],
-      name: "Hexatónica Frigia.1",
-      "carter-number": "20",
-      "complement-forte-code": "6-9B",
+        "complement-forte-code": "6-9B",
       "documentation-link": null,
     },
     {
@@ -1550,17 +1336,9 @@ const CHORDS = {
     {
       "forte-code": "6-14",
       "pitch-classes": [0, 1, 3, 4, 5, 8],
-      name: null,
+        name: "Hexatónica Aumentada.1A",
       "carter-number": null,
-      "complement-forte-code": null,
-      "documentation-link": null,
-    },
-    {
-      "forte-code": "6-14A",
-      "pitch-classes": [0, 1, 3, 4, 5, 8],
-      name: "Hexatónica Aumentada.1A",
-      "carter-number": "3",
-      "complement-forte-code": "6-14A",
+        "complement-forte-code": "6-14A",
       "documentation-link": null,
     },
     {
@@ -1576,15 +1354,7 @@ const CHORDS = {
       "pitch-classes": [0, 1, 2, 4, 5, 8],
       name: null,
       "carter-number": null,
-      "complement-forte-code": null,
-      "documentation-link": null,
-    },
-    {
-      "forte-code": "6-15A",
-      "pitch-classes": [0, 1, 2, 4, 5, 8],
-      name: null,
-      "carter-number": "13",
-      "complement-forte-code": "6-15B",
+        "complement-forte-code": "6-15B",
       "documentation-link": null,
     },
     {
@@ -1600,15 +1370,7 @@ const CHORDS = {
       "pitch-classes": [0, 1, 4, 5, 6, 8],
       name: null,
       "carter-number": null,
-      "complement-forte-code": null,
-      "documentation-link": null,
-    },
-    {
-      "forte-code": "6-16A",
-      "pitch-classes": [0, 1, 4, 5, 6, 8],
-      name: null,
-      "carter-number": "11",
-      "complement-forte-code": "6-16B",
+        "complement-forte-code": "6-16B",
       "documentation-link": null,
     },
     {
@@ -1624,15 +1386,7 @@ const CHORDS = {
       "pitch-classes": [0, 1, 2, 5, 7, 8],
       name: null,
       "carter-number": null,
-      "complement-forte-code": null,
-      "documentation-link": null,
-    },
-    {
-      "forte-code": "6-18A",
-      "pitch-classes": [0, 1, 2, 5, 7, 8],
-      name: null,
-      "carter-number": "17",
-      "complement-forte-code": "6-18B",
+        "complement-forte-code": "6-18B",
       "documentation-link": null,
     },
     {
@@ -1654,17 +1408,9 @@ const CHORDS = {
     {
       "forte-code": "6-21",
       "pitch-classes": [0, 2, 3, 4, 6, 8],
-      name: null,
+        name: "Hexatónica Cromática.2A",
       "carter-number": null,
-      "complement-forte-code": null,
-      "documentation-link": null,
-    },
-    {
-      "forte-code": "6-21A",
-      "pitch-classes": [0, 2, 3, 4, 6, 8],
-      name: "Hexatónica Cromática.2A",
-      "carter-number": "19",
-      "complement-forte-code": "6-21B",
+        "complement-forte-code": "6-21B",
       "documentation-link": null,
     },
     {
@@ -1680,15 +1426,7 @@ const CHORDS = {
       "pitch-classes": [0, 1, 2, 4, 6, 8],
       name: null,
       "carter-number": null,
-      "complement-forte-code": null,
-      "documentation-link": null,
-    },
-    {
-      "forte-code": "6-22A",
-      "pitch-classes": [0, 1, 2, 4, 6, 8],
-      name: null,
-      "carter-number": "10",
-      "complement-forte-code": "6-22B",
+        "complement-forte-code": "6-22B",
       "documentation-link": null,
     },
     {
@@ -1704,15 +1442,7 @@ const CHORDS = {
       "pitch-classes": [0, 1, 3, 4, 6, 9],
       name: null,
       "carter-number": null,
-      "complement-forte-code": null,
-      "documentation-link": null,
-    },
-    {
-      "forte-code": "6-27A",
-      "pitch-classes": [0, 1, 3, 4, 6, 9],
-      name: null,
-      "carter-number": "14",
-      "complement-forte-code": "6-27B",
+        "complement-forte-code": "6-27B",
       "documentation-link": null,
     },
     {
@@ -1727,16 +1457,8 @@ const CHORDS = {
       "forte-code": "6-30",
       "pitch-classes": [0, 1, 3, 6, 7, 9],
       name: "Hexatónica Menor-bitonal",
-      "carter-number": null,
-      "complement-forte-code": null,
-      "documentation-link": null,
-    },
-    {
-      "forte-code": "6-30A",
-      "pitch-classes": [0, 1, 3, 6, 7, 9],
-      name: null,
-      "carter-number": "15",
-      "complement-forte-code": "6-30B",
+        "carter-number": "15",
+        "complement-forte-code": "6-30B",
       "documentation-link": null,
     },
     {
@@ -1752,15 +1474,7 @@ const CHORDS = {
       "pitch-classes": [0, 1, 4, 5, 7, 9],
       name: null,
       "carter-number": null,
-      "complement-forte-code": null,
-      "documentation-link": null,
-    },
-    {
-      "forte-code": "6-31A",
-      "pitch-classes": [0, 1, 4, 5, 7, 9],
-      name: null,
-      "carter-number": "8",
-      "complement-forte-code": "6-31B",
+        "complement-forte-code": "6-31B",
       "documentation-link": null,
     },
     {
@@ -1784,15 +1498,7 @@ const CHORDS = {
       "pitch-classes": [0, 2, 3, 5, 7, 9],
       name: "Hexatónica Dórica no7",
       "carter-number": null,
-      "complement-forte-code": null,
-      "documentation-link": null,
-    },
-    {
-      "forte-code": "6-33A",
-      "pitch-classes": [0, 2, 3, 5, 7, 9],
-      name: null,
-      "carter-number": "18",
-      "complement-forte-code": "6-33B",
+        "complement-forte-code": "6-33B",
       "documentation-link": null,
     },
     {
@@ -1808,15 +1514,7 @@ const CHORDS = {
       "pitch-classes": [0, 1, 3, 5, 7, 9],
       name: "Acorde Prometeo",
       "carter-number": null,
-      "complement-forte-code": null,
-      "documentation-link": null,
-    },
-    {
-      "forte-code": "6-34A",
-      "pitch-classes": [0, 1, 3, 5, 7, 9],
-      name: null,
-      "carter-number": "9",
-      "complement-forte-code": "6-34B",
+        "complement-forte-code": "6-34B",
       "documentation-link": null,
     },
     {
@@ -1840,15 +1538,7 @@ const CHORDS = {
       "pitch-classes": [0, 1, 2, 3, 5, 6],
       name: null,
       "carter-number": null,
-      "complement-forte-code": null,
-      "documentation-link": null,
-    },
-    {
-      "forte-code": "6-Z3A",
-      "pitch-classes": [0, 1, 2, 3, 5, 6],
-      name: null,
-      "carter-number": "49",
-      "complement-forte-code": "6-Z36B",
+        "complement-forte-code": "6-Z36B",
       "documentation-link": null,
     },
     {
@@ -1880,15 +1570,7 @@ const CHORDS = {
       "pitch-classes": [0, 1, 3, 4, 5, 7],
       name: null,
       "carter-number": null,
-      "complement-forte-code": null,
-      "documentation-link": null,
-    },
-    {
-      "forte-code": "6-Z10A",
-      "pitch-classes": [0, 1, 3, 4, 5, 7],
-      name: null,
-      "carter-number": "42",
-      "complement-forte-code": "6-Z39A",
+        "complement-forte-code": "6-Z39A",
       "documentation-link": null,
     },
     {
@@ -1904,15 +1586,7 @@ const CHORDS = {
       "pitch-classes": [0, 1, 2, 4, 5, 7],
       name: null,
       "carter-number": null,
-      "complement-forte-code": null,
-      "documentation-link": null,
-    },
-    {
-      "forte-code": "6-Z11A",
-      "pitch-classes": [0, 1, 2, 4, 5, 7],
-      name: null,
-      "carter-number": "47",
-      "complement-forte-code": "6-Z40B",
+        "complement-forte-code": "6-Z40B",
       "documentation-link": null,
     },
     {
@@ -1928,15 +1602,7 @@ const CHORDS = {
       "pitch-classes": [0, 1, 2, 4, 6, 7],
       name: null,
       "carter-number": null,
-      "complement-forte-code": null,
-      "documentation-link": null,
-    },
-    {
-      "forte-code": "6-Z12A",
-      "pitch-classes": [0, 1, 2, 4, 6, 7],
-      name: null,
-      "carter-number": "46",
-      "complement-forte-code": "6-Z41B",
+        "complement-forte-code": "6-Z41B",
       "documentation-link": null,
     },
     {
@@ -1960,15 +1626,7 @@ const CHORDS = {
       "pitch-classes": [0, 1, 2, 4, 7, 8],
       name: "All intervals hexatonic",
       "carter-number": null,
-      "complement-forte-code": null,
-      "documentation-link": null,
-    },
-    {
-      "forte-code": "6-Z17A",
-      "pitch-classes": [0, 1, 2, 4, 7, 8],
-      name: null,
-      "carter-number": "35",
-      "complement-forte-code": "6-Z43B",
+        "complement-forte-code": "6-Z43B",
       "documentation-link": null,
     },
     {
@@ -1984,15 +1642,7 @@ const CHORDS = {
       "pitch-classes": [0, 1, 3, 4, 7, 8],
       name: "Pseudo Augmented minor - mMaj9(4#) - Lydian 3b(no6)",
       "carter-number": null,
-      "complement-forte-code": null,
-      "documentation-link": null,
-    },
-    {
-      "forte-code": "6-Z19A",
-      "pitch-classes": [0, 1, 3, 4, 7, 8],
-      name: null,
-      "carter-number": "37",
-      "complement-forte-code": "6-Z44B",
+        "complement-forte-code": "6-Z44B",
       "documentation-link": null,
     },
     {
@@ -2016,15 +1666,7 @@ const CHORDS = {
       "pitch-classes": [0, 1, 3, 4, 6, 8],
       name: null,
       "carter-number": null,
-      "complement-forte-code": null,
-      "documentation-link": null,
-    },
-    {
-      "forte-code": "6-Z24A",
-      "pitch-classes": [0, 1, 3, 4, 6, 8],
-      name: null,
-      "carter-number": "39",
-      "complement-forte-code": "6-Z46B",
+        "complement-forte-code": "6-Z46B",
       "documentation-link": null,
     },
     {
@@ -2040,15 +1682,7 @@ const CHORDS = {
       "pitch-classes": [0, 1, 3, 5, 6, 8],
       name: "Locrian no7 Hexachord - Suddha Saveri raga -Ionian no6",
       "carter-number": null,
-      "complement-forte-code": null,
-      "documentation-link": null,
-    },
-    {
-      "forte-code": "6-Z25A",
-      "pitch-classes": [0, 1, 3, 5, 6, 8],
-      name: null,
-      "carter-number": "43",
-      "complement-forte-code": "6-Z47B",
+        "complement-forte-code": "6-Z47B",
       "documentation-link": null,
     },
     {
@@ -2088,15 +1722,7 @@ const CHORDS = {
       "pitch-classes": [0, 1, 2, 3, 4, 7],
       name: null,
       "carter-number": null,
-      "complement-forte-code": null,
-      "documentation-link": null,
-    },
-    {
-      "forte-code": "6-Z36A",
-      "pitch-classes": [0, 1, 2, 3, 4, 7],
-      name: null,
-      "carter-number": "50",
-      "complement-forte-code": "6-Z3B",
+        "complement-forte-code": "6-Z3B",
       "documentation-link": null,
     },
     {
@@ -2128,15 +1754,7 @@ const CHORDS = {
       "pitch-classes": [0, 2, 3, 4, 5, 8],
       name: null,
       "carter-number": null,
-      "complement-forte-code": null,
-      "documentation-link": null,
-    },
-    {
-      "forte-code": "6-Z39A",
-      "pitch-classes": [0, 2, 3, 4, 5, 8],
-      name: null,
-      "carter-number": "41",
-      "complement-forte-code": "6-Z10A",
+        "complement-forte-code": "6-Z10A",
       "documentation-link": null,
     },
     {
@@ -2152,15 +1770,7 @@ const CHORDS = {
       "pitch-classes": [0, 1, 2, 3, 5, 8],
       name: null,
       "carter-number": null,
-      "complement-forte-code": null,
-      "documentation-link": null,
-    },
-    {
-      "forte-code": "6-Z40A",
-      "pitch-classes": [0, 1, 2, 3, 5, 8],
-      name: null,
-      "carter-number": "48",
-      "complement-forte-code": "6-Z11B",
+        "complement-forte-code": "6-Z11B",
       "documentation-link": null,
     },
     {
@@ -2176,15 +1786,7 @@ const CHORDS = {
       "pitch-classes": [0, 1, 2, 3, 6, 8],
       name: null,
       "carter-number": null,
-      "complement-forte-code": null,
-      "documentation-link": null,
-    },
-    {
-      "forte-code": "6-Z41A",
-      "pitch-classes": [0, 1, 2, 3, 6, 8],
-      name: null,
-      "carter-number": "45",
-      "complement-forte-code": "6-Z12B",
+        "complement-forte-code": "6-Z12B",
       "documentation-link": null,
     },
     {
@@ -2208,15 +1810,7 @@ const CHORDS = {
       "pitch-classes": [0, 1, 2, 5, 6, 8],
       name: null,
       "carter-number": null,
-      "complement-forte-code": null,
-      "documentation-link": null,
-    },
-    {
-      "forte-code": "6-Z43A",
-      "pitch-classes": [0, 1, 2, 5, 6, 8],
-      name: null,
-      "carter-number": "36",
-      "complement-forte-code": "6-Z17B",
+        "complement-forte-code": "6-Z17B",
       "documentation-link": null,
     },
     {
@@ -2232,15 +1826,7 @@ const CHORDS = {
       "pitch-classes": [0, 1, 2, 5, 6, 9],
       name: "Schoemberg anagram hexatonic",
       "carter-number": null,
-      "complement-forte-code": null,
-      "documentation-link": null,
-    },
-    {
-      "forte-code": "6-Z44A",
-      "pitch-classes": [0, 1, 2, 5, 6, 9],
-      name: null,
-      "carter-number": "38",
-      "complement-forte-code": "6-Z19B",
+        "complement-forte-code": "6-Z19B",
       "documentation-link": null,
     },
     {
@@ -2268,14 +1854,6 @@ const CHORDS = {
       "documentation-link": null,
     },
     {
-      "forte-code": "6-Z46A",
-      "pitch-classes": [0, 1, 2, 4, 6, 9],
-      name: null,
-      "carter-number": "40",
-      "complement-forte-code": "6-Z24B",
-      "documentation-link": null,
-    },
-    {
       "forte-code": "6-Z46B",
       "pitch-classes": [0, 2, 4, 5, 6, 9],
       name: null,
@@ -2289,14 +1867,6 @@ const CHORDS = {
       name: null,
       "carter-number": null,
       "complement-forte-code": null,
-      "documentation-link": null,
-    },
-    {
-      "forte-code": "6-Z47A",
-      "pitch-classes": [0, 1, 2, 4, 7, 9],
-      name: null,
-      "carter-number": "44",
-      "complement-forte-code": "6-Z25B",
       "documentation-link": null,
     },
     {
@@ -2348,14 +1918,6 @@ const CHORDS = {
       "documentation-link": null,
     },
     {
-      "forte-code": "7-2A",
-      "pitch-classes": [0, 1, 2, 3, 4, 5, 7],
-      name: null,
-      "carter-number": "11",
-      "complement-forte-code": "5-2B",
-      "documentation-link": null,
-    },
-    {
       "forte-code": "7-2B",
       "pitch-classes": [0, 2, 3, 4, 5, 6, 7],
       name: null,
@@ -2369,14 +1931,6 @@ const CHORDS = {
       name: null,
       "carter-number": null,
       "complement-forte-code": null,
-      "documentation-link": null,
-    },
-    {
-      "forte-code": "7-3A",
-      "pitch-classes": [0, 1, 2, 3, 4, 5, 8],
-      name: null,
-      "carter-number": "14",
-      "complement-forte-code": "5-3B",
       "documentation-link": null,
     },
     {
@@ -2396,14 +1950,6 @@ const CHORDS = {
       "documentation-link": null,
     },
     {
-      "forte-code": "7-4A",
-      "pitch-classes": [0, 1, 2, 3, 4, 6, 7],
-      name: null,
-      "carter-number": "12",
-      "complement-forte-code": "5-4B",
-      "documentation-link": null,
-    },
-    {
       "forte-code": "7-4B",
       "pitch-classes": [0, 1, 3, 4, 5, 6, 7],
       name: null,
@@ -2417,14 +1963,6 @@ const CHORDS = {
       name: null,
       "carter-number": null,
       "complement-forte-code": null,
-      "documentation-link": null,
-    },
-    {
-      "forte-code": "7-5A",
-      "pitch-classes": [0, 1, 2, 3, 5, 6, 7],
-      name: null,
-      "carter-number": "13",
-      "complement-forte-code": "5-5B",
       "documentation-link": null,
     },
     {
@@ -2444,14 +1982,6 @@ const CHORDS = {
       "documentation-link": null,
     },
     {
-      "forte-code": "7-6A",
-      "pitch-classes": [0, 1, 2, 3, 4, 7, 8],
-      name: null,
-      "carter-number": "27",
-      "complement-forte-code": "5-6B",
-      "documentation-link": null,
-    },
-    {
       "forte-code": "7-6B",
       "pitch-classes": [0, 1, 4, 5, 6, 7, 8],
       name: null,
@@ -2465,14 +1995,6 @@ const CHORDS = {
       name: null,
       "carter-number": null,
       "complement-forte-code": null,
-      "documentation-link": null,
-    },
-    {
-      "forte-code": "7-7A",
-      "pitch-classes": [0, 1, 2, 3, 6, 7, 8],
-      name: null,
-      "carter-number": "30",
-      "complement-forte-code": "5-7B",
       "documentation-link": null,
     },
     {
@@ -2500,14 +2022,6 @@ const CHORDS = {
       "documentation-link": null,
     },
     {
-      "forte-code": "7-9A",
-      "pitch-classes": [0, 1, 2, 3, 4, 6, 8],
-      name: null,
-      "carter-number": "15",
-      "complement-forte-code": "5-9B",
-      "documentation-link": null,
-    },
-    {
       "forte-code": "7-9B",
       "pitch-classes": [0, 2, 4, 5, 6, 7, 8],
       name: null,
@@ -2521,14 +2035,6 @@ const CHORDS = {
       name: null,
       "carter-number": null,
       "complement-forte-code": null,
-      "documentation-link": null,
-    },
-    {
-      "forte-code": "7-10A",
-      "pitch-classes": [0, 1, 2, 3, 4, 6, 9],
-      name: null,
-      "carter-number": "19",
-      "complement-forte-code": "5-10B",
       "documentation-link": null,
     },
     {
@@ -2547,14 +2053,7 @@ const CHORDS = {
       "complement-forte-code": null,
       "documentation-link": null,
     },
-    {
-      "forte-code": "7-11A",
-      "pitch-classes": [0, 1, 3, 4, 5, 6, 8],
-      name: null,
-      "carter-number": "18",
-      "complement-forte-code": "5-11A",
-      "documentation-link": null,
-    },
+   
     {
       "forte-code": "7-11B",
       "pitch-classes": [0, 2, 3, 4, 5, 7, 8],
@@ -2571,14 +2070,7 @@ const CHORDS = {
       "complement-forte-code": null,
       "documentation-link": null,
     },
-    {
-      "forte-code": "7-13A",
-      "pitch-classes": [0, 1, 2, 4, 5, 6, 8],
-      name: null,
-      "carter-number": "17",
-      "complement-forte-code": "5-13B",
-      "documentation-link": null,
-    },
+    
     {
       "forte-code": "7-13B",
       "pitch-classes": [0, 2, 3, 4, 6, 7, 8],
@@ -2595,14 +2087,7 @@ const CHORDS = {
       "complement-forte-code": null,
       "documentation-link": null,
     },
-    {
-      "forte-code": "7-14A",
-      "pitch-classes": [0, 1, 2, 3, 5, 7, 8],
-      name: null,
-      "carter-number": "28",
-      "complement-forte-code": "5-14B",
-      "documentation-link": null,
-    },
+    
     {
       "forte-code": "7-14B",
       "pitch-classes": [0, 1, 3, 5, 6, 7, 8],
@@ -2627,14 +2112,7 @@ const CHORDS = {
       "complement-forte-code": null,
       "documentation-link": null,
     },
-    {
-      "forte-code": "7-16A",
-      "pitch-classes": [0, 1, 2, 3, 5, 6, 9],
-      name: null,
-      "carter-number": "20",
-      "complement-forte-code": "5-16B",
-      "documentation-link": null,
-    },
+    
     {
       "forte-code": "7-16B",
       "pitch-classes": [0, 1, 3, 4, 5, 6, 9],
@@ -2651,14 +2129,7 @@ const CHORDS = {
       "complement-forte-code": null,
       "documentation-link": null,
     },
-    {
-      "forte-code": "7-19A",
-      "pitch-classes": [0, 1, 2, 3, 6, 7, 9],
-      name: null,
-      "carter-number": "31",
-      "complement-forte-code": "5-19B",
-      "documentation-link": null,
-    },
+   
     {
       "forte-code": "7-19B",
       "pitch-classes": [0, 1, 2, 3, 6, 8, 9],
@@ -2675,14 +2146,7 @@ const CHORDS = {
       "complement-forte-code": null,
       "documentation-link": null,
     },
-    {
-      "forte-code": "7-20A",
-      "pitch-classes": [0, 1, 2, 5, 6, 7, 9],
-      name: null,
-      "carter-number": "34",
-      "complement-forte-code": "5-20B",
-      "documentation-link": null,
-    },
+  
     {
       "forte-code": "7-20B",
       "pitch-classes": [0, 2, 3, 4, 7, 8, 9],
@@ -2699,14 +2163,7 @@ const CHORDS = {
       "complement-forte-code": null,
       "documentation-link": null,
     },
-    {
-      "forte-code": "7-21A",
-      "pitch-classes": [0, 1, 2, 4, 5, 8, 9],
-      name: null,
-      "carter-number": "21",
-      "complement-forte-code": "5-21B",
-      "documentation-link": null,
-    },
+
     {
       "forte-code": "7-21B",
       "pitch-classes": [0, 1, 3, 4, 5, 8, 9],
@@ -2731,14 +2188,7 @@ const CHORDS = {
       "complement-forte-code": null,
       "documentation-link": null,
     },
-    {
-      "forte-code": "7-23A",
-      "pitch-classes": [0, 2, 3, 4, 5, 7, 9],
-      name: null,
-      "carter-number": "25",
-      "complement-forte-code": "5-23B",
-      "documentation-link": null,
-    },
+
     {
       "forte-code": "7-23B",
       "pitch-classes": [0, 2, 4, 5, 6, 7, 9],
@@ -2755,14 +2205,7 @@ const CHORDS = {
       "complement-forte-code": null,
       "documentation-link": null,
     },
-    {
-      "forte-code": "7-24A",
-      "pitch-classes": [0, 1, 2, 3, 5, 7, 9],
-      name: null,
-      "carter-number": "22",
-      "complement-forte-code": "5-24B",
-      "documentation-link": null,
-    },
+
     {
       "forte-code": "7-24B",
       "pitch-classes": [0, 2, 4, 6, 7, 8, 9],
@@ -2779,14 +2222,7 @@ const CHORDS = {
       "complement-forte-code": null,
       "documentation-link": null,
     },
-    {
-      "forte-code": "7-25A",
-      "pitch-classes": [0, 2, 3, 4, 6, 7, 9],
-      name: null,
-      "carter-number": "24",
-      "complement-forte-code": "5-25B",
-      "documentation-link": null,
-    },
+    
     {
       "forte-code": "7-25B",
       "pitch-classes": [0, 2, 3, 5, 6, 7, 9],
@@ -2827,14 +2263,7 @@ const CHORDS = {
       "complement-forte-code": null,
       "documentation-link": null,
     },
-    {
-      "forte-code": "7-27A",
-      "pitch-classes": [0, 1, 2, 4, 5, 7, 9],
-      name: null,
-      "carter-number": "23",
-      "complement-forte-code": "5-27B",
-      "documentation-link": null,
-    },
+
     {
       "forte-code": "7-27B",
       "pitch-classes": [0, 2, 4, 5, 7, 8, 9],
@@ -2851,14 +2280,7 @@ const CHORDS = {
       "complement-forte-code": null,
       "documentation-link": null,
     },
-    {
-      "forte-code": "7-28A",
-      "pitch-classes": [0, 1, 3, 5, 6, 7, 9],
-      name: null,
-      "carter-number": "36",
-      "complement-forte-code": "5-28A",
-      "documentation-link": null,
-    },
+
     {
       "forte-code": "7-28B",
       "pitch-classes": [0, 2, 3, 4, 6, 8, 9],
@@ -2875,14 +2297,7 @@ const CHORDS = {
       "complement-forte-code": null,
       "documentation-link": null,
     },
-    {
-      "forte-code": "7-29A",
-      "pitch-classes": [0, 1, 2, 4, 6, 7, 9],
-      name: null,
-      "carter-number": "32",
-      "complement-forte-code": "5-29B",
-      "documentation-link": null,
-    },
+  
     {
       "forte-code": "7-29B",
       "pitch-classes": [0, 2, 3, 5, 7, 8, 9],
@@ -2899,14 +2314,7 @@ const CHORDS = {
       "complement-forte-code": null,
       "documentation-link": null,
     },
-    {
-      "forte-code": "7-30A",
-      "pitch-classes": [0, 1, 2, 4, 6, 8, 9],
-      name: null,
-      "carter-number": "37",
-      "complement-forte-code": "5-30B",
-      "documentation-link": null,
-    },
+ 
     {
       "forte-code": "7-30B",
       "pitch-classes": [0, 1, 3, 5, 7, 8, 9],
@@ -2923,14 +2331,7 @@ const CHORDS = {
       "complement-forte-code": null,
       "documentation-link": null,
     },
-    {
-      "forte-code": "7-31A",
-      "pitch-classes": [0, 1, 3, 4, 6, 7, 9],
-      name: null,
-      "carter-number": "38",
-      "complement-forte-code": "5-31B",
-      "documentation-link": null,
-    },
+ 
     {
       "forte-code": "7-31B",
       "pitch-classes": [0, 2, 3, 5, 6, 8, 9],
@@ -2947,14 +2348,7 @@ const CHORDS = {
       "complement-forte-code": null,
       "documentation-link": null,
     },
-    {
-      "forte-code": "7-32A",
-      "pitch-classes": [0, 1, 3, 4, 6, 8, 9],
-      name: null,
-      "carter-number": "33",
-      "complement-forte-code": "5-32B",
-      "documentation-link": null,
-    },
+ 
     {
       "forte-code": "7-32B",
       "pitch-classes": [0, 1, 3, 5, 6, 8, 9],
@@ -3011,14 +2405,7 @@ const CHORDS = {
       "complement-forte-code": null,
       "documentation-link": null,
     },
-    {
-      "forte-code": "7-Z18A",
-      "pitch-classes": [0, 1, 4, 5, 6, 7, 9],
-      name: null,
-      "carter-number": "35",
-      "complement-forte-code": "5-Z18B",
-      "documentation-link": null,
-    },
+ 
     {
       "forte-code": "7-Z18B",
       "pitch-classes": [0, 2, 3, 4, 5, 8, 9],
@@ -3035,14 +2422,7 @@ const CHORDS = {
       "complement-forte-code": null,
       "documentation-link": null,
     },
-    {
-      "forte-code": "7-Z36A",
-      "pitch-classes": [0, 1, 2, 3, 5, 6, 8],
-      name: null,
-      "carter-number": "16",
-      "complement-forte-code": "5-Z36B",
-      "documentation-link": null,
-    },
+   
     {
       "forte-code": "7-Z36B",
       "pitch-classes": [0, 2, 3, 5, 6, 7, 8],
@@ -3067,14 +2447,7 @@ const CHORDS = {
       "complement-forte-code": null,
       "documentation-link": null,
     },
-    {
-      "forte-code": "7-Z38A",
-      "pitch-classes": [0, 1, 2, 4, 5, 7, 8],
-      name: null,
-      "carter-number": "29",
-      "complement-forte-code": "5-Z38B",
-      "documentation-link": null,
-    },
+  
     {
       "forte-code": "7-Z38B",
       "pitch-classes": [0, 1, 3, 4, 6, 7, 8],
@@ -3099,14 +2472,7 @@ const CHORDS = {
       "complement-forte-code": null,
       "documentation-link": null,
     },
-    {
-      "forte-code": "8-2A",
-      "pitch-classes": [0, 1, 2, 3, 4, 5, 6, 8],
-      name: null,
-      "carter-number": null,
-      "complement-forte-code": "4-2B",
-      "documentation-link": null,
-    },
+    
     {
       "forte-code": "8-2B",
       "pitch-classes": [0, 2, 3, 4, 5, 6, 7, 8],
@@ -3131,14 +2497,7 @@ const CHORDS = {
       "complement-forte-code": null,
       "documentation-link": null,
     },
-    {
-      "forte-code": "8-4A",
-      "pitch-classes": [0, 1, 2, 3, 4, 5, 7, 8],
-      name: null,
-      "carter-number": null,
-      "complement-forte-code": "4-4B",
-      "documentation-link": null,
-    },
+   
     {
       "forte-code": "8-4B",
       "pitch-classes": [0, 1, 3, 4, 5, 6, 7, 8],
@@ -3155,14 +2514,7 @@ const CHORDS = {
       "complement-forte-code": null,
       "documentation-link": null,
     },
-    {
-      "forte-code": "8-5A",
-      "pitch-classes": [0, 1, 2, 3, 4, 6, 7, 8],
-      name: null,
-      "carter-number": null,
-      "complement-forte-code": "4-5B",
-      "documentation-link": null,
-    },
+    
     {
       "forte-code": "8-5B",
       "pitch-classes": [0, 1, 2, 4, 5, 6, 7, 8],
@@ -3219,14 +2571,7 @@ const CHORDS = {
       "complement-forte-code": null,
       "documentation-link": null,
     },
-    {
-      "forte-code": "8-11A",
-      "pitch-classes": [0, 1, 2, 3, 4, 5, 7, 9],
-      name: null,
-      "carter-number": null,
-      "complement-forte-code": "4-11B",
-      "documentation-link": null,
-    },
+    
     {
       "forte-code": "8-11B",
       "pitch-classes": [0, 2, 4, 5, 6, 7, 8, 9],
@@ -3243,14 +2588,7 @@ const CHORDS = {
       "complement-forte-code": null,
       "documentation-link": null,
     },
-    {
-      "forte-code": "8-12A",
-      "pitch-classes": [0, 1, 3, 4, 5, 6, 7, 9],
-      name: null,
-      "carter-number": null,
-      "complement-forte-code": "4-12A",
-      "documentation-link": null,
-    },
+   
     {
       "forte-code": "8-12B",
       "pitch-classes": [0, 2, 3, 4, 5, 6, 8, 9],
@@ -3267,14 +2605,7 @@ const CHORDS = {
       "complement-forte-code": null,
       "documentation-link": null,
     },
-    {
-      "forte-code": "8-13A",
-      "pitch-classes": [0, 1, 2, 3, 4, 6, 7, 9],
-      name: null,
-      "carter-number": null,
-      "complement-forte-code": "4-13B",
-      "documentation-link": null,
-    },
+    
     {
       "forte-code": "8-13B",
       "pitch-classes": [0, 2, 3, 5, 6, 7, 8, 9],
@@ -3291,14 +2622,7 @@ const CHORDS = {
       "complement-forte-code": null,
       "documentation-link": null,
     },
-    {
-      "forte-code": "8-14A",
-      "pitch-classes": [0, 1, 2, 4, 5, 6, 7, 9],
-      name: null,
-      "carter-number": null,
-      "complement-forte-code": "4-14A",
-      "documentation-link": null,
-    },
+    
     {
       "forte-code": "8-14B",
       "pitch-classes": [0, 2, 3, 4, 5, 7, 8, 9],
@@ -3315,14 +2639,7 @@ const CHORDS = {
       "complement-forte-code": null,
       "documentation-link": null,
     },
-    {
-      "forte-code": "8-16A",
-      "pitch-classes": [0, 1, 2, 3, 5, 7, 8, 9],
-      name: null,
-      "carter-number": null,
-      "complement-forte-code": "4-16B",
-      "documentation-link": null,
-    },
+   
     {
       "forte-code": "8-16B",
       "pitch-classes": [0, 1, 2, 4, 6, 7, 8, 9],
@@ -3347,14 +2664,7 @@ const CHORDS = {
       "complement-forte-code": null,
       "documentation-link": null,
     },
-    {
-      "forte-code": "8-18A",
-      "pitch-classes": [0, 1, 2, 3, 5, 6, 8, 9],
-      name: null,
-      "carter-number": null,
-      "complement-forte-code": "4-18B",
-      "documentation-link": null,
-    },
+    
     {
       "forte-code": "8-18B",
       "pitch-classes": [0, 1, 3, 4, 6, 7, 8, 9],
@@ -3371,14 +2681,7 @@ const CHORDS = {
       "complement-forte-code": null,
       "documentation-link": null,
     },
-    {
-      "forte-code": "8-19A",
-      "pitch-classes": [0, 1, 2, 4, 5, 6, 8, 9],
-      name: null,
-      "carter-number": null,
-      "complement-forte-code": "4-19B",
-      "documentation-link": null,
-    },
+   
     {
       "forte-code": "8-19B",
       "pitch-classes": [0, 1, 3, 4, 5, 7, 8, 9],
@@ -3411,14 +2714,7 @@ const CHORDS = {
       "complement-forte-code": null,
       "documentation-link": null,
     },
-    {
-      "forte-code": "8-22A",
-      "pitch-classes": [0, 1, 2, 3, 5, 6, 8, 10],
-      name: null,
-      "carter-number": null,
-      "complement-forte-code": "4-22B",
-      "documentation-link": null,
-    },
+   
     {
       "forte-code": "8-22B",
       "pitch-classes": [0, 1, 3, 4, 5, 6, 8, 10],
@@ -3467,14 +2763,7 @@ const CHORDS = {
       "complement-forte-code": null,
       "documentation-link": null,
     },
-    {
-      "forte-code": "8-27A",
-      "pitch-classes": [0, 1, 2, 4, 5, 7, 8, 10],
-      name: null,
-      "carter-number": null,
-      "complement-forte-code": "4-27B",
-      "documentation-link": null,
-    },
+   
     {
       "forte-code": "8-27B",
       "pitch-classes": [0, 1, 3, 4, 6, 7, 8, 10],
@@ -3499,14 +2788,7 @@ const CHORDS = {
       "complement-forte-code": null,
       "documentation-link": null,
     },
-    {
-      "forte-code": "8-Z15A",
-      "pitch-classes": [0, 1, 2, 3, 4, 6, 8, 9],
-      name: null,
-      "carter-number": null,
-      "complement-forte-code": "4-Z15B",
-      "documentation-link": null,
-    },
+  
     {
       "forte-code": "8-Z15B",
       "pitch-classes": [0, 1, 3, 5, 6, 7, 8, 9],
@@ -3523,14 +2805,7 @@ const CHORDS = {
       "complement-forte-code": null,
       "documentation-link": null,
     },
-    {
-      "forte-code": "8-Z29A",
-      "pitch-classes": [0, 1, 2, 3, 5, 6, 7, 9],
-      name: null,
-      "carter-number": null,
-      "complement-forte-code": "4-Z29B",
-      "documentation-link": null,
-    },
+    
     {
       "forte-code": "8-Z29B",
       "pitch-classes": [0, 2, 3, 4, 6, 7, 8, 9],
@@ -3555,14 +2830,7 @@ const CHORDS = {
       "complement-forte-code": null,
       "documentation-link": null,
     },
-    {
-      "forte-code": "9-2A",
-      "pitch-classes": [0, 1, 2, 3, 4, 5, 6, 7, 9],
-      name: null,
-      "carter-number": null,
-      "complement-forte-code": "3-2B",
-      "documentation-link": null,
-    },
+   
     {
       "forte-code": "9-2B",
       "pitch-classes": [0, 2, 3, 4, 5, 6, 7, 8, 9],
@@ -3579,14 +2847,7 @@ const CHORDS = {
       "complement-forte-code": null,
       "documentation-link": null,
     },
-    {
-      "forte-code": "9-3A",
-      "pitch-classes": [0, 1, 2, 3, 4, 5, 6, 8, 9],
-      name: null,
-      "carter-number": null,
-      "complement-forte-code": "3-3B",
-      "documentation-link": null,
-    },
+    
     {
       "forte-code": "9-3B",
       "pitch-classes": [0, 1, 3, 4, 5, 6, 7, 8, 9],
@@ -3603,14 +2864,7 @@ const CHORDS = {
       "complement-forte-code": null,
       "documentation-link": null,
     },
-    {
-      "forte-code": "9-4A",
-      "pitch-classes": [0, 1, 2, 3, 4, 5, 7, 8, 9],
-      name: null,
-      "carter-number": null,
-      "complement-forte-code": "3-4B",
-      "documentation-link": null,
-    },
+    
     {
       "forte-code": "9-4B",
       "pitch-classes": [0, 1, 2, 4, 5, 6, 7, 8, 9],
@@ -3627,14 +2881,7 @@ const CHORDS = {
       "complement-forte-code": null,
       "documentation-link": null,
     },
-    {
-      "forte-code": "9-5A",
-      "pitch-classes": [0, 1, 2, 3, 4, 6, 7, 8, 9],
-      name: null,
-      "carter-number": null,
-      "complement-forte-code": "3-5B",
-      "documentation-link": null,
-    },
+   
     {
       "forte-code": "9-5B",
       "pitch-classes": [0, 1, 2, 3, 5, 6, 7, 8, 9],
@@ -3659,14 +2906,7 @@ const CHORDS = {
       "complement-forte-code": null,
       "documentation-link": null,
     },
-    {
-      "forte-code": "9-7A",
-      "pitch-classes": [0, 1, 2, 3, 4, 5, 7, 8, 10],
-      name: null,
-      "carter-number": null,
-      "complement-forte-code": "3-7B",
-      "documentation-link": null,
-    },
+    
     {
       "forte-code": "9-7B",
       "pitch-classes": [0, 1, 3, 4, 5, 6, 7, 8, 10],
@@ -3683,14 +2923,7 @@ const CHORDS = {
       "complement-forte-code": null,
       "documentation-link": null,
     },
-    {
-      "forte-code": "9-8A",
-      "pitch-classes": [0, 1, 2, 3, 4, 6, 7, 8, 10],
-      name: null,
-      "carter-number": null,
-      "complement-forte-code": "3-8B",
-      "documentation-link": null,
-    },
+    
     {
       "forte-code": "9-8B",
       "pitch-classes": [0, 1, 2, 4, 5, 6, 7, 8, 10],
@@ -3723,14 +2956,7 @@ const CHORDS = {
       "complement-forte-code": null,
       "documentation-link": null,
     },
-    {
-      "forte-code": "9-11A",
-      "pitch-classes": [0, 1, 2, 3, 5, 6, 7, 9, 10],
-      name: null,
-      "carter-number": null,
-      "complement-forte-code": "3-11B",
-      "documentation-link": null,
-    },
+   
     {
       "forte-code": "9-11B",
       "pitch-classes": [0, 1, 2, 4, 5, 6, 7, 9, 10],
@@ -3819,14 +3045,7 @@ const CHORDS = {
       "complement-forte-code": null,
       "documentation-link": null,
     },
-    {
-      "forte-code": "7-Z36A",
-      "pitch-classes": [0, 1, 2, 3, 5, 6, 8],
-      name: "Heptatónica Z36.1",
-      "carter-number": "16",
-      "complement-forte-code": "5-Z36B",
-      "documentation-link": null,
-    },
+    
     {
       "forte-code": "7-Z36B",
       "pitch-classes": [0, 2, 3, 5, 6, 7, 8],
@@ -3843,14 +3062,7 @@ const CHORDS = {
       "complement-forte-code": null,
       "documentation-link": null,
     },
-    {
-      "forte-code": "8-Z29A",
-      "pitch-classes": [0, 1, 2, 3, 5, 6, 7, 9],
-      name: "Octatónica Z29.1",
-      "carter-number": null,
-      "complement-forte-code": "4-Z29B",
-      "documentation-link": null,
-    },
+
     {
       "forte-code": "8-Z29B",
       "pitch-classes": [0, 2, 3, 4, 6, 7, 8, 9],

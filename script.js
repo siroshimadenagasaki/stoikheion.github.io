@@ -1041,13 +1041,68 @@ function onPlayForElementClicked(event) {
       .map((value) => parseInt(value));
   }
   pitchClasses = pitchClasses.sort((a, b) => a - b);
+
+  // Create all inversions of the set
+  const inversions = [];
+  for (let i = 0; i < pitchClasses.length; i++) {
+    const inversion = [...pitchClasses];
+    // Rearrange the set to make the ith note the lowest
+    while (inversion[0] !== pitchClasses[i]) {
+      inversion.push(inversion.shift());
+    }
+    inversions.push(inversion);
+  }
+
+  // Play original set melodically
+  showNotification(
+    `Playing set ${HELPERS.formatWithSpaces(pitchClasses)} melodically`,
+    2000
+  );
   for (let i = 0; i < pitchClasses.length; i++) {
     setTimeout(() => {
       audioPlayer.playNote(pitchClasses[i], 4);
     }, i * 500);
+  }
+
+  // Calculate total time for melodic playing
+  const melodicTime = pitchClasses.length * 500;
+
+  // Play original set as a chord
+  setTimeout(() => {
+    showNotification(
+      `Playing chord ${HELPERS.formatWithSpaces(pitchClasses)}`,
+      2000
+    );
+    for (let i = 0; i < pitchClasses.length; i++) {
+      setTimeout(() => {
+        audioPlayer.playNote(pitchClasses[i], 4);
+      }, i * 50);
+    }
+  }, melodicTime + 500);
+
+  // Calculate time for chord playing
+  const chordTime = 1000;
+
+  // Play each inversion as a chord
+  let currentDelay = melodicTime + 1000 + chordTime;
+
+  // Skip the first inversion as it's the same as the original set
+  for (let inv = 1; inv < inversions.length; inv++) {
+    const inversion = inversions[inv];
     setTimeout(() => {
-      audioPlayer.playNote(pitchClasses[i], 4);
-    }, 500 * pitchClasses.length + 500 + i * 50);
+      showNotification(
+        `Playing inversion with ${
+          inversion[0]
+        } as lowest note: ${HELPERS.formatWithSpaces(inversion)}`,
+        2000
+      );
+      for (let i = 0; i < inversion.length; i++) {
+        setTimeout(() => {
+          audioPlayer.playNote(inversion[i], 4);
+        }, i * 50);
+      }
+    }, currentDelay);
+    currentDelay += 1500; // Time between inversions
   }
 }
 
@@ -1296,8 +1351,31 @@ async function updateUI() {
     UI.icVectorInput.title =
       "Click to copy\n\n" + HELPERS.formatICVectorTables(icVector);
     UI.zMateInput.value = zMate ?? "No z-mate";
+
+    // Format the solomon code with * and Z markers as requested
     const solomonCode = solomonChord ? solomonChord["forte-code"] : null;
-    UI.solomonCodeInput.value = solomonCode ?? "No solomon code";
+    let formattedSolomonCode = solomonCode ?? "No solomon code";
+
+    // If we have a solomon chord, check for * and Z properties
+    if (solomonChord) {
+      // Get the base forte code (removing any existing Z prefix)
+      const baseForteCode = solomonChord["forte-code"]
+        .replace(/Z/g, "")
+        .replace(/\*/g, "");
+
+      // Add * and Z markers in the correct format
+      if (solomonChord["*"] && solomonChord["Z"]) {
+        formattedSolomonCode = baseForteCode + " * Z";
+      } else if (solomonChord["*"]) {
+        formattedSolomonCode = baseForteCode + " *";
+      } else if (solomonChord["Z"]) {
+        formattedSolomonCode = baseForteCode + " Z";
+      } else {
+        formattedSolomonCode = baseForteCode;
+      }
+    }
+
+    UI.solomonCodeInput.value = formattedSolomonCode;
     UI.solomonNameInput.value = solomonChord
       ? solomonChord["name"] ?? "No solomon name"
       : "No solomon name";

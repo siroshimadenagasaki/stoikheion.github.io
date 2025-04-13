@@ -1042,17 +1042,6 @@ function onPlayForElementClicked(event) {
   }
   pitchClasses = pitchClasses.sort((a, b) => a - b);
 
-  // Create all inversions of the set
-  const inversions = [];
-  for (let i = 0; i < pitchClasses.length; i++) {
-    const inversion = [...pitchClasses];
-    // Rearrange the set to make the ith note the lowest
-    while (inversion[0] !== pitchClasses[i]) {
-      inversion.push(inversion.shift());
-    }
-    inversions.push(inversion);
-  }
-
   // Play original set melodically
   showNotification(
     `Playing set ${HELPERS.formatWithSpaces(pitchClasses)} melodically`,
@@ -1067,10 +1056,36 @@ function onPlayForElementClicked(event) {
   // Calculate total time for melodic playing
   const melodicTime = pitchClasses.length * 500;
 
-  // Play original set as a chord
+  // Create proper musical inversions (adjusting octaves)
+  const inversions = [];
+  // Root position
+  inversions.push([...pitchClasses]);
+
+  // Generate inversions only if we have at least 2 notes
+  if (pitchClasses.length >= 2) {
+    // Create each inversion by moving the lowest note up an octave
+    for (let i = 1; i < pitchClasses.length; i++) {
+      const inversion = [];
+
+      for (let j = 0; j < pitchClasses.length; j++) {
+        if (j < i) {
+          // Move notes that were in bass positions up an octave
+          inversion.push(pitchClasses[j] + 12);
+        } else {
+          inversion.push(pitchClasses[j]);
+        }
+      }
+
+      // Sort to ensure proper ordering by pitch
+      inversion.sort((a, b) => a - b);
+      inversions.push(inversion);
+    }
+  }
+
+  // Play root position as a chord
   setTimeout(() => {
     showNotification(
-      `Playing chord ${HELPERS.formatWithSpaces(pitchClasses)}`,
+      `Playing Root Position: ${HELPERS.formatWithSpaces(pitchClasses)}`,
       2000
     );
     for (let i = 0; i < pitchClasses.length; i++) {
@@ -1086,19 +1101,30 @@ function onPlayForElementClicked(event) {
   // Play each inversion as a chord
   let currentDelay = melodicTime + 1000 + chordTime;
 
-  // Skip the first inversion as it's the same as the original set
+  // Play each inversion (skip first as we already played it)
   for (let inv = 1; inv < inversions.length; inv++) {
     const inversion = inversions[inv];
     setTimeout(() => {
+      const inversionName =
+        inv === 1
+          ? "1st Inversion"
+          : inv === 2
+          ? "2nd Inversion"
+          : `${inv}${inv === 3 ? "rd" : "th"} Inversion`;
+
       showNotification(
-        `Playing inversion with ${
-          inversion[0]
-        } as lowest note: ${HELPERS.formatWithSpaces(inversion)}`,
+        `Playing ${inversionName}: ${HELPERS.formatWithSpaces(
+          inversion.map((n) => n % 12)
+        )}`,
         2000
       );
+
       for (let i = 0; i < inversion.length; i++) {
         setTimeout(() => {
-          audioPlayer.playNote(inversion[i], 4);
+          // Calculate correct octave for each note
+          const octave = Math.floor(inversion[i] / 12) + 4;
+          const pitchClass = inversion[i] % 12;
+          audioPlayer.playNote(pitchClass, octave);
         }, i * 50);
       }
     }, currentDelay);

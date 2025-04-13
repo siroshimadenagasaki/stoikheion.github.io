@@ -833,7 +833,7 @@ const CHORDS = {
     },
     {
       "forte-code": "5-12",
-      "pitch-classes": [0, 1, 5, 6, 10],
+      "pitch-classes": [0, 1, 3, 5, 6],
       name: "Locrian pentatonic",
       "carter-number": null,
       "complement-forte-code": null,

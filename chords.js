@@ -174,7 +174,7 @@ const CHORDS = {
     {
       "forte-code": "3-11",
       "pitch-classes": [0, 3, 7],
-      name: "Tríada Menor / 6(no5)",
+      name: "Minor triad / 6(no5)",
       "carter-number": null,
       "complement-forte-code": "9-11B",
       "documentation-link": null,
@@ -184,7 +184,7 @@ const CHORDS = {
     {
       "forte-code": "3-11B",
       "pitch-classes": [0, 4, 7],
-      name: "Tríada Mayor / m6(no5)",
+      name: "Major triad / m6(no5)",
       "carter-number": null,
       "complement-forte-code": "9-11",
       "documentation-link": null,
@@ -404,7 +404,7 @@ const CHORDS = {
     {
       "forte-code": "4-14B",
       "pitch-classes": [0, 4, 5, 7],
-      name: "Tetracordio Mayor cuarta justa",
+      name: "Major perfect fourth tetrachord ",
       "carter-number": null,
       "complement-forte-code": "8-14B",
       "documentation-link": null,
@@ -1614,7 +1614,7 @@ const CHORDS = {
     {
       "forte-code": "6-20",
       "pitch-classes": [0, 1, 4, 5, 8, 9],
-      name: "Escala Aumentada",
+      name: "Augmented scale",
       "carter-number": "2",
       "complement-forte-code": "6-20",
       "documentation-link": null,
@@ -1624,7 +1624,7 @@ const CHORDS = {
     {
       "forte-code": "6-21",
       "pitch-classes": [0, 2, 3, 4, 6, 8],
-      name: "Hexatónica Cromática.2A",
+      name: " Chromatic hexatonic n.2",
       "carter-number": null,
       "complement-forte-code": "6-21B",
       "documentation-link": null,
@@ -1734,7 +1734,7 @@ const CHORDS = {
     {
       "forte-code": "6-27B",
       "pitch-classes": [0, 2, 3, 5, 6, 9],
-      name: "Hexatónica Pirámide",
+      name: "Pyramid hexatonic",
       "carter-number": null,
       "complement-forte-code": "6-27",
       "documentation-link": null,
@@ -1764,7 +1764,7 @@ const CHORDS = {
     {
       "forte-code": "6-30",
       "pitch-classes": [0, 1, 3, 6, 7, 9],
-      name: "Hexatónica Menor-bitonal",
+      name: "Minor bitonal hexatonic",
       "carter-number": "15",
       "complement-forte-code": "6-30B",
       "documentation-link": null,
@@ -1774,7 +1774,7 @@ const CHORDS = {
     {
       "forte-code": "6-30B",
       "pitch-classes": [0, 2, 3, 6, 8, 9],
-      name: "Hexacordio Mayor-bitonal",
+        name: "Major bitonal hexatonic",
       "carter-number": null,
       "complement-forte-code": "6-30",
       "documentation-link": null,
@@ -1804,7 +1804,7 @@ const CHORDS = {
     {
       "forte-code": "6-32",
       "pitch-classes": [0, 2, 4, 5, 7, 9],
-      name: "Hexatónica mayor",
+      name: "Major hexatonic",
       "carter-number": "6",
       "complement-forte-code": "6-32",
       "documentation-link": null,
@@ -1814,7 +1814,7 @@ const CHORDS = {
     {
       "forte-code": "6-33",
       "pitch-classes": [0, 2, 3, 5, 7, 9],
-      name: "Hexatónica Dórica no7",
+      name: "Dorian no7 hexatonic",
       "carter-number": null,
       "complement-forte-code": "6-33B",
       "documentation-link": null,
@@ -1824,7 +1824,7 @@ const CHORDS = {
     {
       "forte-code": "6-33B",
       "pitch-classes": [0, 2, 4, 6, 7, 9],
-      name: "Hexatónica Lidia no7",
+        name: "Lydian no7 hexatonic",
       "carter-number": null,
       "complement-forte-code": "6-33",
       "documentation-link": null,
@@ -1834,7 +1834,7 @@ const CHORDS = {
     {
       "forte-code": "6-34",
       "pitch-classes": [0, 1, 3, 5, 7, 9],
-      name: "Acorde Prometeo",
+      name: "Prometeus chord",
       "carter-number": null,
       "complement-forte-code": "6-34B",
       "documentation-link": null,
@@ -1844,7 +1844,7 @@ const CHORDS = {
     {
       "forte-code": "6-34B",
       "pitch-classes": [0, 2, 4, 6, 8, 9],
-      name: "Hexatónica Armónica",
+      name: "Harmonic hexatonic",
       "carter-number": null,
       "complement-forte-code": "6-34",
       "documentation-link": null,
@@ -1854,7 +1854,7 @@ const CHORDS = {
     {
       "forte-code": "6-35",
       "pitch-classes": [0, 2, 4, 6, 8, 10],
-      name: "Escala Tonal",
+      name: "Tonal scale",
       "carter-number": "1",
       "complement-forte-code": "6-35",
       "documentation-link": null,

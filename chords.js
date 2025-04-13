@@ -1774,7 +1774,7 @@ const CHORDS = {
     {
       "forte-code": "6-30B",
       "pitch-classes": [0, 2, 3, 6, 8, 9],
-        name: "Major bitonal hexatonic",
+      name: "Major bitonal hexatonic",
       "carter-number": null,
       "complement-forte-code": "6-30",
       "documentation-link": null,
@@ -1824,7 +1824,7 @@ const CHORDS = {
     {
       "forte-code": "6-33B",
       "pitch-classes": [0, 2, 4, 6, 7, 9],
-        name: "Lydian no7 hexatonic",
+      name: "Lydian no7 hexatonic",
       "carter-number": null,
       "complement-forte-code": "6-33",
       "documentation-link": null,

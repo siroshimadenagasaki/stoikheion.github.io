@@ -210,6 +210,35 @@ function initialize() {
   if (typeof GOOGLE_API_KEY !== "undefined") {
     fetchGoogleDriveFiles();
   }
+
+  // Connect the Solomon play audio button to the play functionality
+  const solomonPlayButton = document.getElementById("solomon-play-audio");
+  if (solomonPlayButton) {
+    // Clone the button to remove any previous event listeners
+    const newSolomonPlayButton = solomonPlayButton.cloneNode(true);
+    solomonPlayButton.parentNode.replaceChild(
+      newSolomonPlayButton,
+      solomonPlayButton
+    );
+
+    // Store a reference to the button in the UI object
+    UI.solomonAudioButton = newSolomonPlayButton;
+
+    // Add fresh event listener to the new button
+    newSolomonPlayButton.addEventListener("click", function () {
+      // Only proceed if we have user input
+      if (SELECTION.array.length === 0) {
+        showNotification("No input available. Please select notes first.");
+        return;
+      }
+
+      // Create a synthetic event with the target having the play-for attribute
+      const syntheticEvent = {
+        target: document.querySelector("[play-for='user-pitch-class']"),
+      };
+      onPlayForElementClicked(syntheticEvent);
+    });
+  }
 }
 
 const SELECTION = {
@@ -1326,6 +1355,15 @@ async function updateUI() {
     UI.solomonNameInput.value = "";
     UI.solomonNameInput.title = "";
 
+    // Disable PDF and audio buttons when no input
+    UI.solomonPDFButton.setAttribute("disabled-like", true);
+    UI.solomonPDFButton.setAttribute(
+      "onclick",
+      "showNotification('No input available. Please select notes first.')"
+    );
+
+    UI.solomonAudioButton.setAttribute("disabled-like", true);
+
     Array.from(UI.subsetSelector.options).forEach((option) => {
       option.value === "0"
         ? option.removeAttribute("hidden")
@@ -1421,23 +1459,27 @@ async function updateUI() {
       UI.solomonPDFButton.setAttribute("disabled-like", true);
     }
 
-    if (solomonCode) {
-      const audioUrl = `audios/${solomonCode}.mp3`;
-      UI.solomonAudioButton.setAttribute("disabled-like", true);
-      if (await isValidUrl(audioUrl)) {
-        UI.solomonAudioButton.setAttribute(
-          "onclick",
-          `playAudio('${audioUrl}')`
-        );
-        UI.solomonAudioButton.removeAttribute("disabled-like");
-      } else {
-        UI.solomonAudioButton.setAttribute(
-          "onclick",
-          "showNotification('No audio available for this Solomon code.')"
-        );
-        UI.solomonAudioButton.setAttribute("disabled-like", true);
-      }
-    }
+    // Enable the audio button when there's user input
+    UI.solomonAudioButton.removeAttribute("disabled-like");
+
+    // Commented out because the audio files are not available yet
+    // if (solomonCode) {
+    //   const audioUrl = `audios/${solomonCode}.mp3`;
+    //   UI.solomonAudioButton.setAttribute("disabled-like", true);
+    //   if (await isValidUrl(audioUrl)) {
+    //     UI.solomonAudioButton.setAttribute(
+    //       "onclick",
+    //       `playAudio('${audioUrl}')`
+    //     );
+    //     UI.solomonAudioButton.removeAttribute("disabled-like");
+    //   } else {
+    //     UI.solomonAudioButton.setAttribute(
+    //       "onclick",
+    //       "showNotification('No audio available for this Solomon code.')"
+    //     );
+    //     UI.solomonAudioButton.setAttribute("disabled-like", true);
+    //   }
+    // }
 
     Array.from(UI.subsetSelector.options).forEach((option) => {
       if (option.value < cardinality) option.removeAttribute("hidden");

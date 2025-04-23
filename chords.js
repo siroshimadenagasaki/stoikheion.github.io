@@ -404,7 +404,7 @@ const CHORDS = {
     {
       "forte-code": "4-14B",
       "pitch-classes": [0, 4, 5, 7],
-      name: "Major perfect fourth tetrachord ",
+      name: "G/C - Maj9(no3) 1 2 5 7 - Major add4",
       "carter-number": null,
       "complement-forte-code": "8-14B",
       "documentation-link": null,
@@ -3024,7 +3024,7 @@ const CHORDS = {
     {
       "forte-code": "8-18B",
       "pitch-classes": [0, 1, 3, 4, 6, 7, 8, 9],
-      name: null,
+        name: "Bebop dominant 9b 13b",
       "carter-number": null,
       "complement-forte-code": "4-18",
       "documentation-link": null,

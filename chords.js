@@ -914,7 +914,7 @@ const CHORDS = {
     {
       "forte-code": "5-17",
       "pitch-classes": [0, 1, 3, 4, 8],
-      name: "Maj+(6) - Minor 9 chord - Farben chord",
+      name: "Maj+(6) - Minor 9 chord - Farben chord - [C + Fm]",
       "carter-number": null,
       "complement-forte-code": "7-17",
       "documentation-link": null,
@@ -984,7 +984,7 @@ const CHORDS = {
     {
       "forte-code": "5-21",
       "pitch-classes": [0, 1, 4, 5, 8],
-      name: "Sirian pentatonic",
+      name: "Sirian pentatonic [Cm + Em]",
       "carter-number": null,
       "complement-forte-code": "7-21B",
       "documentation-link": null,
@@ -994,7 +994,7 @@ const CHORDS = {
     {
       "forte-code": "5-21B",
       "pitch-classes": [0, 3, 4, 7, 8],
-      name: "Libanese pentatonic - Augmented minor chord",
+      name: "Libanese pentatonic - Augmented minor chord - [C + E]",
       "carter-number": null,
       "complement-forte-code": "7-21",
       "documentation-link": null,
@@ -1004,7 +1004,7 @@ const CHORDS = {
     {
       "forte-code": "5-22",
       "pitch-classes": [0, 1, 4, 7, 8],
-      name: " Persian pentatonic",
+      name: " Persian pentatonic - [C + Dbm]",
       "carter-number": null,
       "complement-forte-code": "7-22",
       "documentation-link": null,
@@ -1094,7 +1094,7 @@ const CHORDS = {
     {
       "forte-code": "5-27",
       "pitch-classes": [0, 1, 3, 5, 8],
-      name: "Major 9 chord - Maj9",
+      name: "Major 9 chord - Maj9 - [C + F]",
       "carter-number": null,
       "complement-forte-code": "7-27B",
       "documentation-link": null,
@@ -1104,7 +1104,7 @@ const CHORDS = {
     {
       "forte-code": "5-27B",
       "pitch-classes": [0, 3, 5, 7, 8],
-      name: "Minor 9 chord - m9 - Maj7(6)",
+      name: "Minor 9 chord - m9 - Maj7(6) - [Cm + Fm]",
       "carter-number": null,
       "complement-forte-code": "7-27",
       "documentation-link": null,
@@ -1194,7 +1194,7 @@ const CHORDS = {
     {
       "forte-code": "5-32",
       "pitch-classes": [0, 1, 4, 6, 9],
-      name: " Napolitan pentatonic n.1",
+      name: " Napolitan pentatonic n.1 [Cm + Ebm]",
       "carter-number": null,
       "complement-forte-code": "7-32B",
       "documentation-link": null,
@@ -1204,7 +1204,7 @@ const CHORDS = {
     {
       "forte-code": "5-32B",
       "pitch-classes": [0, 2, 5, 6, 9],
-      name: " Napolitan pentatonic n.2 - Elektra chord",
+      name: " Napolitan pentatonic n.2 - Elektra chord - [C + Eb]",
       "carter-number": null,
       "complement-forte-code": "7-32",
       "documentation-link": null,
@@ -1594,7 +1594,7 @@ const CHORDS = {
     {
       "forte-code": "6-19",
       "pitch-classes": [0, 1, 3, 4, 7, 8],
-      name: "Pseudo Augmented minor - mMaj9(4#) - Lydian 3b(no6)",
+      name: "Pseudo Augmented minor - mMaj9(4#) - Lydian 3b(no6) [Cm + Dbm]",
       "carter-number": null,
       "complement-forte-code": "6-44B",
       "documentation-link": null,
@@ -1604,7 +1604,7 @@ const CHORDS = {
     {
       "forte-code": "6-19B",
       "pitch-classes": [0, 1, 4, 5, 7, 8],
-      name: "Maj7(2#4) - Lydian2# (no6)",
+      name: "Maj7(2#4) - Lydian2# (no6)- [C + Db]",
       "carter-number": null,
       "complement-forte-code": "6-44",
       "documentation-link": null,
@@ -1764,7 +1764,7 @@ const CHORDS = {
     {
       "forte-code": "6-30",
       "pitch-classes": [0, 1, 3, 6, 7, 9],
-      name: "Minor bitonal hexatonic",
+      name: "Minor bitonal hexatonic [Cm + F#m]",
       "carter-number": "15",
       "complement-forte-code": "6-30B",
       "documentation-link": null,
@@ -1774,7 +1774,7 @@ const CHORDS = {
     {
       "forte-code": "6-30B",
       "pitch-classes": [0, 2, 3, 6, 8, 9],
-      name: "Major bitonal hexatonic - Petrushka chord",
+      name: "Major bitonal hexatonic - Petrushka chord - [C + F#]",
       "carter-number": null,
       "complement-forte-code": "6-30",
       "documentation-link": null,
@@ -1804,7 +1804,7 @@ const CHORDS = {
     {
       "forte-code": "6-32",
       "pitch-classes": [0, 2, 4, 5, 7, 9],
-      name: "Major hexatonic",
+      name: "Major hexatonic - [C + Dm]",
       "carter-number": "6",
       "complement-forte-code": "6-32",
       "documentation-link": null,
@@ -1814,7 +1814,7 @@ const CHORDS = {
     {
       "forte-code": "6-33",
       "pitch-classes": [0, 2, 3, 5, 7, 9],
-      name: "Dorian no7 hexatonic",
+      name: "Dorian no7 hexatonic -[Cm + Dm]",
       "carter-number": null,
       "complement-forte-code": "6-33B",
       "documentation-link": null,
@@ -1824,7 +1824,7 @@ const CHORDS = {
     {
       "forte-code": "6-33B",
       "pitch-classes": [0, 2, 4, 6, 7, 9],
-      name: "Lydian no7 hexatonic",
+      name: "Lydian no7 hexatonic - [C + D]",
       "carter-number": null,
       "complement-forte-code": "6-33",
       "documentation-link": null,
@@ -2074,7 +2074,7 @@ const CHORDS = {
     {
       "forte-code": "6-49",
       "pitch-classes": [0, 1, 3, 4, 7, 9],
-      name: "Prometeus napolitan 132312",
+      name: "Prometeus napolitan 132312 - [C + Ebm]",
       "carter-number": "22",
       "complement-forte-code": "6-28",
       "documentation-link": null,

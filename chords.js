@@ -14,7 +14,7 @@ const CHORDS = {
     {
       "forte-code": "3-1",
       "pitch-classes": [0, 1, 2],
-      name: "Chromatic tricord",
+      name: "Chromatic trichord",
       "carter-number": "4",
       "complement-forte-code": "9-1",
       "documentation-link": null,
@@ -84,7 +84,7 @@ const CHORDS = {
     {
       "forte-code": "3-5",
       "pitch-classes": [0, 1, 6],
-      name: "Fourth/Tritone triad - Rite n1 - Lydian triad",
+      name: "Fourth/Tritone triad - Rite n1 - Lydian triad - Viennese trichord 1",
       "carter-number": null,
       "complement-forte-code": "9-5B",
       "documentation-link": null,
@@ -94,7 +94,7 @@ const CHORDS = {
     {
       "forte-code": "3-5B",
       "pitch-classes": [0, 5, 6],
-      name: "Tritone/Fourth triad - Rite n2 - Phrygian triad n2",
+      name: "Tritone/Fourth triad - Rite n2 - Phrygian triad n2 - Viennese trichord 2",
       "carter-number": null,
       "complement-forte-code": "9-5",
       "documentation-link": null,
@@ -184,7 +184,7 @@ const CHORDS = {
     {
       "forte-code": "3-11B",
       "pitch-classes": [0, 4, 7],
-      name: "Major triad / m6(no5)",
+      name: "Major triad - m6(no5) - F/C - Ab/C",
       "carter-number": null,
       "complement-forte-code": "9-11",
       "documentation-link": null,
@@ -234,7 +234,7 @@ const CHORDS = {
     {
       "forte-code": "4-3",
       "pitch-classes": [0, 1, 3, 4],
-      name: " mMaj9(no5) - Alternating tetrachord",
+      name: " mMaj9(no5) - Alternating tetrachord - DSCH",
       "carter-number": "9",
       "complement-forte-code": "8-3",
       "documentation-link": null,
@@ -284,7 +284,7 @@ const CHORDS = {
     {
       "forte-code": "4-6",
       "pitch-classes": [0, 1, 2, 7],
-      name: "Perfect fourth tetracord",
+      name: "Perfect fourth tetracord - Dream chord",
       "carter-number": "6",
       "complement-forte-code": "8-6",
       "documentation-link": null,
@@ -314,7 +314,7 @@ const CHORDS = {
     {
       "forte-code": "4-9",
       "pitch-classes": [0, 1, 6, 7],
-      name: "Double tritone tetrachord",
+      name: "Double tritone tetrachord - Distance model",
       "carter-number": "2",
       "complement-forte-code": "8-9",
       "documentation-link": null,
@@ -454,7 +454,7 @@ const CHORDS = {
     {
       "forte-code": "4-17",
       "pitch-classes": [0, 3, 4, 7],
-      name: "Major/minor tetrachord - Bitonal",
+      name: "Major/minor tetrachord - Bitonal - Alpha chord - A/C",
       "carter-number": "13",
       "complement-forte-code": "8-17",
       "documentation-link": null,
@@ -464,7 +464,7 @@ const CHORDS = {
     {
       "forte-code": "4-18",
       "pitch-classes": [0, 1, 4, 7],
-      name: "Diminished major tetrachord - Dim Maj7",
+      name: "Diminished major tetrachord - Dim Maj7 - B/C",
       "carter-number": null,
       "complement-forte-code": "8-18B",
       "documentation-link": null,
@@ -494,7 +494,7 @@ const CHORDS = {
     {
       "forte-code": "4-19B",
       "pitch-classes": [0, 3, 4, 8],
-      name: "Augmented major tetrachord - Maj7+ ",
+      name: "Augmented major tetrachord - Maj7+ - E/C",
       "carter-number": null,
       "complement-forte-code": "8-19",
       "documentation-link": null,
@@ -504,7 +504,7 @@ const CHORDS = {
     {
       "forte-code": "4-20",
       "pitch-classes": [0, 1, 5, 8],
-      name: "Maj7 - Major seventh chord",
+      name: "Maj7 - Major seventh chord - Db/C",
       "carter-number": "15",
       "complement-forte-code": "8-20",
       "documentation-link": null,
@@ -524,7 +524,7 @@ const CHORDS = {
     {
       "forte-code": "4-22",
       "pitch-classes": [0, 2, 4, 7],
-      name: "Major tetrachord - 1 2 3 5 - Coltrane major",
+      name: "Major tetrachord - 1 2 3 5 - Coltrane major - Bb/C",
       "carter-number": null,
       "complement-forte-code": "8-22B",
       "documentation-link": null,
@@ -574,7 +574,7 @@ const CHORDS = {
     {
       "forte-code": "4-26",
       "pitch-classes": [0, 3, 5, 8],
-      name: "m7 - Minor seventh chord",
+      name: "m7 - Minor seventh chord - Eb/C",
       "carter-number": "14",
       "complement-forte-code": "8-26",
       "documentation-link": null,
@@ -594,7 +594,7 @@ const CHORDS = {
     {
       "forte-code": "4-27B",
       "pitch-classes": [0, 3, 6, 8],
-      name: "Seventh chord - 7 - German sixth chord",
+      name: "Seventh chord - 7 - D/C - German sixth chord",
       "carter-number": null,
       "complement-forte-code": "8-27",
       "documentation-link": null,
@@ -624,7 +624,7 @@ const CHORDS = {
     {
       "forte-code": "4-29B",
       "pitch-classes": [0, 4, 6, 7],
-      name: " All intervals tetrachord n.4 - Major 4#",
+      name: " All intervals tetrachord n.4 - Major 4# - F#/C",
       "carter-number": "23",
       "complement-forte-code": "8-29",
       "documentation-link": null,
@@ -914,7 +914,7 @@ const CHORDS = {
     {
       "forte-code": "5-17",
       "pitch-classes": [0, 1, 3, 4, 8],
-      name: "Maj+(6) - Minor 9 chord",
+      name: "Maj+(6) - Minor 9 chord - Farben chord",
       "carter-number": null,
       "complement-forte-code": "7-17",
       "documentation-link": null,
@@ -964,7 +964,7 @@ const CHORDS = {
     {
       "forte-code": "5-20",
       "pitch-classes": [0, 1, 5, 6, 8],
-      name: "Pelog pentatonic",
+      name: "Pelog pentatonic - Ryukyu",
       "carter-number": null,
       "complement-forte-code": "7-20B",
       "documentation-link": null,
@@ -1204,7 +1204,7 @@ const CHORDS = {
     {
       "forte-code": "5-32B",
       "pitch-classes": [0, 2, 5, 6, 9],
-      name: " Napolitan pentatonic n.2",
+      name: " Napolitan pentatonic n.2 - Elektra chord",
       "carter-number": null,
       "complement-forte-code": "7-32",
       "documentation-link": null,
@@ -1484,7 +1484,7 @@ const CHORDS = {
     {
       "forte-code": "6-13",
       "pitch-classes": [0, 1, 3, 4, 6, 7],
-      name: "Alternated Hexatonic",
+      name: "Alternated Hexatonic - Istrian scale",
       "carter-number": "29",
       "complement-forte-code": "6-42",
       "documentation-link": null,
@@ -1774,7 +1774,7 @@ const CHORDS = {
     {
       "forte-code": "6-30B",
       "pitch-classes": [0, 2, 3, 6, 8, 9],
-      name: "Major bitonal hexatonic",
+      name: "Major bitonal hexatonic - Petrushka chord",
       "carter-number": null,
       "complement-forte-code": "6-30",
       "documentation-link": null,
@@ -1834,7 +1834,7 @@ const CHORDS = {
     {
       "forte-code": "6-34",
       "pitch-classes": [0, 1, 3, 5, 7, 9],
-      name: "Prometeus chord",
+      name: "Prometeus / Mystic chord",
       "carter-number": null,
       "complement-forte-code": "6-34B",
       "documentation-link": null,
@@ -2024,7 +2024,7 @@ const CHORDS = {
     {
       "forte-code": "6-46",
       "pitch-classes": [0, 1, 2, 4, 6, 9],
-      name: null,
+        name: "Harmonics scale",
       "carter-number": null,
       "complement-forte-code": null,
       "documentation-link": null,
